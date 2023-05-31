@@ -1,0 +1,21 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+
+    <changeSet author="clarolab" id="2-1.1">
+        <dropColumn columnName="trend"
+                    schemaName="public"
+                    tableName="qa_automated_test_issue"/>
+    </changeSet>
+    <changeSet author="clarolab" id="2-2.2">
+        <addColumn tableName="qa_automated_test_issue">
+            <column name="trend" type="varchar(100)"/>
+        </addColumn>
+    </changeSet>
+</databaseChangeLog>

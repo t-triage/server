@@ -1,0 +1,1570 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet id="1-1" author="clarolab">
+        <createSequence sequenceName="sequenceGenerator" startValue="20000"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-2">
+        <createTable tableName="qa_application_domain">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_application_domain_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="allowed" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="domainname" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-3">
+        <createTable tableName="qa_artifact">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_artifact_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="artifacttype" type="SMALLINT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="url" type="TEXT"/>
+            <column name="build_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-4">
+        <createTable tableName="qa_automated_test_issue">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_automated_test_issue_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="calculatedpriority" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="failtimes" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="issuetype" type="SMALLINT"/>
+            <column name="reopentimes" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="userfixprioritytype" type="SMALLINT"/>
+            <column name="note_id" type="BIGINT"/>
+            <column name="testcase_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="testtriage_id" type="BIGINT"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-5">
+        <createTable tableName="qa_build">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_build_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="buildid" type="VARCHAR(255)"/>
+            <column name="displayname" type="VARCHAR(255)"/>
+            <column name="executeddate" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="number" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="populatemode" type="SMALLINT"/>
+            <column name="processed" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="SMALLINT"/>
+            <column name="url" type="TEXT"/>
+            <column name="container_id" type="BIGINT"/>
+            <column name="executor_id" type="BIGINT"/>
+            <column name="report_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-6">
+        <createTable tableName="qa_build_triage">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_build_triage_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currentstate" type="SMALLINT"/>
+            <column name="deadline" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expired" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file" type="VARCHAR(255)"/>
+            <column name="number" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rank" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="tags" type="VARCHAR(255)"/>
+            <column name="triaged" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="build_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="container_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executor_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="note_id" type="BIGINT"/>
+            <column name="spec_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-7">
+        <createTable tableName="qa_connector">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_connector_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="type" type="SMALLINT"/>
+            <column name="url" type="VARCHAR(255)"/>
+            <column name="username" type="VARCHAR(255)"/>
+            <column name="usertoken" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-8">
+        <createTable tableName="qa_container">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_container_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="hidden_data" type="VARCHAR(255)"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="populatemode" type="SMALLINT"/>
+            <column name="url" type="VARCHAR(255)"/>
+            <column name="connector_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="product_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-9">
+        <createTable tableName="qa_deadline">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_deadline_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="deadlinedate" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="note_id" type="BIGINT"/>
+            <column name="product_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-10">
+        <createTable tableName="qa_error_detail">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_error_detail_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="applicationfailtype" type="SMALLINT"/>
+            <column name="causedby" type="TEXT"/>
+            <column name="exceptiontype" type="VARCHAR(255)"/>
+            <column name="message" type="TEXT"/>
+            <column name="testfailtype" type="SMALLINT"/>
+            <column name="previoustesttriage_id" type="BIGINT"/>
+            <column name="testexecution_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-11">
+        <createTable tableName="qa_event">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_event_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="additionalparameter" type="VARCHAR(255)"/>
+            <column name="displayname" type="VARCHAR(255)"/>
+            <column name="eventtime" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="extraparameter" type="VARCHAR(255)"/>
+            <column name="originatingclass" type="VARCHAR(255)"/>
+            <column name="originatingmethod" type="VARCHAR(255)"/>
+            <column name="processed" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="processingmessage" type="VARCHAR(255)"/>
+            <column name="success" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="SMALLINT"/>
+            <column name="parameter_id" type="BIGINT"/>
+            <column name="source_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-12">
+        <createTable tableName="qa_executor">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_executor_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="maxtestexecuted" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="url" type="TEXT"/>
+            <column name="container_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-13">
+        <createTable tableName="qa_executor_stat">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_executor_stat_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="actualdate" type="VARCHAR(255)"/>
+            <column name="assignee" type="VARCHAR(255)"/>
+            <column name="containername" type="VARCHAR(255)"/>
+            <column name="daystodeadline" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="deadline" type="VARCHAR(255)"/>
+            <column name="deadlinepriority" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="defaultpriority" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="duration" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="evolutionfails" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="evolutionnewfails" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="evolutionnowpassing" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="evolutionpass" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="evolutionskip" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="evolutiontotriage" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executiondate" type="VARCHAR(255)"/>
+            <column name="fails" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="maxexecutedtest" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="newfails" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="nowpassing" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="pass" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="priority" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="productname" type="VARCHAR(255)"/>
+            <column name="skip" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="stabilityindex" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="state" type="INTEGER"/>
+            <column name="suitename" type="VARCHAR(255)"/>
+            <column name="tags" type="VARCHAR(255)"/>
+            <column name="totriage" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executor_id" type="BIGINT"/>
+            <column name="buildtriage_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-14">
+        <createTable tableName="qa_image">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_image_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="data" type="TEXT"/>
+            <column name="description" type="TEXT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="type" type="VARCHAR(255)"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-15">
+        <createTable tableName="qa_issue_ticket">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_issue_ticket_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="component" type="VARCHAR(255)"/>
+            <column name="description" type="TEXT"/>
+            <column name="duedate" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file" type="VARCHAR(255)"/>
+            <column name="issuetype" type="SMALLINT"/>
+            <column name="priority" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="reopentimes" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="summary" type="VARCHAR(255)"/>
+            <column name="url" type="VARCHAR(255)"/>
+            <column name="user_id" type="BIGINT"/>
+            <column name="note_id" type="BIGINT"/>
+            <column name="product_id" type="BIGINT"/>
+            <column name="testcase_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-16">
+        <createTable tableName="qa_note">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_note_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-17">
+        <createTable tableName="qa_pin">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_pin_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="createdate" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="reason" type="VARCHAR(255)"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-18">
+        <createTable tableName="qa_product">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_product_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="packagenames" type="TEXT"/>
+            <column name="image_id" type="BIGINT"/>
+            <column name="note_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-19">
+        <createTable tableName="qa_productivity">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_productivity_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="autopull" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="builds" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="connectors" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="containers" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executors" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="item" type="VARCHAR(255)"/>
+            <column name="jobs" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="manualpull" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="products" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="push" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uniqueloging" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-20">
+        <createTable tableName="qa_property">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_property_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="hidden" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="longvalue" type="TEXT"/>
+            <column name="name" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="uselongvalue" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="value" type="VARCHAR(255)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-21">
+        <createTable tableName="qa_report">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_report_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="TEXT"/>
+            <column name="duration" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executiondate" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="failcount" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="fail_reason" type="TEXT"/>
+            <column name="passcount" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="skipcount" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="SMALLINT"/>
+            <column name="totaltest" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="type" type="SMALLINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-22">
+        <createTable tableName="qa_slack_spec">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_slack_spec_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="channel" type="VARCHAR(255)"/>
+            <column name="token" type="VARCHAR(255)"/>
+            <column name="container_id" type="BIGINT"/>
+            <column name="product_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-23">
+        <createTable tableName="qa_test_case">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_test_case_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="dataprovider" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="locationpath" type="TEXT"/>
+            <column name="name" type="TEXT"/>
+            <column name="automatedtestissue_id" type="BIGINT"/>
+            <column name="issueticket_id" type="BIGINT"/>
+            <column name="pin_id" type="BIGINT"/>
+            <column name="product_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-24">
+        <createTable tableName="qa_test_execution">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_test_execution_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="age" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="duration" type="FLOAT8">
+                <constraints nullable="false"/>
+            </column>
+            <column name="errordetails" type="TEXT"/>
+            <column name="errorstacktrace" type="TEXT"/>
+            <column name="failedsince" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="screenshoturl" type="TEXT"/>
+            <column name="skippedmessage" type="TEXT"/>
+            <column name="standardoutput" type="TEXT"/>
+            <column name="status" type="SMALLINT"/>
+            <column name="suitename" type="TEXT"/>
+            <column name="videourl" type="TEXT"/>
+            <column name="report_id" type="BIGINT"/>
+            <column name="testcase_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-25">
+        <createTable tableName="qa_test_triage">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_test_triage_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="applicationfailtype" type="SMALLINT"/>
+            <column name="buildnumber" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currentstate" type="SMALLINT"/>
+            <column name="executiondate" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executorname" type="VARCHAR(255)"/>
+            <column name="expired" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="file" type="VARCHAR(255)"/>
+            <column name="previouserrortype" type="SMALLINT"/>
+            <column name="rank" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="snooze" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="statereasontype" type="SMALLINT"/>
+            <column name="tags" type="VARCHAR(255)"/>
+            <column name="testfailtype" type="SMALLINT"/>
+            <column name="triaged" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updatedbyuser" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="build_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="buildtriage_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="container_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executor_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="note_id" type="BIGINT"/>
+            <column name="testcase_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="test_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-26">
+        <createTable tableName="qa_triage_spec">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_triage_spec_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="everyweeks" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expectedminamountoftests" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="expectedpassrate" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="frequencycron" type="VARCHAR(255)"/>
+            <column name="lastcalculateddeadline" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lastcalculatedweek" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="priority" type="INTEGER">
+                <constraints nullable="false"/>
+            </column>
+            <column name="container_id" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="executor_id" type="BIGINT"/>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-27">
+        <createTable tableName="qa_user">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_user_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="agreedtermsconditions" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="lastlogintime" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="password" type="VARCHAR(255)"/>
+            <column name="provider" type="VARCHAR(255)"/>
+            <column name="providerid" type="VARCHAR(255)"/>
+            <column name="realname" type="VARCHAR(255)"/>
+            <column name="roletype" type="SMALLINT"/>
+            <column name="username" type="VARCHAR(255)"/>
+            <column name="image_id" type="BIGINT"/>
+            <column name="preference_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-28">
+        <createTable tableName="qa_user_preference">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="qa_user_preference_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currentcontainer" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="currentpagenumber" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="rowperpage" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="user_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-29">
+        <createTable tableName="testexecutionstep">
+            <column name="id" type="BIGINT">
+                <constraints primaryKey="true" primaryKeyName="testexecutionstep_pkey"/>
+            </column>
+            <column name="enabled" type="BOOLEAN">
+                <constraints nullable="false"/>
+            </column>
+            <column name="timestamp" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="updated" type="BIGINT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="name" type="VARCHAR(255)"/>
+            <column name="output" type="TEXT"/>
+            <column name="parameters" type="VARCHAR(255)"/>
+            <column name="testexecution_id" type="BIGINT"/>
+        </createTable>
+    </changeSet>
+    <changeSet author="clarolab" id="1-30">
+        <addUniqueConstraint columnNames="executor_id, number" constraintName="idx_build_number_executor"
+                             tableName="qa_build"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-31">
+        <addUniqueConstraint columnNames="name" constraintName="idx_property_name" tableName="qa_property"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-32">
+        <addUniqueConstraint columnNames="executor_id, container_id" constraintName="idx_triageflowspec_exec_cont"
+                             tableName="qa_triage_spec"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-33">
+        <addUniqueConstraint columnNames="username" constraintName="idx_user_username" tableName="qa_user"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-34">
+        <addUniqueConstraint columnNames="testcase_id" constraintName="uk_4fxnsv39n24fa72korixx4n9g"
+                             tableName="qa_issue_ticket"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-35">
+        <addUniqueConstraint columnNames="testcase_id" constraintName="uk_awbbtq9hq7rr9h38h52er2umw"
+                             tableName="qa_automated_test_issue"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-36">
+        <addUniqueConstraint columnNames="build_id" constraintName="uk_ovmuxftjoxgk3oxjha5rxv6cm"
+                             tableName="qa_build_triage"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-37">
+        <createIndex indexName="idx_app_domain_allowed_enabled" tableName="qa_application_domain">
+            <column name="allowed"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-38">
+        <createIndex indexName="idx_app_domain_domain_enabled" tableName="qa_application_domain">
+            <column name="domainname"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-39">
+        <createIndex indexName="idx_artifact_id" tableName="qa_artifact">
+            <column name="build_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-40">
+        <createIndex indexName="idx_automated_user_issue" tableName="qa_automated_test_issue">
+            <column name="issuetype"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-41">
+        <createIndex indexName="idx_automated_user_type" tableName="qa_automated_test_issue">
+            <column name="user_id"/>
+            <column name="issuetype"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-42">
+        <createIndex indexName="idx_build_enabled" tableName="qa_build">
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-43">
+        <createIndex indexName="idx_build_executed_date" tableName="qa_build">
+            <column name="executeddate"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-44">
+        <createIndex indexName="idx_build_executor" tableName="qa_build">
+            <column name="executor_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-45">
+        <createIndex indexName="idx_build_number" tableName="qa_build">
+            <column name="number"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-46">
+        <createIndex indexName="idx_buildtriage_container" tableName="qa_build_triage">
+            <column name="container_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-47">
+        <createIndex indexName="idx_buildtriage_executor" tableName="qa_build_triage">
+            <column name="executor_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-48">
+        <createIndex indexName="idx_buildtriage_expire" tableName="qa_build_triage">
+            <column name="deadline"/>
+            <column name="enabled"/>
+            <column name="triaged"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-49">
+        <createIndex indexName="idx_buildtriage_expired" tableName="qa_build_triage">
+            <column name="expired"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-50">
+        <createIndex indexName="idx_buildtriage_list_cont" tableName="qa_build_triage">
+            <column name="container_id"/>
+            <column name="expired"/>
+            <column name="enabled"/>
+            <column name="executor_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-51">
+        <createIndex indexName="idx_buildtriage_list_exec" tableName="qa_build_triage">
+            <column name="executor_id"/>
+            <column name="expired"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-52">
+        <createIndex indexName="idx_buildtriage_rank" tableName="qa_build_triage">
+            <column name="rank"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-53">
+        <createIndex indexName="idx_buildtriage_state" tableName="qa_build_triage">
+            <column name="currentstate"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-54">
+        <createIndex indexName="idx_connector_name" tableName="qa_connector">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-55">
+        <createIndex indexName="idx_container_enabled" tableName="qa_container">
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-56">
+        <createIndex indexName="idx_container_name" tableName="qa_container">
+            <column name="name"/>
+            <column name="product_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-57">
+        <createIndex indexName="idx_deadline_name" tableName="qa_deadline">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-58">
+        <createIndex indexName="idx_error_detail_type" tableName="qa_error_detail">
+            <column name="exceptiontype"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-59">
+        <createIndex indexName="idx_event_pending" tableName="qa_event">
+            <column name="eventtime"/>
+            <column name="processed"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-60">
+        <createIndex indexName="idx_event_pending_type" tableName="qa_event">
+            <column name="type"/>
+            <column name="processed"/>
+            <column name="extraparameter"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-61">
+        <createIndex indexName="idx_executor_created_date" tableName="qa_executor">
+            <column name="timestamp"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-62">
+        <createIndex indexName="idx_executor_date" tableName="qa_executor_stat">
+            <column name="actualdate"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-63">
+        <createIndex indexName="idx_executor_id" tableName="qa_executor_stat">
+            <column name="executor_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-64">
+        <createIndex indexName="idx_executor_name" tableName="qa_executor">
+            <column name="name"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-65">
+        <createIndex indexName="idx_executor_process_list" tableName="qa_executor">
+            <column name="container_id"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-66">
+        <createIndex indexName="idx_image_name" tableName="qa_image">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-67">
+        <createIndex indexName="idx_issueticket_summary" tableName="qa_issue_ticket">
+            <column name="summary"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-68">
+        <createIndex indexName="idx_note_name" tableName="qa_note">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-69">
+        <createIndex indexName="idx_product_name" tableName="qa_product">
+            <column name="name"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-70">
+        <createIndex indexName="idx_productivity_type" tableName="qa_productivity">
+            <column name="item"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-71">
+        <createIndex indexName="idx_report_type" tableName="qa_report">
+            <column name="type"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-73">
+        <createIndex indexName="idx_testcase_automation" tableName="qa_test_case">
+            <column name="automatedtestissue_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-75">
+        <createIndex indexName="idx_testcase_pin" tableName="qa_test_case">
+            <column name="pin_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-76">
+        <createIndex indexName="idx_testcase_ticket" tableName="qa_test_case">
+            <column name="issueticket_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-77">
+        <createIndex indexName="idx_testexecution_duration" tableName="qa_test_execution">
+            <column name="duration"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-78">
+        <createIndex indexName="idx_testexecution_status" tableName="qa_test_execution">
+            <column name="status"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-79">
+        <createIndex indexName="idx_testexecution_test" tableName="qa_test_execution">
+            <column name="testcase_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-80">
+        <createIndex indexName="idx_testtriage_attempt" tableName="qa_test_triage">
+            <column name="build_id"/>
+            <column name="triaged"/>
+            <column name="expired"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-81">
+        <createIndex indexName="idx_testtriage_build" tableName="qa_test_triage">
+            <column name="build_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-82">
+        <createIndex indexName="idx_testtriage_build_exec_state" tableName="qa_test_triage">
+            <column name="build_id"/>
+            <column name="test_id"/>
+            <column name="currentstate"/>
+            <column name="buildnumber"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-83">
+        <createIndex indexName="idx_testtriage_buildtriage_triaged" tableName="qa_test_triage">
+            <column name="buildtriage_id"/>
+            <column name="enabled"/>
+            <column name="triaged"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-84">
+        <createIndex indexName="idx_testtriage_executor_state" tableName="qa_test_triage">
+            <column name="test_id"/>
+            <column name="currentstate"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-85">
+        <createIndex indexName="idx_testtriage_executor_test" tableName="qa_test_triage">
+            <column name="executor_id"/>
+            <column name="test_id"/>
+            <column name="id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-86">
+        <createIndex indexName="idx_testtriage_history" tableName="qa_test_triage">
+            <column name="executor_id"/>
+            <column name="test_id"/>
+            <column name="enabled"/>
+            <column name="buildnumber"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-87">
+        <createIndex indexName="idx_testtriage_prev" tableName="qa_test_triage">
+            <column name="executor_id"/>
+            <column name="test_id"/>
+            <column name="triaged"/>
+            <column name="expired"/>
+            <column name="enabled"/>
+            <column name="buildnumber"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-88">
+        <createIndex indexName="idx_testtriage_rank" tableName="qa_test_triage">
+            <column name="rank"/>
+            <column name="build_id"/>
+            <column name="currentstate"/>
+            <column name="triaged"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-89">
+        <createIndex indexName="idx_testtriage_state" tableName="qa_test_triage">
+            <column name="currentstate"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-90">
+        <createIndex indexName="idx_triageflowspec_container" tableName="qa_triage_spec">
+            <column name="container_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-91">
+        <createIndex indexName="idx_triageflowspec_exec" tableName="qa_triage_spec">
+            <column name="executor_id"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-92">
+        <createIndex indexName="idx_triageflowspec_list" tableName="qa_triage_spec">
+            <column name="user_id"/>
+            <column name="container_id"/>
+            <column name="lastcalculateddeadline"/>
+            <column name="priority"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-93">
+        <createIndex indexName="idx_triageflowspec_priority" tableName="qa_triage_spec">
+            <column name="priority"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-94">
+        <createIndex indexName="idx_user_realname" tableName="qa_user">
+            <column name="realname"/>
+            <column name="enabled"/>
+        </createIndex>
+    </changeSet>
+    <changeSet author="clarolab" id="1-95">
+        <addForeignKeyConstraint baseColumnNames="testcase_id" baseTableName="qa_issue_ticket"
+                                 constraintName="fk220k43vgxy7xshhhb6i3lxc2e" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_case" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-96">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_build_triage"
+                                 constraintName="fk26gdb6vy3lp20i56vyxr6tc6m" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-97">
+        <addForeignKeyConstraint baseColumnNames="note_id" baseTableName="qa_product"
+                                 constraintName="fk30f4e55wisepvln2e65k71ysi" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_note" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-98">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_test_triage"
+                                 constraintName="fk34400d1e34r8wvmt3qjd6tjj" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-99">
+        <addForeignKeyConstraint baseColumnNames="issueticket_id" baseTableName="qa_test_case"
+                                 constraintName="fk39ot1ddvh55ythhxcr7ew8y2y" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_issue_ticket" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-100">
+        <addForeignKeyConstraint baseColumnNames="testcase_id" baseTableName="qa_automated_test_issue"
+                                 constraintName="fk3hhs8o0xgtdpo0etwhq8hjgem" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_case" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-101">
+        <addForeignKeyConstraint baseColumnNames="container_id" baseTableName="qa_test_triage"
+                                 constraintName="fk3o85qe0sww064a5p3cuspvqgi" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_container" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-102">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_note"
+                                 constraintName="fk3t7p0b44brhfkymfwn2u7rmh4" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-103">
+        <addForeignKeyConstraint baseColumnNames="executor_id" baseTableName="qa_test_triage"
+                                 constraintName="fk45dpocypvvgwe8ph4f75up9hw" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_executor" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-104">
+        <addForeignKeyConstraint baseColumnNames="container_id" baseTableName="qa_slack_spec"
+                                 constraintName="fk5bvpueic9tjr2heljdb5g701b" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_container" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-105">
+        <addForeignKeyConstraint baseColumnNames="executor_id" baseTableName="qa_executor_stat"
+                                 constraintName="fk5nbvur1rxrex0xk2wnlm36la9" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_executor" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-106">
+        <addForeignKeyConstraint baseColumnNames="container_id" baseTableName="qa_build_triage"
+                                 constraintName="fk8c0m9otd3sl9wt15b7d9nx45n" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_container" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-107">
+        <addForeignKeyConstraint baseColumnNames="image_id" baseTableName="qa_product"
+                                 constraintName="fk8qk327veq7swmccfg75p9tpj" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_image" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-108">
+        <addForeignKeyConstraint baseColumnNames="testcase_id" baseTableName="qa_test_triage"
+                                 constraintName="fk8ukmlh1qe63sdwbitism43yy1" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_case" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-109">
+        <addForeignKeyConstraint baseColumnNames="report_id" baseTableName="qa_build"
+                                 constraintName="fk983kxga75wup29q7uk8t6bdek" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_report" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-110">
+        <addForeignKeyConstraint baseColumnNames="container_id" baseTableName="qa_triage_spec"
+                                 constraintName="fk9e7lj0phuo45i3ovxxiyxp7lp" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_container" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-111">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="qa_deadline"
+                                 constraintName="fk9o3g8tcgh0qk8f6xsod2mxi7c" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_product" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-112">
+        <addForeignKeyConstraint baseColumnNames="executor_id" baseTableName="qa_build_triage"
+                                 constraintName="fkauk50nix9lwrjt4mxllpfe8rr" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_executor" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-113">
+        <addForeignKeyConstraint baseColumnNames="spec_id" baseTableName="qa_build_triage"
+                                 constraintName="fkb1g5ksmbe6no32qk1avcj0ubc" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_triage_spec" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-114">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_triage_spec"
+                                 constraintName="fkbgjqj763mpxbcn14j0ch08vdy" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-115">
+        <addForeignKeyConstraint baseColumnNames="container_id" baseTableName="qa_build"
+                                 constraintName="fkc0ua156x39gx3fg7lyh43bewm" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_container" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-116">
+        <addForeignKeyConstraint baseColumnNames="automatedtestissue_id" baseTableName="qa_test_case"
+                                 constraintName="fkcs10slspiv965awqka9ty2uxy" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_automated_test_issue"
+                                 validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-117">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_issue_ticket"
+                                 constraintName="fkcs2ol2cwfcbeirfc7luf2c7do" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-118">
+        <addForeignKeyConstraint baseColumnNames="testexecution_id" baseTableName="testexecutionstep"
+                                 constraintName="fkd8nwcwuxfnpksxv9wx9lxr9uh" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_execution" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-119">
+        <addForeignKeyConstraint baseColumnNames="previoustesttriage_id" baseTableName="qa_error_detail"
+                                 constraintName="fkdjht20g9nsm5rptkxq9uidwqj" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_triage" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-120">
+        <addForeignKeyConstraint baseColumnNames="note_id" baseTableName="qa_automated_test_issue"
+                                 constraintName="fkdljbonyudb5qdmne47a5yi8u" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_note" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-121">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_pin"
+                                 constraintName="fkdp1k9fte28i1oodlhy8fjfcpk" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-122">
+        <addForeignKeyConstraint baseColumnNames="test_id" baseTableName="qa_test_triage"
+                                 constraintName="fkdqlc9witnba773rscr03jr8rt" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_execution" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-123">
+        <addForeignKeyConstraint baseColumnNames="build_id" baseTableName="qa_build_triage"
+                                 constraintName="fkf5wu0m7dv93iflkldm7i4f2ox" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_build" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-124">
+        <addForeignKeyConstraint baseColumnNames="testexecution_id" baseTableName="qa_error_detail"
+                                 constraintName="fkfdc0fkvktvlqo55c1vsgx7xyh" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_execution" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-125">
+        <addForeignKeyConstraint baseColumnNames="report_id" baseTableName="qa_test_execution"
+                                 constraintName="fkfwv5lkagmlypsu7j75fr6m38q" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_report" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-126">
+        <addForeignKeyConstraint baseColumnNames="testtriage_id" baseTableName="qa_automated_test_issue"
+                                 constraintName="fkfx6xdp9fde1gpx86nph7ki2jt" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_triage" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-127">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="qa_slack_spec"
+                                 constraintName="fkg84ns9gy9dk1bk9pd5s9sri0m" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_product" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-128">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="qa_issue_ticket"
+                                 constraintName="fkgsmxutxw5q6206qibh65eqq1q" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_product" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-129">
+        <addForeignKeyConstraint baseColumnNames="pin_id" baseTableName="qa_test_case"
+                                 constraintName="fkgt4rh944sv6akf6cpa5ira6gb" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_pin" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-130">
+        <addForeignKeyConstraint baseColumnNames="executor_id" baseTableName="qa_build"
+                                 constraintName="fkh2898x35ct0ra36vigatkmpi8" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_executor" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-131">
+        <addForeignKeyConstraint baseColumnNames="connector_id" baseTableName="qa_container"
+                                 constraintName="fkh60ig7vhfphucylmd1vjhkq7i" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_connector" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-132">
+        <addForeignKeyConstraint baseColumnNames="executor_id" baseTableName="qa_triage_spec"
+                                 constraintName="fkhyfh2ohu25i1buiq4ep2mutor" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_executor" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-133">
+        <addForeignKeyConstraint baseColumnNames="build_id" baseTableName="qa_test_triage"
+                                 constraintName="fkinm24glwai3rghhwqdhc86ign" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_build" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-134">
+        <addForeignKeyConstraint baseColumnNames="build_id" baseTableName="qa_artifact"
+                                 constraintName="fkk80q0p5m5k61ckbl2h8wcno1w" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_build" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-135">
+        <addForeignKeyConstraint baseColumnNames="note_id" baseTableName="qa_issue_ticket"
+                                 constraintName="fkko2x62kiuxyhm6vh9jdodh1h0" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_note" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-136">
+        <addForeignKeyConstraint baseColumnNames="note_id" baseTableName="qa_deadline"
+                                 constraintName="fklwprr3h9w9h21wnqnvap860h0" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_note" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-137">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_user_preference"
+                                 constraintName="fkm3erbcnehocwmtucihmqnu1td" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-138">
+        <addForeignKeyConstraint baseColumnNames="note_id" baseTableName="qa_build_triage"
+                                 constraintName="fkn2niqie5pxq015yachoclec9e" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_note" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-139">
+        <addForeignKeyConstraint baseColumnNames="note_id" baseTableName="qa_test_triage"
+                                 constraintName="fkowmnoj7nesa77tj6fjlicrmlg" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_note" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-140">
+        <addForeignKeyConstraint baseColumnNames="image_id" baseTableName="qa_user"
+                                 constraintName="fkq1079lk35pykn3rsuwdc7qs51" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_image" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-141">
+        <addForeignKeyConstraint baseColumnNames="container_id" baseTableName="qa_executor"
+                                 constraintName="fkqg3dean5oo7jw47hhkngpcrcr" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_container" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-142">
+        <addForeignKeyConstraint baseColumnNames="buildtriage_id" baseTableName="qa_executor_stat"
+                                 constraintName="fkr6kwf1ih8owgk6hbrarx60n96" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_build_triage" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-143">
+        <addForeignKeyConstraint baseColumnNames="testcase_id" baseTableName="qa_test_execution"
+                                 constraintName="fksa7eo6fhhvg9k3bko17xxiqwr" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_case" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-144">
+        <addForeignKeyConstraint baseColumnNames="buildtriage_id" baseTableName="qa_test_triage"
+                                 constraintName="fksnpphd1adfjra8pdnuwagcfi3" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_build_triage" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-145">
+        <addForeignKeyConstraint baseColumnNames="preference_id" baseTableName="qa_user"
+                                 constraintName="fkt656r5dwxtrhscdt3r99kvx4k" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user_preference" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-146">
+        <addForeignKeyConstraint baseColumnNames="user_id" baseTableName="qa_automated_test_issue"
+                                 constraintName="fkt6q43lrtaws89fupk9j6jig38" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_user" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-147">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="qa_test_case"
+                                 constraintName="fktgbnk0a97uckyxxyusmsxja1y" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_product" validate="true"/>
+    </changeSet>
+    <changeSet author="clarolab" id="1-148">
+        <addForeignKeyConstraint baseColumnNames="product_id" baseTableName="qa_container"
+                                 constraintName="fkuqbxcngm2yi2mecj8sjvy5pe" deferrable="false"
+                                 initiallyDeferred="false" onDelete="NO ACTION" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_product" validate="true"/>
+    </changeSet>
+</databaseChangeLog>

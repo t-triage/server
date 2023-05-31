@@ -1,0 +1,41 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <changeSet id="c1.1" author="clarolab">
+        <dropForeignKeyConstraint baseTableName="qa_test_triage" constraintName="fkrhesnii9wga8hlvo5l40qhvxv"/>
+    </changeSet>
+    <changeSet author="clarolab" id="c1.2">
+        <addForeignKeyConstraint baseColumnNames="previoustriage_id" baseTableName="qa_test_triage"
+                                 constraintName="fkrhesnii9wga8hlvo5l40qhvxv" deferrable="false"
+                                 initiallyDeferred="false" onDelete="SET NULL" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_triage" validate="true"/>
+    </changeSet>
+
+    <changeSet id="c1.3" author="clarolab">
+        <dropForeignKeyConstraint baseTableName="qa_test_triage" constraintName="fkdqlc9witnba773rscr03jr8rt"/>
+    </changeSet>
+    <changeSet author="clarolab" id="c1.4">
+        <addForeignKeyConstraint baseColumnNames="test_id" baseTableName="qa_test_triage"
+                                 constraintName="fkdqlc9witnba773rscr03jr8rt" deferrable="false"
+                                 initiallyDeferred="false" onDelete="SET NULL" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_execution" validate="true"/>
+    </changeSet>
+
+    <changeSet id="c1.5" author="clarolab">
+        <dropForeignKeyConstraint baseTableName="qa_test_execution_step" constraintName="fke4n5g7c7lgr1urwrswa0t3x7y"/>
+    </changeSet>
+    <changeSet author="clarolab" id="c1.6">
+        <addForeignKeyConstraint baseColumnNames="testexecution_id" baseTableName="qa_test_execution_step"
+                                 constraintName="fke4n5g7c7lgr1urwrswa0t3x7y" deferrable="false"
+                                 initiallyDeferred="false" onDelete="SET NULL" onUpdate="NO ACTION"
+                                 referencedColumnNames="id" referencedTableName="qa_test_execution" validate="true"/>
+    </changeSet>
+
+
+
+</databaseChangeLog>

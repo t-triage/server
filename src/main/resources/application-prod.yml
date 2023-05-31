@@ -1,0 +1,21 @@
+# Here override all properties that are specific to PRODUCTION profile
+spring:
+
+  profiles: prod
+
+  application:
+    name: 'T-Triage Application Production'
+
+
+################################################################################################
+# Application specific properties
+################################################################################################
+
+app:
+
+  # Populate configuration
+  populate:
+    enable: ${db.populate:false}
+    amount: 4
+    configuration:
+      - ${db.profile:none}

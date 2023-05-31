@@ -1,0 +1,36 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+    <changeSet author="clarolab" id="a.1">
+        <modifyDataType
+                tableName="qa_test_execution_step"
+                columnName="name"
+                newDataType="LONGTEXT"
+        />
+    </changeSet>
+
+<!--    <changeSet author="clarolab" id="a.2">-->
+<!--        <addColumn tableName="qa_manual_test_case">-->
+<!--            <column name="component4_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+<!--    <changeSet author="clarolab" id="a.3">-->
+<!--        <addColumn tableName="qa_manual_test_case">-->
+<!--            <column name="component5_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+<!--    <changeSet author="clarolab" id="a.4">-->
+<!--        <addColumn tableName="qa_manual_test_case">-->
+<!--            <column name="component6_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+    
+
+</databaseChangeLog>

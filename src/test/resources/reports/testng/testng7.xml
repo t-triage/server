@@ -1,0 +1,1282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/admin/properties/jive.content.video.testing.automate" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "name" : "jive.content.video.testing.automate",
+  "value" : "true",
+  "type" : "property"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/admin/properties" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[input json={
+  "name" : "jive.content.video.testing.automate",
+  "value" : "true",
+  "type" : "property"
+}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[The environment is not yet installed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Tests: SmokeX
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testCreateDiscussionInSpaceAsAdmin
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-WgnwyENPDLxC",
+  "name" : "RobotSpace-WgnwyENPDLxC",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-WPesqlgKDSts",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1360"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents/1362" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testCreateDiscussionInSpaceAsAdmin Passed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-nsjDtFHIfzBV",
+  "name" : "RobotSpace-nsjDtFHIfzBV",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-iKXONUDWBWcS",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1363"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: 6148ae50-5ba7-11e9-81ee-005056a749f1, X-Jive-Flow-Id: 6148ae51-5ba7-11e9-81ee-005056a749f1, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, WWW-Authenticate: Basic realm="Jive SBS", Expires: Wed, 10 Apr 2019 15:43:26 GMT, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=162853 t=1554911006132301, Content-Type: text/plain, Date: Wed, 10 Apr 2019 15:43:26 GMT, Connection: close, Set-Cookie: jive.login.ts=1554911006133; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=qbwNsmxn; Path=/; Secure; HttpOnly]
+	Params=org.apache.http.params.BasicHttpParams@7ce97ee5
+	StatusLine=HTTP/1.1 401 Unauthorized
+	ProtocolVersion=HTTP/1.1
+	Entity="{"code":401,"message":"Bad credentials"}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion Skipped
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-LncwPiDUKQeh",
+  "name" : "RobotSpace-LncwPiDUKQeh",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-UfqgMjFUclQC",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1366"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: 6355bc60-5ba7-11e9-81ee-005056a749f1, X-Jive-Flow-Id: 6355bc61-5ba7-11e9-81ee-005056a749f1, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, WWW-Authenticate: Basic realm="Jive SBS", Expires: Wed, 10 Apr 2019 15:43:29 GMT, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=163419 t=1554911009573007, Content-Type: text/plain, Date: Wed, 10 Apr 2019 15:43:29 GMT, Connection: close, Set-Cookie: jive.login.ts=1554911009574; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=bobWuivR; Path=/; Secure; HttpOnly]
+	Params=org.apache.http.params.BasicHttpParams@14d14731
+	StatusLine=HTTP/1.1 401 Unauthorized
+	ProtocolVersion=HTTP/1.1
+	Entity="{"code":401,"message":"Bad credentials"}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion Skipped
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-hGwlQhedWMIE",
+  "name" : "RobotSpace-hGwlQhedWMIE",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-oOWxIkNXskuQ",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1369"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: 655adb30-5ba7-11e9-81ee-005056a749f1, X-Jive-Flow-Id: 655adb31-5ba7-11e9-81ee-005056a749f1, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, WWW-Authenticate: Basic realm="Jive SBS", Expires: Wed, 10 Apr 2019 15:43:32 GMT, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=175414 t=1554911012962395, Content-Type: text/plain, Date: Wed, 10 Apr 2019 15:43:33 GMT, Connection: close, Set-Cookie: jive.login.ts=1554911012963; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=HeWk0wno; Path=/; Secure; HttpOnly]
+	Params=org.apache.http.params.BasicHttpParams@6475472c
+	StatusLine=HTTP/1.1 401 Unauthorized
+	ProtocolVersion=HTTP/1.1
+	Entity="{"code":401,"message":"Bad credentials"}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion Skipped
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-fbCxgbLCGuSo",
+  "name" : "RobotSpace-fbCxgbLCGuSo",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-EdCZVXZPeMqR",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1372"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: 676662a0-5ba7-11e9-81ee-005056a749f1, X-Jive-Flow-Id: 676662a1-5ba7-11e9-81ee-005056a749f1, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, WWW-Authenticate: Basic realm="Jive SBS", Expires: Wed, 10 Apr 2019 15:43:36 GMT, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=165162 t=1554911016393432, Content-Type: text/plain, Date: Wed, 10 Apr 2019 15:43:36 GMT, Connection: close, Set-Cookie: jive.login.ts=1554911016394; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=JC8MBScN; Path=/; Secure; HttpOnly]
+	Params=org.apache.http.params.BasicHttpParams@18cebaa5
+	StatusLine=HTTP/1.1 401 Unauthorized
+	ProtocolVersion=HTTP/1.1
+	Entity="{"code":401,"message":"Bad credentials"}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion Failed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Jive API Test Suite" duration-ms="17942" started-at="2019-04-10T15:43:18Z" finished-at="2019-04-10T15:43:36Z">
+    <groups>
+      <group name="ContentType">
+        <method signature="DiscussionTest.testCreateDiscussionInSpaceAsAdmin()[pri:0, instance:com.jivesoftware.api.test.content.DiscussionTest@48b67364]" name="testCreateDiscussionInSpaceAsAdmin" class="com.jivesoftware.api.test.content.DiscussionTest"/>
+        <method signature="DiscussionTest.testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion()[pri:0, instance:com.jivesoftware.api.test.content.DiscussionTest@48b67364]" name="testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion" class="com.jivesoftware.api.test.content.DiscussionTest"/>
+      </group> <!-- ContentType -->
+      <group name="Core.SmokeX">
+        <method signature="DiscussionTest.testCreateDiscussionInSpaceAsAdmin()[pri:0, instance:com.jivesoftware.api.test.content.DiscussionTest@48b67364]" name="testCreateDiscussionInSpaceAsAdmin" class="com.jivesoftware.api.test.content.DiscussionTest"/>
+        <method signature="DiscussionTest.testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion()[pri:0, instance:com.jivesoftware.api.test.content.DiscussionTest@48b67364]" name="testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion" class="com.jivesoftware.api.test.content.DiscussionTest"/>
+      </group> <!-- Core.SmokeX -->
+    </groups>
+    <test name="SmokeX" duration-ms="17942" started-at="2019-04-10T15:43:18Z" finished-at="2019-04-10T15:43:36Z">
+      <class name="com.jivesoftware.api.test.streamOnce.mailconnectors.StreamOnceMailConnectorsBaseTest">
+        <test-method status="PASS" signature="streamOnceAfterSuite()[pri:0, instance:com.jivesoftware.api.test.streamOnce.mailconnectors.StreamOnceMailConnectorsBaseTest@42e25b0b]" name="streamOnceAfterSuite" is-config="true" duration-ms="0" started-at="2019-04-10T08:43:36Z" finished-at="2019-04-10T08:43:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamOnceAfterSuite -->
+      </class> <!-- com.jivesoftware.api.test.streamOnce.mailconnectors.StreamOnceMailConnectorsBaseTest -->
+      <class name="com.jivesoftware.api.test.recommender.RecommendedContentTests">
+        <test-method status="PASS" signature="ainitSuite(org.testng.ITestContext)[pri:0, instance:com.jivesoftware.api.test.recommender.RecommendedContentTests@2663e964]" name="ainitSuite" is-config="true" duration-ms="1613" started-at="2019-04-10T08:43:17Z" finished-at="2019-04-10T08:43:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@1c55f277]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/admin/properties/jive.content.video.testing.automate" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "name" : "jive.content.video.testing.automate",
+  "value" : "true",
+  "type" : "property"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/admin/properties" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[input json={
+  "name" : "jive.content.video.testing.automate",
+  "value" : "true",
+  "type" : "property"
+}
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[The environment is not yet installed
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ainitSuite -->
+      </class> <!-- com.jivesoftware.api.test.recommender.RecommendedContentTests -->
+      <class name="com.jivesoftware.api.test.content.DiscussionTest">
+        <test-method status="PASS" signature="testCreateDiscussionInSpaceAsAdmin()[pri:0, instance:com.jivesoftware.api.test.content.DiscussionTest@48b67364]" name="testCreateDiscussionInSpaceAsAdmin" duration-ms="4212" started-at="2019-04-10T08:43:18Z" finished-at="2019-04-10T08:43:22Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-WgnwyENPDLxC",
+  "name" : "RobotSpace-WgnwyENPDLxC",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-WPesqlgKDSts",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1360"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents/1362" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[******************************************************************************
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Test: testCreateDiscussionInSpaceAsAdmin Passed
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[******************************************************************************
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateDiscussionInSpaceAsAdmin -->
+        <test-method status="FAIL" signature="testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion()[pri:0, instance:com.jivesoftware.api.test.content.DiscussionTest@48b67364]" name="testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion" duration-ms="3416" started-at="2019-04-10T08:43:33Z" finished-at="2019-04-10T08:43:36Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[HTTP Execution call returned code does not match the expected one: expected: 200; got: 401
+{"code":401,"message":"Bad credentials"}
+Curl Sent -> curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 200; got: 401
+{"code":401,"message":"Bad credentials"}
+Curl Sent -> curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure
+	at com.jivesoftware.api.utils.HttpUtils.doExecuteHTTP(HttpUtils.java:623)
+	at com.jivesoftware.api.utils.HttpUtils.doExecuteHTTP(HttpUtils.java:645)
+	at com.jivesoftware.api.utils.HttpUtils.doExecuteHTTP(HttpUtils.java:638)
+	at com.jivesoftware.api.utils.HttpUtils.get(HttpUtils.java:1258)
+	at com.jivesoftware.api.utils.HttpUtils.get(HttpUtils.java:1239)
+	at com.jivesoftware.api.utils.HttpUtils.get(HttpUtils.java:1228)
+	at com.jivesoftware.api.utils.metadata.PropertyMetadataUtils.getPropertyMetadata(PropertyMetadataUtils.java:15)
+	at com.jivesoftware.api.test.content.DiscussionTest.testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion(DiscussionTest.java:182)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.retryFailed(Invoker.java:967)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotSpace-fbCxgbLCGuSo",
+  "name" : "RobotSpace-fbCxgbLCGuSo",
+  "type" : "space",
+  "description" : "jive-api-test space desc",
+  "tags" : [ "mytag" ],
+  "locale" : "en"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:MU5QHmdtWeEbG9 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "content" : {
+    "text" : "&lt;body&gt;&lt;p&gt;Test body&lt;/p&gt;&lt;/body&gt;",
+    "type" : "text/html"
+  },
+  "subject" : "TestDiscussion-EdCZVXZPeMqR",
+  "type" : "discussion",
+  "parent" : "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/places/1372"
+}' "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/contents" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:admin --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://lithium-cloud-john-0308.jivelandia.com/api/core/v3/metadata/properties/feature.discussion.new.question.by.default" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Returned Code Mismatch. Response info:
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: 676662a0-5ba7-11e9-81ee-005056a749f1, X-Jive-Flow-Id: 676662a1-5ba7-11e9-81ee-005056a749f1, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, WWW-Authenticate: Basic realm="Jive SBS", Expires: Wed, 10 Apr 2019 15:43:36 GMT, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=165162 t=1554911016393432, Content-Type: text/plain, Date: Wed, 10 Apr 2019 15:43:36 GMT, Connection: close, Set-Cookie: jive.login.ts=1554911016394; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=JC8MBScN; Path=/; Secure; HttpOnly]
+	Params=org.apache.http.params.BasicHttpParams@18cebaa5
+	StatusLine=HTTP/1.1 401 Unauthorized
+	ProtocolVersion=HTTP/1.1
+	Entity="{"code":401,"message":"Bad credentials"}
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[******************************************************************************
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Test: testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion Failed
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[******************************************************************************
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCreateDiscussionInSpaceAsAdminAndVerifyIfShouldBeMarkedAsQuestion -->
+      </class> <!-- com.jivesoftware.api.test.content.DiscussionTest -->
+    </test> <!-- SmokeX -->
+  </suite> <!-- Jive API Test Suite -->
+</testng-results>

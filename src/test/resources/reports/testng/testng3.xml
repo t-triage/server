@@ -1,0 +1,2017 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="7" failed="0" total="8" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/version" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Got version info for product: com.jivesoftware.api.data.impl.VersioningData@3e44f2a5
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Setting IS_JIVE_X to false
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/cloud/?url=https%3A%2F%2Fbanzai-qe-api-testing-25-develop.jivelandia.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Found Full Admin password from https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword: mBdqFVWdqNcEed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/cloud/?url=https%3A%2F%2Fbanzai-qe-api-testing-25-develop.jivelandia.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Found Full Admin password from https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword: mBdqFVWdqNcEed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/qe@banzai.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Preparing to run main core Smoke tests.
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Initializing QETestFixture
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/cloud/?url=https%3A%2F%2Fbanzai-qe-api-testing-25-develop.jivelandia.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Found Full Admin password from https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword: mBdqFVWdqNcEed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Start Full Admin Setup: admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin_api_lith-jnk-c7-node1piq_f%40jivesoftware.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Creating Full admin : admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_f"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 272, Expires: Thu, 14 Feb 2019 22:26:16 GMT, Date: Thu, 14 Feb 2019 22:26:16 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@2f16c6b3
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;767008d1&amp;#46;1550183176&amp;#46;fe6d4f
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_f"
+  }
+}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Full Admin setup failed. Fall Back Full Admin to: admin
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin_api_lith-jnk-c7-node1piq_c%40jivesoftware.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_c"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 273, Expires: Thu, 14 Feb 2019 22:26:56 GMT, Date: Thu, 14 Feb 2019 22:26:56 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@4b79ac84
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;6de1ab42&amp;#46;1550183216&amp;#46;ec24572
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_c"
+  }
+}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin_api_lith-jnk-c7-node1piq_c%40jivesoftware.com" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: af5166d2-30a7-11e9-a3f6-005056a7436a, X-Jive-Flow-Id: af5166d3-30a7-11e9-a3f6-005056a7436a, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, P3P: CP="CAO PSA OUR", X-JIVE-USER-ID: 1, X-XSS-Protection: 1; mode=block, Content-Type: application/json, Expires: Thu, 14 Feb 2019 22:27:17 GMT, Cache-Control: no-cache, no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=48958 t=1550183237050484, Date: Thu, 14 Feb 2019 22:27:17 GMT, Content-Length: 164, Connection: keep-alive, Set-Cookie: jive.login.ts=1550183237053; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=ERQ52Kwi; Path=/; Secure; HttpOnly, Set-Cookie: jive.user.loggedIn=true; Expires=Fri, 15-Feb-2019 10:27:17 GMT; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: jive.server.info="serverName=banzai-qe-api-testing-25-develop.jivelandia.com:serverPort=443:contextPath=:localName=localhost:localPort=9200:localAddr=127.0.0.1"; Version=1; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: BIGipServerpool_banzai-qe-api-testing-25-develop.jivelandia.com=1073987338.20480.0000; path=/]
+	Params=org.apache.http.params.BasicHttpParams@21fd5faa
+	StatusLine=HTTP/1.1 404 Not Found
+	ProtocolVersion=HTTP/1.1
+	Entity="{
+  "error" : {
+    "code" : "peopleMissingUsername",
+    "message" : "Invalid username admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "status" : 404
+  }
+}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/admin/properties/video.upload.enabled" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Tests: Activity-Smoke-I
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testSearchForSecretGroupAsOwner
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-TBGodKcp9CbN@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-TBGodKcp9CbN@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-TBGodKcp9CbN"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 273, Expires: Thu, 14 Feb 2019 22:27:57 GMT, Date: Thu, 14 Feb 2019 22:27:57 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@22356acd
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;6de1ab42&amp;#46;1550183277&amp;#46;ec3a8c1
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-TBGodKcp9CbN@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-TBGodKcp9CbN@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-TBGodKcp9CbN"
+  }
+}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testSearchForSecretGroupAsOwner Skipped
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting Test: testSearchForSecretGroupAsOwner
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-uAD9ldEeXmOF@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-uAD9ldEeXmOF@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-uAD9ldEeXmOF"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u regularuser-uad9ldeexmof@example.com:test123 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotGroup-yWomGxkgNbav",
+  "name" : "RobotGroup-yWomGxkgNbav",
+  "type" : "group",
+  "description" : "jive-api-test group desc",
+  "visibleToExternalContributors" : false,
+  "groupType" : "SECRET",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: df454002-30a7-11e9-a3f6-005056a7436a, X-Jive-Flow-Id: df454004-30a7-11e9-a3f6-005056a7436a, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, P3P: CP="CAO PSA OUR", X-JIVE-USER-ID: 2016, X-XSS-Protection: 1; mode=block, Content-Type: text/html;charset=UTF-8, Content-Language: en-US, Expires: Thu, 14 Feb 2019 22:28:37 GMT, Content-Encoding: gzip, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=2072061 t=1550183317503813, Content-Length: 372, Date: Thu, 14 Feb 2019 22:28:39 GMT, Connection: close, Set-Cookie: jive.login.ts=1550183317504; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: jive.user.loggedIn=true; Expires=Fri, 15-Feb-2019 10:28:37 GMT; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: jive.server.info="serverName=banzai-qe-api-testing-25-develop.jivelandia.com:serverPort=443:contextPath=:localName=localhost:localPort=9200:localAddr=127.0.0.1"; Version=1; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: JSESSIONID=A3E5CC123D6F7018381249481FF99DD4.node01; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: BIGipServerpool_banzai-qe-api-testing-25-develop.jivelandia.com=1073987338.20480.0000; path=/]
+	Params=org.apache.http.params.BasicHttpParams@77d67cf3
+	StatusLine=HTTP/1.1 500 Internal Server Error
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;System Error&lt;/title&gt;
+    &lt;style&gt;
+    body {
+	    font-family : arial, helvetica, sans-serif;
+	    font-size: 81.25%;
+	}
+    td, th, p, div, span, li, a { font-size : 1em; }
+    h1 { font-size : 1.72em; }
+    code {
+        font-family : courier new, monospace;
+        font-size : .8em;
+	}}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+
+&lt;div id="jive-header" class="jive-clearfix"&gt;
+    &lt;h1&gt;System Error&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+We're sorry but a serious error has occurred in the system.
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u regularuser-uad9ldeexmof@example.com:test123 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotGroup-yWomGxkgNbav",
+  "name" : "RobotGroup-yWomGxkgNbav",
+  "type" : "group",
+  "description" : "jive-api-test group desc",
+  "visibleToExternalContributors" : false,
+  "groupType" : "SECRET",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Polling places until the name is present: RobotGroup-yWomGxkgNbav
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Starting to poll places as user regularuser-uad9ldeexmof@example.com with timeout of 60000 ms and options:
+GetSearchPlacesOptions { 
+  Filters: search =&gt; RobotGroup-yWomGxkgNbav, type =&gt; group
+  Other query params: count =&gt; 100
+}
+
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u regularuser-uad9ldeexmof@example.com:test123 --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/search/places?filter=search(RobotGroup-yWomGxkgNbav)&amp;filter=type(group)&amp;count=100" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Found secret group in search: RobotGroup-yWomGxkgNbav
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[Test: testSearchForSecretGroupAsOwner Passed
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[******************************************************************************
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[Returned Code Mismatch. Response info:
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence even" >]]>
+    </line>
+    <line>
+      <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 273, Expires: Thu, 14 Feb 2019 22:30:17 GMT, Date: Thu, 14 Feb 2019 22:30:17 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@20a14b55
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;5635d417&amp;#46;1550183417&amp;#46;37afc68
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+    <line>
+      <![CDATA[<div class="curlSentence odd" >]]>
+    </line>
+    <line>
+      <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}
+]]>
+    </line>
+    <line>
+      <![CDATA[</div>]]>
+    </line>
+  </reporter-output>
+  <suite name="Jive API Test Suite" duration-ms="281449" started-at="2019-02-14T22:27:37Z" finished-at="2019-02-14T22:32:18Z">
+    <groups>
+      <group name="ActivityInbox">
+        <method signature="ActivityTest.testContentAtInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testContentAtInbox" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+        <method signature="ActivityTest.testDirectMessageInInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testDirectMessageInInbox" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+        <method signature="ActivityTest.testInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testInbox" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+        <method signature="ActivityTest.testMentionInPrivateContent(com.jivesoftware.api.models.AbstractContentType)[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testMentionInPrivateContent" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+        <method signature="ActivityTest.testMentionToInbox(com.jivesoftware.api.models.AbstractContentType)[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testMentionToInbox" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+        <method signature="ActivityTest.testPrivateMentionInDirectMessage()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testPrivateMentionInDirectMessage" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+      </group> <!-- ActivityInbox -->
+      <group name="Core.Smoke">
+        <method signature="ActivityTest.testContentAtInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testContentAtInbox" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+      </group> <!-- Core.Smoke -->
+      <group name="blocked-by-JIVE-61626">
+        <method signature="ActivityTest.testMentionToInbox(com.jivesoftware.api.models.AbstractContentType)[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testMentionToInbox" class="com.jivesoftware.api.test.inbox.ActivityTest"/>
+      </group> <!-- blocked-by-JIVE-61626 -->
+      <group name="ActivitySearch">
+        <method signature="SearchPlaceTest.testSearchForSecretGroupAsOwner()[pri:0, instance:com.jivesoftware.api.test.search.SearchPlaceTest@b4711e2]" name="testSearchForSecretGroupAsOwner" class="com.jivesoftware.api.test.search.SearchPlaceTest"/>
+      </group> <!-- ActivitySearch -->
+    </groups>
+    <test name="Activity-Smoke-I" duration-ms="281449" started-at="2019-02-14T22:27:37Z" finished-at="2019-02-14T22:32:18Z">
+      <class name="com.jivesoftware.api.test.search.SearchPlaceTest">
+        <test-method status="PASS" signature="testSearchForSecretGroupAsOwner()[pri:0, instance:com.jivesoftware.api.test.search.SearchPlaceTest@b4711e2]" name="testSearchForSecretGroupAsOwner" duration-ms="101892" started-at="2019-02-14T14:27:57Z" finished-at="2019-02-14T14:29:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-uAD9ldEeXmOF@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-uAD9ldEeXmOF@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-uAD9ldEeXmOF"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u regularuser-uad9ldeexmof@example.com:test123 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotGroup-yWomGxkgNbav",
+  "name" : "RobotGroup-yWomGxkgNbav",
+  "type" : "group",
+  "description" : "jive-api-test group desc",
+  "visibleToExternalContributors" : false,
+  "groupType" : "SECRET",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Returned Code Mismatch. Response info:
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: df454002-30a7-11e9-a3f6-005056a7436a, X-Jive-Flow-Id: df454004-30a7-11e9-a3f6-005056a7436a, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, P3P: CP="CAO PSA OUR", X-JIVE-USER-ID: 2016, X-XSS-Protection: 1; mode=block, Content-Type: text/html;charset=UTF-8, Content-Language: en-US, Expires: Thu, 14 Feb 2019 22:28:37 GMT, Content-Encoding: gzip, Cache-Control: no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=2072061 t=1550183317503813, Content-Length: 372, Date: Thu, 14 Feb 2019 22:28:39 GMT, Connection: close, Set-Cookie: jive.login.ts=1550183317504; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: jive.user.loggedIn=true; Expires=Fri, 15-Feb-2019 10:28:37 GMT; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: jive.server.info="serverName=banzai-qe-api-testing-25-develop.jivelandia.com:serverPort=443:contextPath=:localName=localhost:localPort=9200:localAddr=127.0.0.1"; Version=1; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: JSESSIONID=A3E5CC123D6F7018381249481FF99DD4.node01; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: BIGipServerpool_banzai-qe-api-testing-25-develop.jivelandia.com=1073987338.20480.0000; path=/]
+	Params=org.apache.http.params.BasicHttpParams@77d67cf3
+	StatusLine=HTTP/1.1 500 Internal Server Error
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;
+
+
+&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;System Error&lt;/title&gt;
+    &lt;style&gt;
+    body {
+	    font-family : arial, helvetica, sans-serif;
+	    font-size: 81.25%;
+	}
+    td, th, p, div, span, li, a { font-size : 1em; }
+    h1 { font-size : 1.72em; }
+    code {
+        font-family : courier new, monospace;
+        font-size : .8em;
+	}}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+
+
+&lt;div id="jive-header" class="jive-clearfix"&gt;
+    &lt;h1&gt;System Error&lt;/h1&gt;
+&lt;/div&gt;
+
+&lt;p&gt;
+We're sorry but a serious error has occurred in the system.
+
+
+&lt;/body&gt;
+&lt;/html&gt;
+
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u regularuser-uad9ldeexmof@example.com:test123 --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "RobotGroup-yWomGxkgNbav",
+  "name" : "RobotGroup-yWomGxkgNbav",
+  "type" : "group",
+  "description" : "jive-api-test group desc",
+  "visibleToExternalContributors" : false,
+  "groupType" : "SECRET",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Polling places until the name is present: RobotGroup-yWomGxkgNbav
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Starting to poll places as user regularuser-uad9ldeexmof@example.com with timeout of 60000 ms and options:
+GetSearchPlacesOptions { 
+  Filters: search =&gt; RobotGroup-yWomGxkgNbav, type =&gt; group
+  Other query params: count =&gt; 100
+}
+
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u regularuser-uad9ldeexmof@example.com:test123 --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/search/places?filter=search(RobotGroup-yWomGxkgNbav)&amp;filter=type(group)&amp;count=100" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Found secret group in search: RobotGroup-yWomGxkgNbav
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[******************************************************************************
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Test: testSearchForSecretGroupAsOwner Passed
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[******************************************************************************
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testSearchForSecretGroupAsOwner -->
+      </class> <!-- com.jivesoftware.api.test.search.SearchPlaceTest -->
+      <class name="com.jivesoftware.api.test.InitTest">
+        <test-method status="PASS" signature="ainitSuite(org.testng.ITestContext)[pri:0, instance:com.jivesoftware.api.test.InitTest@2796aeae]" name="ainitSuite" is-config="true" duration-ms="118992" started-at="2019-02-14T14:25:38Z" finished-at="2019-02-14T14:27:37Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@18518ccf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Preparing to run main core Smoke tests.
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Initializing QETestFixture
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/cloud/?url=https%3A%2F%2Fbanzai-qe-api-testing-25-develop.jivelandia.com" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u cylon@jivesoftware.com:CylonSix66! --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Found Full Admin password from https://cloud.qa.jivehosted.com/admin/api/cloud/v1/installations/107664/adminPassword: mBdqFVWdqNcEed
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Start Full Admin Setup: admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin_api_lith-jnk-c7-node1piq_f%40jivesoftware.com" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Creating Full admin : admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_f"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Returned Code Mismatch. Response info:
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 272, Expires: Thu, 14 Feb 2019 22:26:16 GMT, Date: Thu, 14 Feb 2019 22:26:16 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@2f16c6b3
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;767008d1&amp;#46;1550183176&amp;#46;fe6d4f
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_f@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_f"
+  }
+}
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Full Admin setup failed. Fall Back Full Admin to: admin
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin_api_lith-jnk-c7-node1piq_c%40jivesoftware.com" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_c"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Returned Code Mismatch. Response info:
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 273, Expires: Thu, 14 Feb 2019 22:26:56 GMT, Date: Thu, 14 Feb 2019 22:26:56 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@4b79ac84
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;6de1ab42&amp;#46;1550183216&amp;#46;ec24572
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "admin123",
+    "username" : "admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "admin_api_lith-jnk-c7-node1piq_c"
+  }
+}
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin_api_lith-jnk-c7-node1piq_c%40jivesoftware.com" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[Returned Code Mismatch. Response info:
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[	Response back:
+	Headers=[Server: Apache, X-Jive-Request-Id: af5166d2-30a7-11e9-a3f6-005056a7436a, X-Jive-Flow-Id: af5166d3-30a7-11e9-a3f6-005056a7436a, Strict-Transport-Security: max-age=31536000; includeSubDomains; preload, X-Content-Type-Options: nosniff, X-Frame-Options: SAMEORIGIN, P3P: CP="CAO PSA OUR", X-JIVE-USER-ID: 1, X-XSS-Protection: 1; mode=block, Content-Type: application/json, Expires: Thu, 14 Feb 2019 22:27:17 GMT, Cache-Control: no-cache, no-store, no-cache, must-revalidate, private, max-age=0, X-JSL: D=48958 t=1550183237050484, Date: Thu, 14 Feb 2019 22:27:17 GMT, Content-Length: 164, Connection: keep-alive, Set-Cookie: jive.login.ts=1550183237053; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: X-JCAPI-Token=ERQ52Kwi; Path=/; Secure; HttpOnly, Set-Cookie: jive.user.loggedIn=true; Expires=Fri, 15-Feb-2019 10:27:17 GMT; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: jive.server.info="serverName=banzai-qe-api-testing-25-develop.jivelandia.com:serverPort=443:contextPath=:localName=localhost:localPort=9200:localAddr=127.0.0.1"; Version=1; Path=/; Secure; HttpOnly;HttpOnly, Set-Cookie: BIGipServerpool_banzai-qe-api-testing-25-develop.jivelandia.com=1073987338.20480.0000; path=/]
+	Params=org.apache.http.params.BasicHttpParams@21fd5faa
+	StatusLine=HTTP/1.1 404 Not Found
+	ProtocolVersion=HTTP/1.1
+	Entity="{
+  "error" : {
+    "code" : "peopleMissingUsername",
+    "message" : "Invalid username admin_api_lith-jnk-c7-node1piq_c@jivesoftware.com",
+    "status" : 404
+  }
+}
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/admin/properties/video.upload.enabled" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ainitSuite -->
+      </class> <!-- com.jivesoftware.api.test.InitTest -->
+      <class name="com.jivesoftware.api.test.inbox.ActivityTest">
+        <test-method status="PASS" signature="genericSetUP()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="genericSetUP" is-config="true" duration-ms="18740" started-at="2019-02-14T14:29:39Z" finished-at="2019-02-14T14:29:58Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X GET "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people/username/admin" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- genericSetUP -->
+        <test-method status="FAIL" signature="setUP()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="setUP" is-config="true" duration-ms="0" started-at="2019-02-14T14:29:58Z" finished-at="2019-02-14T14:29:58Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;5635d417&#46;1550183417&#46;37afc68
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;5635d417&#46;1550183417&#46;37afc68
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+	at com.jivesoftware.api.utils.people.PeopleUtils.createUser(PeopleUtils.java:535)
+	at com.jivesoftware.api.utils.people.PeopleUtils.createUser(PeopleUtils.java:512)
+	at com.jivesoftware.api.utils.people.PeopleUtils.createStandardUser(PeopleUtils.java:486)
+	at com.jivesoftware.api.utils.people.PeopleUtils.createStandardUser(PeopleUtils.java:295)
+	at com.jivesoftware.api.test.inbox.ActivityTest.setUP(ActivityTest.java:39)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
+	at org.testng.internal.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:178)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;5635d417&#46;1550183417&#46;37afc68
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+	at com.jivesoftware.webservice.util.HttpUtils.doExecuteHTTP(HttpUtils.java:870)
+	at com.jivesoftware.webservice.util.HttpUtils.doExecuteHTTP(HttpUtils.java:892)
+	at com.jivesoftware.webservice.util.HttpUtils.doExecuteHTTP(HttpUtils.java:885)
+	at com.jivesoftware.webservice.util.HttpUtils.post(HttpUtils.java:1329)
+	at com.jivesoftware.webservice.util.HttpUtils.post(HttpUtils.java:1255)
+	at com.jivesoftware.api.utils.people.PeopleUtils.createUser(PeopleUtils.java:528)
+	... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/people" --insecure
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[Returned Code Mismatch. Response info:
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence even" >]]>
+            </line>
+            <line>
+              <![CDATA[	Response back:
+	Headers=[Server: AkamaiGHost, Mime-Version: 1.0, Content-Type: text/html, Content-Length: 273, Expires: Thu, 14 Feb 2019 22:30:17 GMT, Date: Thu, 14 Feb 2019 22:30:17 GMT, Connection: close]
+	Params=org.apache.http.params.BasicHttpParams@20a14b55
+	StatusLine=HTTP/1.1 503 Service Unavailable
+	ProtocolVersion=HTTP/1.1
+	Entity="&lt;HTML&gt;&lt;HEAD&gt;
+&lt;TITLE&gt;Service Unavailable&lt;/TITLE&gt;
+&lt;/HEAD&gt;&lt;BODY&gt;
+&lt;H1&gt;Service Unavailable - Zero size object&lt;/H1&gt;
+The server is temporarily unable to service your request.  Please try again
+later.&lt;P&gt;
+Reference&amp;#32;&amp;#35;15&amp;#46;5635d417&amp;#46;1550183417&amp;#46;37afc68
+&lt;/BODY&gt;&lt;/HTML&gt;
+
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+            <line>
+              <![CDATA[<div class="curlSentence odd" >]]>
+            </line>
+            <line>
+              <![CDATA[input json={
+  "emails" : [ {
+    "jive_label" : "Email",
+    "value" : "regularUser-f8QEjZN0rMb9@example.com",
+    "type" : "home",
+    "primary" : true
+  } ],
+  "jive" : {
+    "password" : "test123",
+    "username" : "regularUser-f8QEjZN0rMb9@example.com",
+    "termsAndConditionsRequired" : false
+  },
+  "name" : {
+    "familyName" : "TestUser",
+    "givenName" : "regularUser-f8QEjZN0rMb9"
+  }
+}
+]]>
+            </line>
+            <line>
+              <![CDATA[</div>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUP -->
+        <test-method status="SKIP" signature="testContentAtInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testContentAtInbox" duration-ms="1" started-at="2019-02-14T14:30:17Z" description="Validate inbox returns data created at setup" finished-at="2019-02-14T14:30:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContentAtInbox -->
+        <test-method status="SKIP" signature="testDirectMessageInInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testDirectMessageInInbox" duration-ms="1" started-at="2019-02-14T14:30:17Z" description="DM participants should get DM in their Inbox" finished-at="2019-02-14T14:30:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDirectMessageInInbox -->
+        <test-method status="SKIP" signature="testInbox()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testInbox" duration-ms="0" started-at="2019-02-14T14:30:17Z" description="Validate inbox returns something" finished-at="2019-02-14T14:30:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInbox -->
+        <test-method status="SKIP" signature="testMentionInPrivateContent(com.jivesoftware.api.models.AbstractContentType)[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testMentionInPrivateContent" duration-ms="1" started-at="2019-02-14T14:30:18Z" description="User mentions should not fall at inbox since it is private content" data-provider="getPrivateContentTypes" finished-at="2019-02-14T14:30:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Content Type: PrivateDocument Name: API Title: EXkJpYZpTpvc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMentionInPrivateContent -->
+        <test-method status="SKIP" signature="testMentionInPrivateContent(com.jivesoftware.api.models.AbstractContentType)[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testMentionInPrivateContent" duration-ms="1" started-at="2019-02-14T14:30:18Z" description="User mentions should not fall at inbox since it is private content" data-provider="getPrivateContentTypes" finished-at="2019-02-14T14:30:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Content Type: PrivateDiscussion Name: API Title: QlVqdRvzhZho]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMentionInPrivateContent -->
+        <test-method status="SKIP" signature="testMentionToInbox(com.jivesoftware.api.models.AbstractContentType)[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testMentionToInbox" duration-ms="0" started-at="2019-02-14T14:32:18Z" description="User mentions should always fall at inbox" data-provider="getPublicContentTypes" finished-at="2019-02-14T14:32:18Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.RuntimeException: java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;bc1a32b8&#46;1550183538&#46;973583ea
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "API Container faqOtSAPtWjM",
+  "name" : "API Container faqOtSAPtWjM",
+  "type" : "project",
+  "description" : "jive-api-test project desc",
+  "parent" : "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places/1073",
+  "contentTypes" : [ "blog" ],
+  "dueDate" : "2019-02-28T22:31:40.000+0000",
+  "startDate" : "2019-01-31T22:31:40.000+0000",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.RuntimeException: java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;bc1a32b8&#46;1550183538&#46;973583ea
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "API Container faqOtSAPtWjM",
+  "name" : "API Container faqOtSAPtWjM",
+  "type" : "project",
+  "description" : "jive-api-test project desc",
+  "parent" : "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places/1073",
+  "contentTypes" : [ "blog" ],
+  "dueDate" : "2019-02-28T22:31:40.000+0000",
+  "startDate" : "2019-01-31T22:31:40.000+0000",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:163)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:430)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1274)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:989)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1079)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:170)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:84)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:92)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.RuntimeException: java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;bc1a32b8&#46;1550183538&#46;973583ea
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "API Container faqOtSAPtWjM",
+  "name" : "API Container faqOtSAPtWjM",
+  "type" : "project",
+  "description" : "jive-api-test project desc",
+  "parent" : "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places/1073",
+  "contentTypes" : [ "blog" ],
+  "dueDate" : "2019-02-28T22:31:40.000+0000",
+  "startDate" : "2019-01-31T22:31:40.000+0000",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+	at com.jivesoftware.api.utils.places.PlacesUtils.createPlace(PlacesUtils.java:91)
+	at com.jivesoftware.api.utils.places.ProjectUtils.createProject(ProjectUtils.java:166)
+	at com.jivesoftware.api.utils.places.ProjectUtils.createProject(ProjectUtils.java:148)
+	at com.jivesoftware.api.models.Project.create(Project.java:23)
+	at com.jivesoftware.api.models.AbstractContainer.createIfRequired(AbstractContainer.java:146)
+	at com.jivesoftware.api.models.AbstractContentType.setContainer(AbstractContentType.java:427)
+	at com.jivesoftware.api.models.AbstractContentType.<init>(AbstractContentType.java:57)
+	at com.jivesoftware.api.models.BlogPost.<init>(BlogPost.java:23)
+	at com.jivesoftware.api.test.JiveTest.getAllContentTypesInAnyContainer(JiveTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:137)
+	... 23 more
+Caused by: java.lang.RuntimeException: HTTP Execution call returned code does not match the expected one: expected: 201; got: 503
+<HTML><HEAD>
+<TITLE>Service Unavailable</TITLE>
+</HEAD><BODY>
+<H1>Service Unavailable - Zero size object</H1>
+The server is temporarily unable to service your request.  Please try again
+later.<P>
+Reference&#32;&#35;15&#46;bc1a32b8&#46;1550183538&#46;973583ea
+</BODY></HTML>
+
+Curl Sent -> curl -u admin:mBdqFVWdqNcEed --header 'Content-Type: application/json;charset=UTF-8;' -X POST  -d '{
+  "displayName" : "API Container faqOtSAPtWjM",
+  "name" : "API Container faqOtSAPtWjM",
+  "type" : "project",
+  "description" : "jive-api-test project desc",
+  "parent" : "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places/1073",
+  "contentTypes" : [ "blog" ],
+  "dueDate" : "2019-02-28T22:31:40.000+0000",
+  "startDate" : "2019-01-31T22:31:40.000+0000",
+  "tags" : [ "mytag" ]
+}' "https://banzai-qe-api-testing-25-develop.jivelandia.com/api/core/v3/places" --insecure
+	at com.jivesoftware.webservice.util.HttpUtils.doExecuteHTTP(HttpUtils.java:870)
+	at com.jivesoftware.webservice.util.HttpUtils.doExecuteHTTP(HttpUtils.java:892)
+	at com.jivesoftware.webservice.util.HttpUtils.doExecuteHTTP(HttpUtils.java:885)
+	at com.jivesoftware.webservice.util.HttpUtils.post(HttpUtils.java:1329)
+	at com.jivesoftware.webservice.util.HttpUtils.post(HttpUtils.java:1255)
+	at com.jivesoftware.api.utils.places.PlacesUtils.createPlace(PlacesUtils.java:86)
+	... 37 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMentionToInbox -->
+        <test-method status="SKIP" signature="testPrivateMentionInDirectMessage()[pri:0, instance:com.jivesoftware.api.test.inbox.ActivityTest@1fa1cab1]" name="testPrivateMentionInDirectMessage" duration-ms="1" started-at="2019-02-14T14:32:18Z" description="Users shouldn't see private mentions in DM" finished-at="2019-02-14T14:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrivateMentionInDirectMessage -->
+      </class> <!-- com.jivesoftware.api.test.inbox.ActivityTest -->
+      <class name="com.jivesoftware.api.test.streamOnce.fieldsconnectors.bugzilla.BugzillaStreamMappingChangeTest">
+        <test-method status="PASS" signature="streamOnceAfterSuite()[pri:0, instance:com.jivesoftware.api.test.streamOnce.fieldsconnectors.bugzilla.BugzillaStreamMappingChangeTest@51fadaff]" name="streamOnceAfterSuite" is-config="true" duration-ms="0" started-at="2019-02-14T14:32:18Z" finished-at="2019-02-14T14:32:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- streamOnceAfterSuite -->
+      </class> <!-- com.jivesoftware.api.test.streamOnce.fieldsconnectors.bugzilla.BugzillaStreamMappingChangeTest -->
+    </test> <!-- Activity-Smoke-I -->
+  </suite> <!-- Jive API Test Suite -->
+</testng-results>

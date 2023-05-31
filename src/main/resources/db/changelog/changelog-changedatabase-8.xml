@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+<!--    <changeSet author="clarolab" id="8-1.1">-->
+<!--        <addColumn tableName="qa_manual_test_case">-->
+<!--            <column name="externalid" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+<!--    <changeSet author="clarolab" id="8-1.2">-->
+<!--        <update tableName="qa_manual_test_case">-->
+<!--            <column name="externalid" value="0"/>-->
+<!--        </update>-->
+<!--    </changeSet>-->
+    <changeSet author="clarolab" id="8-1.3">
+        <modifyDataType
+                tableName="qa_manual_test_case"
+                columnName="externalid"
+                newDataType="VARCHAR(255)"
+                />
+    </changeSet>
+    <changeSet author="clarolab" id="8-1.4">
+        <update tableName="qa_manual_test_case">
+            <column name="externalid" value=""/>
+        </update>
+    </changeSet>
+<!--    <changeSet author="clarolab" id="8-2.1">-->
+<!--        <addColumn tableName="qa_manual_test_step">-->
+<!--            <column name="externalid" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+    <changeSet author="clarolab" id="8-2.2">
+        <update tableName="qa_manual_test_step">
+            <column name="externalid" value="0"/>
+        </update>
+    </changeSet>
+
+
+</databaseChangeLog>

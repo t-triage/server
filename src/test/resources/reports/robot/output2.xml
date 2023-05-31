@@ -1,0 +1,1863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 2.8.5 (Jython 2.5.3 on java1.8.0_131)" generated="20190128 17:32:54.287">
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive" name="Jive Robot Run" id="s1">
+<kw type="setup" name="SuiteSetup.Before Jive Robot Suite">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:03.155">Arguments: [  ]</msg>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Suite">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:03.179">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:13.475">log4j: reset attribute= "false".
+log4j: Threshold ="null".
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [robot_html_logger] additivity to [false].
+log4j: Level value for robot_html_logger is  [INFO].
+log4j: robot_html_logger level set to INFO
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Setting property [follow] to [true].
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [*HTML* [%t] %m%n].
+log4j: Adding appender named [stdout_robot_html] to category [robot_html_logger].
+log4j: Class name: [com.jivesoftware.logging.RobotAppender]
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Adding appender named [robot_appender] to category [robot_html_logger].
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [robot_simple_logger] additivity to [false].
+log4j: Level value for robot_simple_logger is  [DEBUG].
+log4j: robot_simple_logger level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Setting property [follow] to [true].
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [*INFO* [%t] %m%n].
+log4j: Adding appender named [simple_appender] to category [robot_simple_logger].
+log4j: Adding appender named [robot_appender] to category [robot_simple_logger].
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [com.jivesoftware.webservice.util] additivity to [true].
+log4j: Level value for com.jivesoftware.webservice.util is  [INFO].
+log4j: com.jivesoftware.webservice.util level set to INFO
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.apache.http] additivity to [true].
+log4j: Level value for org.apache.http is  [ERROR].
+log4j: org.apache.http level set to ERROR
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.openqa] additivity to [true].
+log4j: Level value for org.openqa is  [ERROR].
+log4j: org.openqa level set to ERROR
+log4j: Retreiving an instance of org.apache.log4j.Logger.
+log4j: Setting [org.openqa.selenium.remote] additivity to [true].
+log4j: Level value for org.openqa.selenium.remote is  [ERROR].
+log4j: org.openqa.selenium.remote level set to ERROR
+log4j: Level value for root is  [DEBUG].
+log4j: root level set to DEBUG
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Setting property [follow] to [true].
+log4j: Setting property [threshold] to [DEBUG].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [*DEBUG* %d{dd MMM yyyy HH:mm:ss} [%t] %c{1} %x - %m%n].
+log4j: Setting property [levelMin] to [DEBUG].
+log4j: Setting property [levelMax] to [DEBUG].
+log4j: Adding filter of type [class org.apache.log4j.varia.LevelRangeFilter] to appender named [stdout_debug].
+log4j: Adding appender named [stdout_debug] to category [root].
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Setting property [follow] to [true].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [*INFO* %d{dd MMM yyyy HH:mm:ss} [%t] %c{1} %x - %m%n].
+log4j: Setting property [levelMin] to [INFO].
+log4j: Setting property [levelMax] to [INFO].
+log4j: Adding filter of type [class org.apache.log4j.varia.LevelRangeFilter] to appender named [stdout_info].
+log4j: Adding appender named [stdout_info] to category [root].
+log4j: Class name: [org.apache.log4j.ConsoleAppender]
+log4j: Setting property [target] to [System.out].
+log4j: Setting property [follow] to [true].
+log4j: Setting property [threshold] to [WARN].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [*WARN* %d{dd MMM yyyy HH:mm:ss} [%t] %c{1} %x - %m%n].
+log4j: Adding appender named [stdout_warn] to category [root].
+log4j: Adding appender named [robot_appender] to category [root].
+log4j: Class name: [org.apache.log4j.DailyRollingFileAppender]
+log4j: Setting property [file] to [target/logs/robot_run.log].
+log4j: Setting property [datePattern] to [.yyyy-MM-dd].
+log4j: Parsing layout of class: "org.apache.log4j.PatternLayout"
+log4j: Setting property [conversionPattern] to [%d{dd MMM yyyy HH:mm:ss} [%t] %c{1} %x - %m%n].
+log4j: setFile called: target/logs/robot_run.log, true
+log4j: setFile ended
+log4j: Appender [fileAppender] to be rolled at midnight.
+log4j: Adding appender named [fileAppender] to category [root].
+===https://cloud.qa.jivehosted.com
+===https://banzai-qe-content-2-22-develop.jivelandia.com</msg>
+<msg level="TRACE" timestamp="20190128 17:33:13.481">Return: None</msg>
+<status endtime="20190128 17:33:13.479" starttime="20190128 17:33:03.156" status="PASS"/>
+</kw>
+<kw type="kw" name="${version} = com.jivesoftware.library.ApiKeywordLibrary.Api Get Jive Version">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:13.483">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:33:13.617">Return: u'2018.16.0.0_jx'</msg>
+<msg level="INFO" timestamp="20190128 17:33:13.618">${version} = 2018.16.0.0_jx</msg>
+<status endtime="20190128 17:33:13.616" starttime="20190128 17:33:13.483" status="PASS"/>
+</kw>
+<kw type="kw" name="${buildInfo} = com.jivesoftware.library.ApiKeywordLibrary.Api Get Build Information Data From JCI">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:13.620">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:33:14.101">Return: u'318'</msg>
+<msg level="INFO" timestamp="20190128 17:33:14.102">${buildInfo} = 318</msg>
+<status endtime="20190128 17:33:14.100" starttime="20190128 17:33:13.620" status="PASS"/>
+</kw>
+<kw type="kw" name="${jiveServer} = com.jivesoftware.library.ApiKeywordLibrary.Api Get Jive Url">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.103">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:33:14.104">Return: u'https://banzai-qe-content-2-22-develop.jivelandia.com'</msg>
+<msg level="INFO" timestamp="20190128 17:33:14.105">${jiveServer} = https://banzai-qe-content-2-22-develop.jivelandia.com</msg>
+<status endtime="20190128 17:33:14.104" starttime="20190128 17:33:14.102" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Suite Documentation">
+<doc>Sets documentation for the current test suite.</doc>
+<arguments>
+<arg>*Jive Version :* ${version} -- *Jive Instance :* ${jiveServer}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.108">Arguments: [ u'*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* https://banzai-qe-content-2-22-develop.jivelandia.com' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:14.109">Set suite documentation to:
+*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* https://banzai-qe-content-2-22-develop.jivelandia.com</msg>
+<msg level="TRACE" timestamp="20190128 17:33:14.109">Return: None</msg>
+<status endtime="20190128 17:33:14.109" starttime="20190128 17:33:14.106" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Suite Metadata">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Version</arg>
+<arg>*${version}*</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.143">Arguments: [ u'Jive Version' | u'*2018.16.0.0_jx*' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:14.145">Set suite metadata 'Jive Version' to value '*2018.16.0.0_jx*'.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:14.146">Return: None</msg>
+<status endtime="20190128 17:33:14.146" starttime="20190128 17:33:14.110" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Suite Metadata">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Instance</arg>
+<arg>${jiveServer}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.148">Arguments: [ u'Jive Instance' | u'https://banzai-qe-content-2-22-develop.jivelandia.com' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:14.149">Set suite metadata 'Jive Instance' to value 'https://banzai-qe-content-2-22-develop.jivelandia.com'.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:14.149">Return: None</msg>
+<status endtime="20190128 17:33:14.149" starttime="20190128 17:33:14.147" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Suite Metadata">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Build Information</arg>
+<arg>*${buildInfo}*</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.155">Arguments: [ u'Jive Build Information' | u'*318*' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:14.156">Set suite metadata 'Jive Build Information' to value '*318*'.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:14.157">Return: None</msg>
+<status endtime="20190128 17:33:14.156" starttime="20190128 17:33:14.150" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:14.158">Return: None</msg>
+<status endtime="20190128 17:33:14.158" starttime="20190128 17:33:03.139" status="PASS"/>
+</kw>
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content" name="Content" id="s1-s1">
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content/Content v2" name="Content v2" id="s1-s1-s1">
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content/Content v2/Common Controls" name="Common Controls" id="s1-s1-s1-s1">
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content/Content v2/Common Controls/IdeaV2GroupTests.robot" name="IdeaV2GroupTests" id="s1-s1-s1-s1-s1">
+<test timeout="10 minutes" name="Delete an idea" id="s1-s1-s1-s1-s1-t1">
+<kw type="setup" name="ContentV2SetupResource.Before Content V2 Group Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.516">Arguments: [  ]</msg>
+<kw type="kw" name="${author} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard User With Retry">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:14.521">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:14.522">Test timeout 10 minutes active. 599.962 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:15.008">Return: u'regularuser-gtsakdldhi7n@example.com'</msg>
+<msg level="INFO" timestamp="20190128 17:33:15.009">${author} = regularuser-gtsakdldhi7n@example.com</msg>
+<status endtime="20190128 17:33:15.007" starttime="20190128 17:33:14.517" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${author}</arg>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:15.011">Arguments: [ u'\\${author}' | u'${author}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:15.020">${author} = regularuser-gtsakdldhi7n@example.com</msg>
+<msg level="TRACE" timestamp="20190128 17:33:15.021">Return: None</msg>
+<status endtime="20190128 17:33:15.021" starttime="20190128 17:33:15.011" status="PASS"/>
+</kw>
+<kw type="kw" name="${authorPass} = com.jivesoftware.library.UiKeywordLibrary.Get Default Password">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:15.022">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:15.023">Test timeout 10 minutes active. 599.461 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:15.025">Return: u'test123'</msg>
+<msg level="INFO" timestamp="20190128 17:33:15.026">${authorPass} = test123</msg>
+<status endtime="20190128 17:33:15.025" starttime="20190128 17:33:15.022" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${authorPass}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:15.028">Arguments: [ u'\\${authorPass}' | u'${authorPass}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:15.029">${authorPass} = test123</msg>
+<msg level="TRACE" timestamp="20190128 17:33:15.030">Return: None</msg>
+<status endtime="20190128 17:33:15.030" starttime="20190128 17:33:15.027" status="PASS"/>
+</kw>
+<kw type="kw" name="${placeName} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Group">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:15.032">Arguments: [ u'regularuser-gtsakdldhi7n@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:15.032">Test timeout 10 minutes active. 599.452 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:17.466">Return: u'Robot-group-wAR5osgAvTkfk8aP'</msg>
+<msg level="INFO" timestamp="20190128 17:33:17.467">${placeName} = Robot-group-wAR5osgAvTkfk8aP</msg>
+<status endtime="20190128 17:33:17.466" starttime="20190128 17:33:15.031" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${placeName}</arg>
+<arg>${placeName}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:17.471">Arguments: [ u'\\${placeName}' | u'${placeName}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:17.473">${placeName} = Robot-group-wAR5osgAvTkfk8aP</msg>
+<msg level="TRACE" timestamp="20190128 17:33:17.474">Return: None</msg>
+<status endtime="20190128 17:33:17.474" starttime="20190128 17:33:17.471" status="PASS"/>
+</kw>
+<kw type="kw" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:17.477">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:17.479">Arguments: [ u'commonControls' | u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:17.479">Test timeout 10 minutes active. 597.005 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:17.514">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:33:17.515">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:33:17.514" starttime="20190128 17:33:17.478" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:17.517">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:33:17.527">Return: None</msg>
+<status endtime="20190128 17:33:17.527" starttime="20190128 17:33:17.516" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:17.529">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:17.530">Test timeout 10 minutes active. 596.954 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:33:20.925">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 1868
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:20.931">Return: None</msg>
+<status endtime="20190128 17:33:20.927" starttime="20190128 17:33:17.529" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:20.933">Return: None</msg>
+<status endtime="20190128 17:33:20.933" starttime="20190128 17:33:17.475" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:20.935">Return: None</msg>
+<status endtime="20190128 17:33:20.934" starttime="20190128 17:33:14.513" status="PASS"/>
+</kw>
+<kw type="kw" name="ContentV2Resource.Delete Content Test Case">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:20.941">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = ContentV2Resource.Create Content">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:20.946">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${contentType}' == 'discussion'</arg>
+<arg>Create Discussion</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'document'</arg>
+<arg>Create Document</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'event'</arg>
+<arg>Create Event</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'file'</arg>
+<arg>Create File</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'idea'</arg>
+<arg>Create Idea</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'poll'</arg>
+<arg>Create Poll</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'post'</arg>
+<arg>Create Blog Post</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'video'</arg>
+<arg>Create Video</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:20.994">Arguments: [ u"'idea' == 'discussion'" | u'Create Discussion' | u'ELSE IF' | u"'${contentType}' == 'document'" | u'Create Document' | u'ELSE IF' | u"'${contentType}' == 'event'" | u'Create Event' | u'ELSE IF' | u"'${contentType}' == 'file'" | u'Create File' | u'ELSE IF' | u"'${contentType}' == 'idea'" | u'Create Idea' | u'ELSE IF' | u"'${contentType}' == 'poll'" | u'Create Poll' | u'ELSE IF' | u"'${contentType}' == 'post'" | u'Create Blog Post' | u'ELSE IF' | u"'${contentType}' == 'video'" | u'Create Video' ]</msg>
+<kw type="kw" name="ContentV2Resource.Create Idea">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:21.078">Arguments: [  ]</msg>
+<kw type="kw" name="${content} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Idea In Place As">
+<doc/>
+<arguments>
+<arg>${placeName}</arg>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:21.090">Arguments: [ u'Robot-group-wAR5osgAvTkfk8aP' | u'regularuser-gtsakdldhi7n@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:21.090">Test timeout 10 minutes active. 593.394 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:21.857">Return: u'Robot-ideaNbUbAyDfBwEN'</msg>
+<msg level="INFO" timestamp="20190128 17:33:21.858">${content} = Robot-ideaNbUbAyDfBwEN</msg>
+<status endtime="20190128 17:33:21.857" starttime="20190128 17:33:21.079" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:21.859">Return: u'Robot-ideaNbUbAyDfBwEN'</msg>
+<status endtime="20190128 17:33:21.859" starttime="20190128 17:33:21.076" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:21.861">Return: u'Robot-ideaNbUbAyDfBwEN'</msg>
+<msg level="INFO" timestamp="20190128 17:33:21.861">${content} = Robot-ideaNbUbAyDfBwEN</msg>
+<status endtime="20190128 17:33:21.860" starttime="20190128 17:33:20.983" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:21.864">Return: u'Robot-ideaNbUbAyDfBwEN'</msg>
+<msg level="INFO" timestamp="20190128 17:33:21.865">${content} = Robot-ideaNbUbAyDfBwEN</msg>
+<status endtime="20190128 17:33:21.862" starttime="20190128 17:33:20.942" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:21.873">Arguments: [ u'regularuser-gtsakdldhi7n@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:21.873">Test timeout 10 minutes active. 592.611 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:33.449">Return: None</msg>
+<status endtime="20190128 17:33:33.448" starttime="20190128 17:33:21.865" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Content V 2 Page By Subject">
+<doc/>
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:33.456">Arguments: [ u'Robot-ideaNbUbAyDfBwEN' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:33.457">Test timeout 10 minutes active. 581.027 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:37.603">Return: None</msg>
+<status endtime="20190128 17:33:37.603" starttime="20190128 17:33:33.450" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Open Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:37.605">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:37.605">Test timeout 10 minutes active. 576.879 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:39.798">Return: None</msg>
+<status endtime="20190128 17:33:39.797" starttime="20190128 17:33:37.604" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Delete Content Via Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:39.800">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:39.809">Test timeout 10 minutes active. 574.675 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:41.094">Return: None</msg>
+<status endtime="20190128 17:33:41.093" starttime="20190128 17:33:39.799" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:41.095">Return: None</msg>
+<status endtime="20190128 17:33:41.095" starttime="20190128 17:33:20.936" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:41.097">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:33:42.383">Return: None</msg>
+<status endtime="20190128 17:33:42.383" starttime="20190128 17:33:41.097" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>commonControls</tag>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:33:42.384" starttime="20190128 17:33:14.482" status="PASS"/>
+</test>
+<test timeout="10 minutes" name="Feature an idea" id="s1-s1-s1-s1-s1-t2">
+<kw type="setup" name="ContentV2SetupResource.Before Content V2 Group Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:42.394">Arguments: [  ]</msg>
+<kw type="kw" name="${author} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard User With Retry">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:42.409">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:42.410">Test timeout 10 minutes active. 599.981 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:42.760">Return: u'regularuser-b9patkqxmo7k@example.com'</msg>
+<msg level="INFO" timestamp="20190128 17:33:42.761">${author} = regularuser-b9patkqxmo7k@example.com</msg>
+<status endtime="20190128 17:33:42.760" starttime="20190128 17:33:42.395" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${author}</arg>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:42.763">Arguments: [ u'\\${author}' | u'${author}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:42.764">${author} = regularuser-b9patkqxmo7k@example.com</msg>
+<msg level="TRACE" timestamp="20190128 17:33:42.765">Return: None</msg>
+<status endtime="20190128 17:33:42.764" starttime="20190128 17:33:42.762" status="PASS"/>
+</kw>
+<kw type="kw" name="${authorPass} = com.jivesoftware.library.UiKeywordLibrary.Get Default Password">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:42.767">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:42.767">Test timeout 10 minutes active. 599.624 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:42.780">Return: u'test123'</msg>
+<msg level="INFO" timestamp="20190128 17:33:42.780">${authorPass} = test123</msg>
+<status endtime="20190128 17:33:42.779" starttime="20190128 17:33:42.766" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${authorPass}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:42.781">Arguments: [ u'\\${authorPass}' | u'${authorPass}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:42.783">${authorPass} = test123</msg>
+<msg level="TRACE" timestamp="20190128 17:33:42.783">Return: None</msg>
+<status endtime="20190128 17:33:42.783" starttime="20190128 17:33:42.781" status="PASS"/>
+</kw>
+<kw type="kw" name="${placeName} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Group">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:42.811">Arguments: [ u'regularuser-b9patkqxmo7k@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:42.812">Test timeout 10 minutes active. 599.579 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:45.217">Return: u'Robot-group-wl7a1E3vw6BpYmaE'</msg>
+<msg level="INFO" timestamp="20190128 17:33:45.217">${placeName} = Robot-group-wl7a1E3vw6BpYmaE</msg>
+<status endtime="20190128 17:33:45.216" starttime="20190128 17:33:42.784" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${placeName}</arg>
+<arg>${placeName}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:45.219">Arguments: [ u'\\${placeName}' | u'${placeName}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:33:45.221">${placeName} = Robot-group-wl7a1E3vw6BpYmaE</msg>
+<msg level="TRACE" timestamp="20190128 17:33:45.221">Return: None</msg>
+<status endtime="20190128 17:33:45.221" starttime="20190128 17:33:45.218" status="PASS"/>
+</kw>
+<kw type="kw" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:45.223">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:45.224">Arguments: [ u'commonControls' | u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:45.225">Test timeout 10 minutes active. 597.166 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:45.234">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:33:45.235">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:33:45.234" starttime="20190128 17:33:45.224" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:45.237">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:33:45.240">Return: None</msg>
+<status endtime="20190128 17:33:45.240" starttime="20190128 17:33:45.236" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:45.242">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:45.242">Test timeout 10 minutes active. 597.149 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:33:47.208">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 9242
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:47.209">Return: None</msg>
+<status endtime="20190128 17:33:47.209" starttime="20190128 17:33:45.241" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:47.210">Return: None</msg>
+<status endtime="20190128 17:33:47.210" starttime="20190128 17:33:45.222" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:47.211">Return: None</msg>
+<status endtime="20190128 17:33:47.211" starttime="20190128 17:33:42.393" status="PASS"/>
+</kw>
+<kw type="kw" name="ContentV2Resource.Feature Content Test Case">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:47.214">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = ContentV2Resource.Create Content">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:47.231">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${contentType}' == 'discussion'</arg>
+<arg>Create Discussion</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'document'</arg>
+<arg>Create Document</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'event'</arg>
+<arg>Create Event</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'file'</arg>
+<arg>Create File</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'idea'</arg>
+<arg>Create Idea</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'poll'</arg>
+<arg>Create Poll</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'post'</arg>
+<arg>Create Blog Post</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'video'</arg>
+<arg>Create Video</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:47.243">Arguments: [ u"'idea' == 'discussion'" | u'Create Discussion' | u'ELSE IF' | u"'${contentType}' == 'document'" | u'Create Document' | u'ELSE IF' | u"'${contentType}' == 'event'" | u'Create Event' | u'ELSE IF' | u"'${contentType}' == 'file'" | u'Create File' | u'ELSE IF' | u"'${contentType}' == 'idea'" | u'Create Idea' | u'ELSE IF' | u"'${contentType}' == 'poll'" | u'Create Poll' | u'ELSE IF' | u"'${contentType}' == 'post'" | u'Create Blog Post' | u'ELSE IF' | u"'${contentType}' == 'video'" | u'Create Video' ]</msg>
+<kw type="kw" name="ContentV2Resource.Create Idea">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:47.310">Arguments: [  ]</msg>
+<kw type="kw" name="${content} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Idea In Place As">
+<doc/>
+<arguments>
+<arg>${placeName}</arg>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:47.312">Arguments: [ u'Robot-group-wl7a1E3vw6BpYmaE' | u'regularuser-b9patkqxmo7k@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:47.312">Test timeout 10 minutes active. 595.079 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:47.642">Return: u'Robot-ideaKnKwUzFBhZSP'</msg>
+<msg level="INFO" timestamp="20190128 17:33:47.643">${content} = Robot-ideaKnKwUzFBhZSP</msg>
+<status endtime="20190128 17:33:47.642" starttime="20190128 17:33:47.310" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:47.644">Return: u'Robot-ideaKnKwUzFBhZSP'</msg>
+<status endtime="20190128 17:33:47.644" starttime="20190128 17:33:47.302" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:47.645">Return: u'Robot-ideaKnKwUzFBhZSP'</msg>
+<msg level="INFO" timestamp="20190128 17:33:47.645">${content} = Robot-ideaKnKwUzFBhZSP</msg>
+<status endtime="20190128 17:33:47.645" starttime="20190128 17:33:47.232" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:33:47.646">Return: u'Robot-ideaKnKwUzFBhZSP'</msg>
+<msg level="INFO" timestamp="20190128 17:33:47.646">${content} = Robot-ideaKnKwUzFBhZSP</msg>
+<status endtime="20190128 17:33:47.646" starttime="20190128 17:33:47.215" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+<arg>${authorpass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:47.648">Arguments: [ u'regularuser-b9patkqxmo7k@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:47.649">Test timeout 10 minutes active. 594.742 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:33:58.059">Return: None</msg>
+<status endtime="20190128 17:33:58.056" starttime="20190128 17:33:47.647" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Content V 2 Page By Subject">
+<doc/>
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:33:58.080">Arguments: [ u'Robot-ideaKnKwUzFBhZSP' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:33:58.082">Test timeout 10 minutes active. 584.309 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:02.566">Return: None</msg>
+<status endtime="20190128 17:34:02.565" starttime="20190128 17:33:58.079" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Open Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:02.567">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:02.568">Test timeout 10 minutes active. 579.823 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:04.364">Return: None</msg>
+<status endtime="20190128 17:34:04.363" starttime="20190128 17:34:02.567" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Feature Content Via Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:04.367">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:04.367">Test timeout 10 minutes active. 578.024 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:05.604">Return: None</msg>
+<status endtime="20190128 17:34:05.603" starttime="20190128 17:34:04.366" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:05.605">Return: None</msg>
+<status endtime="20190128 17:34:05.604" starttime="20190128 17:33:47.212" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:05.606">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:34:06.332">Return: None</msg>
+<status endtime="20190128 17:34:06.332" starttime="20190128 17:34:05.606" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>commonControls</tag>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:34:06.333" starttime="20190128 17:33:42.390" status="PASS"/>
+</test>
+<test timeout="10 minutes" name="View idea as a PDF" id="s1-s1-s1-s1-s1-t3">
+<kw type="setup" name="ContentV2SetupResource.Before Content V2 Group Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:06.340">Arguments: [  ]</msg>
+<kw type="kw" name="${author} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard User With Retry">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:06.365">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:06.365">Test timeout 10 minutes active. 599.97 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:06.756">Return: u'regularuser-gyxvjkflxeac@example.com'</msg>
+<msg level="INFO" timestamp="20190128 17:34:06.757">${author} = regularuser-gyxvjkflxeac@example.com</msg>
+<status endtime="20190128 17:34:06.756" starttime="20190128 17:34:06.364" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${author}</arg>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:06.758">Arguments: [ u'\\${author}' | u'${author}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:06.760">${author} = regularuser-gyxvjkflxeac@example.com</msg>
+<msg level="TRACE" timestamp="20190128 17:34:06.761">Return: None</msg>
+<status endtime="20190128 17:34:06.761" starttime="20190128 17:34:06.758" status="PASS"/>
+</kw>
+<kw type="kw" name="${authorPass} = com.jivesoftware.library.UiKeywordLibrary.Get Default Password">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:06.762">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:06.762">Test timeout 10 minutes active. 599.573 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:06.774">Return: u'test123'</msg>
+<msg level="INFO" timestamp="20190128 17:34:06.775">${authorPass} = test123</msg>
+<status endtime="20190128 17:34:06.774" starttime="20190128 17:34:06.761" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${authorPass}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:06.779">Arguments: [ u'\\${authorPass}' | u'${authorPass}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:06.780">${authorPass} = test123</msg>
+<msg level="TRACE" timestamp="20190128 17:34:06.780">Return: None</msg>
+<status endtime="20190128 17:34:06.780" starttime="20190128 17:34:06.776" status="PASS"/>
+</kw>
+<kw type="kw" name="${placeName} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Group">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:06.782">Arguments: [ u'regularuser-gyxvjkflxeac@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:06.782">Test timeout 10 minutes active. 599.553 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:09.174">Return: u'Robot-group-Xy406fXu9OuGAzW6'</msg>
+<msg level="INFO" timestamp="20190128 17:34:09.175">${placeName} = Robot-group-Xy406fXu9OuGAzW6</msg>
+<status endtime="20190128 17:34:09.174" starttime="20190128 17:34:06.781" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${placeName}</arg>
+<arg>${placeName}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:09.176">Arguments: [ u'\\${placeName}' | u'${placeName}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:09.178">${placeName} = Robot-group-Xy406fXu9OuGAzW6</msg>
+<msg level="TRACE" timestamp="20190128 17:34:09.179">Return: None</msg>
+<status endtime="20190128 17:34:09.179" starttime="20190128 17:34:09.176" status="PASS"/>
+</kw>
+<kw type="kw" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:09.181">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:09.182">Arguments: [ u'commonControls' | u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:09.183">Test timeout 10 minutes active. 597.152 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:09.372">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:34:09.373">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:34:09.371" starttime="20190128 17:34:09.182" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:09.378">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:34:09.382">Return: None</msg>
+<status endtime="20190128 17:34:09.382" starttime="20190128 17:34:09.377" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:09.386">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:09.386">Test timeout 10 minutes active. 596.949 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:34:10.895">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 21013
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:10.901">Return: None</msg>
+<status endtime="20190128 17:34:10.895" starttime="20190128 17:34:09.383" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:10.903">Return: None</msg>
+<status endtime="20190128 17:34:10.902" starttime="20190128 17:34:09.179" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:10.906">Return: None</msg>
+<status endtime="20190128 17:34:10.905" starttime="20190128 17:34:06.338" status="PASS"/>
+</kw>
+<kw type="kw" name="ContentV2Resource.View Content As Pdf Test Case">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:10.909">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = ContentV2Resource.Create Content">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:10.910">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${contentType}' == 'discussion'</arg>
+<arg>Create Discussion</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'document'</arg>
+<arg>Create Document</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'event'</arg>
+<arg>Create Event</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'file'</arg>
+<arg>Create File</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'idea'</arg>
+<arg>Create Idea</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'poll'</arg>
+<arg>Create Poll</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'post'</arg>
+<arg>Create Blog Post</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'video'</arg>
+<arg>Create Video</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:10.913">Arguments: [ u"'idea' == 'discussion'" | u'Create Discussion' | u'ELSE IF' | u"'${contentType}' == 'document'" | u'Create Document' | u'ELSE IF' | u"'${contentType}' == 'event'" | u'Create Event' | u'ELSE IF' | u"'${contentType}' == 'file'" | u'Create File' | u'ELSE IF' | u"'${contentType}' == 'idea'" | u'Create Idea' | u'ELSE IF' | u"'${contentType}' == 'poll'" | u'Create Poll' | u'ELSE IF' | u"'${contentType}' == 'post'" | u'Create Blog Post' | u'ELSE IF' | u"'${contentType}' == 'video'" | u'Create Video' ]</msg>
+<kw type="kw" name="ContentV2Resource.Create Idea">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:10.934">Arguments: [  ]</msg>
+<kw type="kw" name="${content} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Idea In Place As">
+<doc/>
+<arguments>
+<arg>${placeName}</arg>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:10.937">Arguments: [ u'Robot-group-Xy406fXu9OuGAzW6' | u'regularuser-gyxvjkflxeac@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:10.937">Test timeout 10 minutes active. 595.397 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:11.384">Return: u'Robot-ideazDcWjQbbxPWM'</msg>
+<msg level="INFO" timestamp="20190128 17:34:11.385">${content} = Robot-ideazDcWjQbbxPWM</msg>
+<status endtime="20190128 17:34:11.384" starttime="20190128 17:34:10.936" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:11.386">Return: u'Robot-ideazDcWjQbbxPWM'</msg>
+<status endtime="20190128 17:34:11.385" starttime="20190128 17:34:10.933" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:11.387">Return: u'Robot-ideazDcWjQbbxPWM'</msg>
+<msg level="INFO" timestamp="20190128 17:34:11.387">${content} = Robot-ideazDcWjQbbxPWM</msg>
+<status endtime="20190128 17:34:11.386" starttime="20190128 17:34:10.911" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:11.388">Return: u'Robot-ideazDcWjQbbxPWM'</msg>
+<msg level="INFO" timestamp="20190128 17:34:11.388">${content} = Robot-ideazDcWjQbbxPWM</msg>
+<status endtime="20190128 17:34:11.388" starttime="20190128 17:34:10.909" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+<arg>${authorpass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:11.390">Arguments: [ u'regularuser-gyxvjkflxeac@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:11.390">Test timeout 10 minutes active. 594.945 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:21.173">Return: None</msg>
+<status endtime="20190128 17:34:21.172" starttime="20190128 17:34:11.389" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Content V 2 Page By Subject">
+<doc/>
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:21.175">Arguments: [ u'Robot-ideazDcWjQbbxPWM' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:21.175">Test timeout 10 minutes active. 585.16 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:25.238">Return: None</msg>
+<status endtime="20190128 17:34:25.237" starttime="20190128 17:34:21.174" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Open Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:25.239">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:25.239">Test timeout 10 minutes active. 581.096 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:27.169">Return: None</msg>
+<status endtime="20190128 17:34:27.169" starttime="20190128 17:34:25.238" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.View Content As Pdf Via Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:27.170">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:27.171">Test timeout 10 minutes active. 579.164 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:33.462">Return: None</msg>
+<status endtime="20190128 17:34:33.462" starttime="20190128 17:34:27.170" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:33.463">Return: None</msg>
+<status endtime="20190128 17:34:33.463" starttime="20190128 17:34:10.907" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:33.465">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:34:34.077">Return: None</msg>
+<status endtime="20190128 17:34:34.076" starttime="20190128 17:34:33.464" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>commonControls</tag>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:34:34.078" starttime="20190128 17:34:06.334" status="PASS"/>
+</test>
+<test timeout="10 minutes" name="Bookmark idea" id="s1-s1-s1-s1-s1-t4">
+<kw type="setup" name="ContentV2SetupResource.Before Content V2 Group Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:34.083">Arguments: [  ]</msg>
+<kw type="kw" name="${author} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard User With Retry">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:34.093">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:34.094">Test timeout 10 minutes active. 599.985 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:34.442">Return: u'regularuser-k2l3ybqfin4z@example.com'</msg>
+<msg level="INFO" timestamp="20190128 17:34:34.442">${author} = regularuser-k2l3ybqfin4z@example.com</msg>
+<status endtime="20190128 17:34:34.441" starttime="20190128 17:34:34.084" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${author}</arg>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:34.443">Arguments: [ u'\\${author}' | u'${author}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:34.444">${author} = regularuser-k2l3ybqfin4z@example.com</msg>
+<msg level="TRACE" timestamp="20190128 17:34:34.445">Return: None</msg>
+<status endtime="20190128 17:34:34.445" starttime="20190128 17:34:34.443" status="PASS"/>
+</kw>
+<kw type="kw" name="${authorPass} = com.jivesoftware.library.UiKeywordLibrary.Get Default Password">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:34.446">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:34.446">Test timeout 10 minutes active. 599.633 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:34.449">Return: u'test123'</msg>
+<msg level="INFO" timestamp="20190128 17:34:34.449">${authorPass} = test123</msg>
+<status endtime="20190128 17:34:34.448" starttime="20190128 17:34:34.445" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${authorPass}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:34.450">Arguments: [ u'\\${authorPass}' | u'${authorPass}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:34.451">${authorPass} = test123</msg>
+<msg level="TRACE" timestamp="20190128 17:34:34.451">Return: None</msg>
+<status endtime="20190128 17:34:34.451" starttime="20190128 17:34:34.449" status="PASS"/>
+</kw>
+<kw type="kw" name="${placeName} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Group">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:34.456">Arguments: [ u'regularuser-k2l3ybqfin4z@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:34.456">Test timeout 10 minutes active. 599.623 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:36.851">Return: u'Robot-group-l5bLVWdsItbJk3SH'</msg>
+<msg level="INFO" timestamp="20190128 17:34:36.852">${placeName} = Robot-group-l5bLVWdsItbJk3SH</msg>
+<status endtime="20190128 17:34:36.851" starttime="20190128 17:34:34.455" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${placeName}</arg>
+<arg>${placeName}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:36.853">Arguments: [ u'\\${placeName}' | u'${placeName}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:36.854">${placeName} = Robot-group-l5bLVWdsItbJk3SH</msg>
+<msg level="TRACE" timestamp="20190128 17:34:36.855">Return: None</msg>
+<status endtime="20190128 17:34:36.855" starttime="20190128 17:34:36.852" status="PASS"/>
+</kw>
+<kw type="kw" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:36.856">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:36.857">Arguments: [ u'commonControls' | u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:36.858">Test timeout 10 minutes active. 597.221 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:36.861">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:34:36.861">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:34:36.861" starttime="20190128 17:34:36.857" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:36.863">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:34:36.865">Return: None</msg>
+<status endtime="20190128 17:34:36.864" starttime="20190128 17:34:36.862" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:36.866">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:36.867">Test timeout 10 minutes active. 597.212 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:34:38.029">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 12200
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:38.030">Return: None</msg>
+<status endtime="20190128 17:34:38.029" starttime="20190128 17:34:36.866" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:38.031">Return: None</msg>
+<status endtime="20190128 17:34:38.030" starttime="20190128 17:34:36.855" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:38.031">Return: None</msg>
+<status endtime="20190128 17:34:38.031" starttime="20190128 17:34:34.082" status="PASS"/>
+</kw>
+<kw type="kw" name="ContentV2Resource.Bookmark Content Test Case">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:38.034">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = ContentV2Resource.Create Content">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:38.036">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${contentType}' == 'discussion'</arg>
+<arg>Create Discussion</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'document'</arg>
+<arg>Create Document</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'event'</arg>
+<arg>Create Event</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'file'</arg>
+<arg>Create File</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'idea'</arg>
+<arg>Create Idea</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'poll'</arg>
+<arg>Create Poll</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'post'</arg>
+<arg>Create Blog Post</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'video'</arg>
+<arg>Create Video</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:38.038">Arguments: [ u"'idea' == 'discussion'" | u'Create Discussion' | u'ELSE IF' | u"'${contentType}' == 'document'" | u'Create Document' | u'ELSE IF' | u"'${contentType}' == 'event'" | u'Create Event' | u'ELSE IF' | u"'${contentType}' == 'file'" | u'Create File' | u'ELSE IF' | u"'${contentType}' == 'idea'" | u'Create Idea' | u'ELSE IF' | u"'${contentType}' == 'poll'" | u'Create Poll' | u'ELSE IF' | u"'${contentType}' == 'post'" | u'Create Blog Post' | u'ELSE IF' | u"'${contentType}' == 'video'" | u'Create Video' ]</msg>
+<kw type="kw" name="ContentV2Resource.Create Idea">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:38.048">Arguments: [  ]</msg>
+<kw type="kw" name="${content} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Idea In Place As">
+<doc/>
+<arguments>
+<arg>${placeName}</arg>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:38.050">Arguments: [ u'Robot-group-l5bLVWdsItbJk3SH' | u'regularuser-k2l3ybqfin4z@example.com' | u'test123' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:38.050">Test timeout 10 minutes active. 596.029 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:38.383">Return: u'Robot-ideaCRTvnPXlhnAY'</msg>
+<msg level="INFO" timestamp="20190128 17:34:38.384">${content} = Robot-ideaCRTvnPXlhnAY</msg>
+<status endtime="20190128 17:34:38.383" starttime="20190128 17:34:38.048" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:38.385">Return: u'Robot-ideaCRTvnPXlhnAY'</msg>
+<status endtime="20190128 17:34:38.385" starttime="20190128 17:34:38.047" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:38.385">Return: u'Robot-ideaCRTvnPXlhnAY'</msg>
+<msg level="INFO" timestamp="20190128 17:34:38.386">${content} = Robot-ideaCRTvnPXlhnAY</msg>
+<status endtime="20190128 17:34:38.385" starttime="20190128 17:34:38.036" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:38.387">Return: u'Robot-ideaCRTvnPXlhnAY'</msg>
+<msg level="INFO" timestamp="20190128 17:34:38.387">${content} = Robot-ideaCRTvnPXlhnAY</msg>
+<status endtime="20190128 17:34:38.387" starttime="20190128 17:34:38.034" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App Default Password">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:38.393">Arguments: [ u'regularuser-k2l3ybqfin4z@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:38.393">Test timeout 10 minutes active. 595.686 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:47.164">Return: None</msg>
+<status endtime="20190128 17:34:47.163" starttime="20190128 17:34:38.388" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Content V 2 Page By Subject">
+<doc/>
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:47.166">Arguments: [ u'Robot-ideaCRTvnPXlhnAY' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:47.166">Test timeout 10 minutes active. 586.912 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:51.347">Return: None</msg>
+<status endtime="20190128 17:34:51.347" starttime="20190128 17:34:47.165" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Open Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:51.349">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:51.349">Test timeout 10 minutes active. 582.73 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:53.213">Return: None</msg>
+<status endtime="20190128 17:34:53.213" starttime="20190128 17:34:51.348" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Bookmark Content Via Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:53.214">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:53.215">Test timeout 10 minutes active. 580.864 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:54.014">Return: None</msg>
+<status endtime="20190128 17:34:54.014" starttime="20190128 17:34:53.214" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:54.015">Return: None</msg>
+<status endtime="20190128 17:34:54.015" starttime="20190128 17:34:38.032" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.016">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:34:54.647">Return: None</msg>
+<status endtime="20190128 17:34:54.647" starttime="20190128 17:34:54.016" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>commonControls</tag>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:34:54.648" starttime="20190128 17:34:34.079" status="PASS"/>
+</test>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:34:54.656" starttime="20190128 17:33:14.321" status="PASS"/>
+</suite>
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content/Content v2/Common Controls/IdeaV2SpaceTests.robot" name="IdeaV2SpaceTests" id="s1-s1-s1-s1-s2">
+<test timeout="10 minutes" name="Delete an idea" id="s1-s1-s1-s1-s2-t1">
+<kw type="setup" name="ContentV2SetupResource.Before Content V2 Space Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.741">Arguments: [  ]</msg>
+<kw type="kw" name="${author} = com.jivesoftware.library.UiKeywordLibrary.Get Admin Username">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.742">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:54.742">Test timeout 10 minutes active. 599.995 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:54.744">Return: u'admin'</msg>
+<msg level="INFO" timestamp="20190128 17:34:54.744">${author} = admin</msg>
+<status endtime="20190128 17:34:54.744" starttime="20190128 17:34:54.742" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${author}</arg>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.745">Arguments: [ u'\\${author}' | u'${author}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:54.746">${author} = admin</msg>
+<msg level="TRACE" timestamp="20190128 17:34:54.747">Return: None</msg>
+<status endtime="20190128 17:34:54.747" starttime="20190128 17:34:54.745" status="PASS"/>
+</kw>
+<kw type="kw" name="${authorPass} = com.jivesoftware.library.UiKeywordLibrary.Get Admin Password">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.748">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:54.748">Test timeout 10 minutes active. 599.989 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:54.757">Return: u'cMr3ADRxUKgfjV'</msg>
+<msg level="INFO" timestamp="20190128 17:34:54.757">${authorPass} = cMr3ADRxUKgfjV</msg>
+<status endtime="20190128 17:34:54.757" starttime="20190128 17:34:54.747" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${authorPass}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.758">Arguments: [ u'\\${authorPass}' | u'${authorPass}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:54.761">${authorPass} = cMr3ADRxUKgfjV</msg>
+<msg level="TRACE" timestamp="20190128 17:34:54.762">Return: None</msg>
+<status endtime="20190128 17:34:54.762" starttime="20190128 17:34:54.758" status="PASS"/>
+</kw>
+<kw type="kw" name="${placeName} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Space">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:54.763">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:54.763">Test timeout 10 minutes active. 599.974 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:57.385">Return: u'Robot-space-exIaGCUdfqBfLtFz'</msg>
+<msg level="INFO" timestamp="20190128 17:34:57.386">${placeName} = Robot-space-exIaGCUdfqBfLtFz</msg>
+<status endtime="20190128 17:34:57.384" starttime="20190128 17:34:54.762" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${placeName}</arg>
+<arg>${placeName}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:57.387">Arguments: [ u'\\${placeName}' | u'${placeName}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:34:57.388">${placeName} = Robot-space-exIaGCUdfqBfLtFz</msg>
+<msg level="TRACE" timestamp="20190128 17:34:57.388">Return: None</msg>
+<status endtime="20190128 17:34:57.388" starttime="20190128 17:34:57.386" status="PASS"/>
+</kw>
+<kw type="kw" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:57.390">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:57.391">Arguments: [ u'commonControls' | u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:57.391">Test timeout 10 minutes active. 597.346 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:57.402">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:34:57.403">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:34:57.402" starttime="20190128 17:34:57.390" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:57.405">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:34:57.407">Return: None</msg>
+<status endtime="20190128 17:34:57.407" starttime="20190128 17:34:57.403" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:57.408">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:57.408">Test timeout 10 minutes active. 597.329 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:34:58.939">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 16475
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:58.941">Return: None</msg>
+<status endtime="20190128 17:34:58.940" starttime="20190128 17:34:57.407" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:58.945">Return: None</msg>
+<status endtime="20190128 17:34:58.945" starttime="20190128 17:34:57.389" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:58.946">Return: None</msg>
+<status endtime="20190128 17:34:58.946" starttime="20190128 17:34:54.740" status="PASS"/>
+</kw>
+<kw type="kw" name="ContentV2Resource.Delete Content Test Case">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:58.971">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = ContentV2Resource.Create Content">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:58.974">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${contentType}' == 'discussion'</arg>
+<arg>Create Discussion</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'document'</arg>
+<arg>Create Document</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'event'</arg>
+<arg>Create Event</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'file'</arg>
+<arg>Create File</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'idea'</arg>
+<arg>Create Idea</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'poll'</arg>
+<arg>Create Poll</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'post'</arg>
+<arg>Create Blog Post</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'video'</arg>
+<arg>Create Video</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:58.978">Arguments: [ u"'idea' == 'discussion'" | u'Create Discussion' | u'ELSE IF' | u"'${contentType}' == 'document'" | u'Create Document' | u'ELSE IF' | u"'${contentType}' == 'event'" | u'Create Event' | u'ELSE IF' | u"'${contentType}' == 'file'" | u'Create File' | u'ELSE IF' | u"'${contentType}' == 'idea'" | u'Create Idea' | u'ELSE IF' | u"'${contentType}' == 'poll'" | u'Create Poll' | u'ELSE IF' | u"'${contentType}' == 'post'" | u'Create Blog Post' | u'ELSE IF' | u"'${contentType}' == 'video'" | u'Create Video' ]</msg>
+<kw type="kw" name="ContentV2Resource.Create Idea">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:59.014">Arguments: [  ]</msg>
+<kw type="kw" name="${content} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Idea In Place As">
+<doc/>
+<arguments>
+<arg>${placeName}</arg>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:59.015">Arguments: [ u'Robot-space-exIaGCUdfqBfLtFz' | u'admin' | u'cMr3ADRxUKgfjV' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:59.016">Test timeout 10 minutes active. 595.721 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:34:59.368">Return: u'Robot-ideayvJylhiQRVEv'</msg>
+<msg level="INFO" timestamp="20190128 17:34:59.368">${content} = Robot-ideayvJylhiQRVEv</msg>
+<status endtime="20190128 17:34:59.368" starttime="20190128 17:34:59.014" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:59.369">Return: u'Robot-ideayvJylhiQRVEv'</msg>
+<status endtime="20190128 17:34:59.369" starttime="20190128 17:34:59.012" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:59.398">Return: u'Robot-ideayvJylhiQRVEv'</msg>
+<msg level="INFO" timestamp="20190128 17:34:59.398">${content} = Robot-ideayvJylhiQRVEv</msg>
+<status endtime="20190128 17:34:59.370" starttime="20190128 17:34:58.974" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:34:59.401">Return: u'Robot-ideayvJylhiQRVEv'</msg>
+<msg level="INFO" timestamp="20190128 17:34:59.401">${content} = Robot-ideayvJylhiQRVEv</msg>
+<status endtime="20190128 17:34:59.399" starttime="20190128 17:34:58.972" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:34:59.403">Arguments: [ u'admin' | u'cMr3ADRxUKgfjV' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:34:59.403">Test timeout 10 minutes active. 595.334 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:08.590">Return: None</msg>
+<status endtime="20190128 17:35:08.589" starttime="20190128 17:34:59.402" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Content V 2 Page By Subject">
+<doc/>
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:08.591">Arguments: [ u'Robot-ideayvJylhiQRVEv' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:08.592">Test timeout 10 minutes active. 586.145 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:12.866">Return: None</msg>
+<status endtime="20190128 17:35:12.865" starttime="20190128 17:35:08.590" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Open Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:12.867">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:12.867">Test timeout 10 minutes active. 581.87 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:14.810">Return: None</msg>
+<status endtime="20190128 17:35:14.809" starttime="20190128 17:35:12.867" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Delete Content Via Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:14.811">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:14.811">Test timeout 10 minutes active. 579.926 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:16.006">Return: None</msg>
+<status endtime="20190128 17:35:16.005" starttime="20190128 17:35:14.810" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:16.007">Return: None</msg>
+<status endtime="20190128 17:35:16.007" starttime="20190128 17:34:58.953" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:16.015">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:35:17.292">Return: None</msg>
+<status endtime="20190128 17:35:17.292" starttime="20190128 17:35:16.014" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>commonControls</tag>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:35:17.293" starttime="20190128 17:34:54.731" status="PASS"/>
+</test>
+<test timeout="10 minutes" name="Feature an idea" id="s1-s1-s1-s1-s2-t2">
+<kw type="setup" name="ContentV2SetupResource.Before Content V2 Space Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:17.298">Arguments: [  ]</msg>
+<kw type="kw" name="${author} = com.jivesoftware.library.UiKeywordLibrary.Get Admin Username">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:17.299">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:17.299">Test timeout 10 minutes active. 599.996 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:17.301">Return: u'admin'</msg>
+<msg level="INFO" timestamp="20190128 17:35:17.302">${author} = admin</msg>
+<status endtime="20190128 17:35:17.301" starttime="20190128 17:35:17.299" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${author}</arg>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:17.303">Arguments: [ u'\\${author}' | u'${author}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:35:17.304">${author} = admin</msg>
+<msg level="TRACE" timestamp="20190128 17:35:17.305">Return: None</msg>
+<status endtime="20190128 17:35:17.305" starttime="20190128 17:35:17.303" status="PASS"/>
+</kw>
+<kw type="kw" name="${authorPass} = com.jivesoftware.library.UiKeywordLibrary.Get Admin Password">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:17.306">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:17.306">Test timeout 10 minutes active. 599.989 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:17.307">Return: u'cMr3ADRxUKgfjV'</msg>
+<msg level="INFO" timestamp="20190128 17:35:17.308">${authorPass} = cMr3ADRxUKgfjV</msg>
+<status endtime="20190128 17:35:17.307" starttime="20190128 17:35:17.305" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${authorPass}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:17.309">Arguments: [ u'\\${authorPass}' | u'${authorPass}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:35:17.310">${authorPass} = cMr3ADRxUKgfjV</msg>
+<msg level="TRACE" timestamp="20190128 17:35:17.310">Return: None</msg>
+<status endtime="20190128 17:35:17.310" starttime="20190128 17:35:17.308" status="PASS"/>
+</kw>
+<kw type="kw" name="${placeName} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Space">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:17.311">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:17.311">Test timeout 10 minutes active. 599.984 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:19.857">Return: u'Robot-space-95tkfAcZUIDCIzp2'</msg>
+<msg level="INFO" timestamp="20190128 17:35:19.857">${placeName} = Robot-space-95tkfAcZUIDCIzp2</msg>
+<status endtime="20190128 17:35:19.856" starttime="20190128 17:35:17.311" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Set Test Variable">
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<arguments>
+<arg>\${placeName}</arg>
+<arg>${placeName}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:19.859">Arguments: [ u'\\${placeName}' | u'${placeName}' ]</msg>
+<msg level="INFO" timestamp="20190128 17:35:19.860">${placeName} = Robot-space-95tkfAcZUIDCIzp2</msg>
+<msg level="TRACE" timestamp="20190128 17:35:19.861">Return: None</msg>
+<status endtime="20190128 17:35:19.861" starttime="20190128 17:35:19.858" status="PASS"/>
+</kw>
+<kw type="kw" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:19.863">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:19.864">Arguments: [ u'commonControls' | u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:19.864">Test timeout 10 minutes active. 597.431 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:19.866">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:35:19.866">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:35:19.866" starttime="20190128 17:35:19.863" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:19.868">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:35:19.873">Return: None</msg>
+<status endtime="20190128 17:35:19.873" starttime="20190128 17:35:19.867" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:19.874">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:19.874">Test timeout 10 minutes active. 597.421 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:35:21.333">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 7626
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:21.334">Return: None</msg>
+<status endtime="20190128 17:35:21.334" starttime="20190128 17:35:19.874" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:21.335">Return: None</msg>
+<status endtime="20190128 17:35:21.335" starttime="20190128 17:35:19.861" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:21.336">Return: None</msg>
+<status endtime="20190128 17:35:21.336" starttime="20190128 17:35:17.297" status="PASS"/>
+</kw>
+<kw type="kw" name="ContentV2Resource.Feature Content Test Case">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:21.339">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = ContentV2Resource.Create Content">
+<doc/>
+<arguments>
+<arg>${contentType}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:21.342">Arguments: [ ${contentType}=u'idea' ]</msg>
+<kw type="kw" name="${content} = BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${contentType}' == 'discussion'</arg>
+<arg>Create Discussion</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'document'</arg>
+<arg>Create Document</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'event'</arg>
+<arg>Create Event</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'file'</arg>
+<arg>Create File</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'idea'</arg>
+<arg>Create Idea</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'poll'</arg>
+<arg>Create Poll</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'post'</arg>
+<arg>Create Blog Post</arg>
+<arg>ELSE IF</arg>
+<arg>'${contentType}' == 'video'</arg>
+<arg>Create Video</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:21.345">Arguments: [ u"'idea' == 'discussion'" | u'Create Discussion' | u'ELSE IF' | u"'${contentType}' == 'document'" | u'Create Document' | u'ELSE IF' | u"'${contentType}' == 'event'" | u'Create Event' | u'ELSE IF' | u"'${contentType}' == 'file'" | u'Create File' | u'ELSE IF' | u"'${contentType}' == 'idea'" | u'Create Idea' | u'ELSE IF' | u"'${contentType}' == 'poll'" | u'Create Poll' | u'ELSE IF' | u"'${contentType}' == 'post'" | u'Create Blog Post' | u'ELSE IF' | u"'${contentType}' == 'video'" | u'Create Video' ]</msg>
+<kw type="kw" name="ContentV2Resource.Create Idea">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:21.355">Arguments: [  ]</msg>
+<kw type="kw" name="${content} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Idea In Place As">
+<doc/>
+<arguments>
+<arg>${placeName}</arg>
+<arg>${author}</arg>
+<arg>${authorPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:21.356">Arguments: [ u'Robot-space-95tkfAcZUIDCIzp2' | u'admin' | u'cMr3ADRxUKgfjV' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:21.357">Test timeout 10 minutes active. 595.938 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:21.653">Return: u'Robot-ideayqDRUzvzDiSw'</msg>
+<msg level="INFO" timestamp="20190128 17:35:21.654">${content} = Robot-ideayqDRUzvzDiSw</msg>
+<status endtime="20190128 17:35:21.653" starttime="20190128 17:35:21.355" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:21.655">Return: u'Robot-ideayqDRUzvzDiSw'</msg>
+<status endtime="20190128 17:35:21.655" starttime="20190128 17:35:21.353" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:21.655">Return: u'Robot-ideayqDRUzvzDiSw'</msg>
+<msg level="INFO" timestamp="20190128 17:35:21.656">${content} = Robot-ideayqDRUzvzDiSw</msg>
+<status endtime="20190128 17:35:21.655" starttime="20190128 17:35:21.342" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:21.656">Return: u'Robot-ideayqDRUzvzDiSw'</msg>
+<msg level="INFO" timestamp="20190128 17:35:21.657">${content} = Robot-ideayqDRUzvzDiSw</msg>
+<status endtime="20190128 17:35:21.656" starttime="20190128 17:35:21.340" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+<arg>${authorpass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:21.658">Arguments: [ u'admin' | u'cMr3ADRxUKgfjV' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:21.659">Test timeout 10 minutes active. 595.636 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:30.792">Return: None</msg>
+<status endtime="20190128 17:35:30.791" starttime="20190128 17:35:21.657" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Content V 2 Page By Subject">
+<doc/>
+<arguments>
+<arg>${content}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:30.794">Arguments: [ u'Robot-ideayqDRUzvzDiSw' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:30.795">Test timeout 10 minutes active. 586.5 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:34.756">Return: None</msg>
+<status endtime="20190128 17:35:34.756" starttime="20190128 17:35:30.793" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Open Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:34.758">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:34.758">Test timeout 10 minutes active. 582.537 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:36.618">Return: None</msg>
+<status endtime="20190128 17:35:36.618" starttime="20190128 17:35:34.757" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Feature Content Via Action Menu V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:36.620">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:36.620">Test timeout 10 minutes active. 580.675 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:37.665">Return: None</msg>
+<status endtime="20190128 17:35:37.664" starttime="20190128 17:35:36.619" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:37.666">Return: None</msg>
+<status endtime="20190128 17:35:37.666" starttime="20190128 17:35:21.337" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:37.667">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:35:38.336">Return: None</msg>
+<status endtime="20190128 17:35:38.335" starttime="20190128 17:35:37.667" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>commonControls</tag>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:35:38.337" starttime="20190128 17:35:17.294" status="PASS"/>
+</test>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:35:38.340" starttime="20190128 17:34:54.669" status="PASS"/>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:35:38.355" starttime="20190128 17:33:14.237" status="PASS"/>
+</suite>
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content/Content v2/Ideas v2" name="Ideas v2" id="s1-s1-s1-s2">
+<suite source="/home/jenkins/workspace/gui-pages-tests/src/test/robot/jive/Content/Content v2/Ideas v2/IdeaV2Tests.robot" name="IdeaV2Tests" id="s1-s1-s1-s2-s1">
+<test timeout="10 minutes" name="Create an idea" id="s1-s1-s1-s2-s1-t1">
+<kw type="setup" name="CommonResourceParent.Before Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:38.534">Arguments: [  ]</msg>
+<kw type="kw" name="${isTestBlocked} = com.jivesoftware.library.UiKeywordLibrary.Is Test Blocked">
+<doc/>
+<arguments>
+<arg>@{TEST TAGS}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:38.536">Arguments: [ u'contentV2' | u'ideasV2' | u'jiven' | u'pri1' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:38.536">Test timeout 10 minutes active. 599.964 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:38.541">Return: False</msg>
+<msg level="INFO" timestamp="20190128 17:35:38.541">${isTestBlocked} = False</msg>
+<status endtime="20190128 17:35:38.541" starttime="20190128 17:35:38.535" status="PASS"/>
+</kw>
+<kw type="kw" name="BuiltIn.Run Keyword If">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>${isTestBlocked} == True</arg>
+<arg>Set Tags</arg>
+<arg>skip</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:38.543">Arguments: [ u'False == True' | u'Set Tags' | u'skip' ]</msg>
+<msg level="TRACE" timestamp="20190128 17:35:38.545">Return: None</msg>
+<status endtime="20190128 17:35:38.545" starttime="20190128 17:35:38.542" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Init Browser And Test State">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:38.546">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:38.546">Test timeout 10 minutes active. 599.954 seconds left.</msg>
+<msg level="INFO" timestamp="20190128 17:35:40.305">Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 12713
+Only local connections are allowed.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:40.310">Return: None</msg>
+<status endtime="20190128 17:35:40.306" starttime="20190128 17:35:38.545" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190128 17:35:40.331">Return: None</msg>
+<status endtime="20190128 17:35:40.330" starttime="20190128 17:35:38.518" status="PASS"/>
+</kw>
+<kw type="kw" name="${author} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard User">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:40.332">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:40.333">Test timeout 10 minutes active. 598.167 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:40.663">Return: u'regularuser-0vlrxiabgwi7@example.com'</msg>
+<msg level="INFO" timestamp="20190128 17:35:40.664">${author} = regularuser-0vlrxiabgwi7@example.com</msg>
+<status endtime="20190128 17:35:40.663" starttime="20190128 17:35:40.332" status="PASS"/>
+</kw>
+<kw type="kw" name="${group} = com.jivesoftware.library.ApiKeywordLibrary.Api Create Standard Group">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:40.667">Arguments: [ u'regularuser-0vlrxiabgwi7@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:40.668">Test timeout 10 minutes active. 597.832 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:43.056">Return: u'Robot-group-az94eZzOSqixmoUq'</msg>
+<msg level="INFO" timestamp="20190128 17:35:43.056">${group} = Robot-group-az94eZzOSqixmoUq</msg>
+<status endtime="20190128 17:35:43.055" starttime="20190128 17:35:40.665" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Login App Default Password">
+<doc/>
+<arguments>
+<arg>${author}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:43.058">Arguments: [ u'regularuser-0vlrxiabgwi7@example.com' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:43.058">Test timeout 10 minutes active. 595.442 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:52.265">Return: None</msg>
+<status endtime="20190128 17:35:52.264" starttime="20190128 17:35:43.057" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Go To Create Idea V 2 Page By Url">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:52.266">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:52.266">Test timeout 10 minutes active. 586.234 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:55.780">Return: None</msg>
+<status endtime="20190128 17:35:55.780" starttime="20190128 17:35:52.265" status="PASS"/>
+</kw>
+<kw type="kw" name="${title} = com.jivesoftware.library.UiKeywordLibrary.Get Random Idea Title">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:55.782">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:55.782">Test timeout 10 minutes active. 582.718 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:55.784">Return: u'Robot-Idea-title GwS0ws0iYj3JAK9CBtA'</msg>
+<msg level="INFO" timestamp="20190128 17:35:55.784">${title} = Robot-Idea-title GwS0ws0iYj3JAK9CBtA</msg>
+<status endtime="20190128 17:35:55.783" starttime="20190128 17:35:55.781" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Enter Content V 2 Title">
+<doc/>
+<arguments>
+<arg>${title}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:55.785">Arguments: [ u'Robot-Idea-title GwS0ws0iYj3JAK9CBtA' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:55.785">Test timeout 10 minutes active. 582.715 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:56.282">Return: None</msg>
+<status endtime="20190128 17:35:56.282" starttime="20190128 17:35:55.784" status="PASS"/>
+</kw>
+<kw type="kw" name="${description} = com.jivesoftware.library.UiKeywordLibrary.Get Random Content Body">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:56.283">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:56.284">Test timeout 10 minutes active. 582.216 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:56.299">Return: u'Robot-Content-content Iby qpT 0qYCXB dobMkfH g8jytqt 2KA nBI? L2w F8I rSIxeJu zmhGg LQkpbeLf dTH X5fuL sa7! jraKYPQL z64Qa zp1nc2 OjFL8pR4 iOI3V 1Rs5x L4d 87r CgN 5czQA! sDsQHxzb W39YIe tNFP0Jrf ndl J3NFWoE1 OCrBh 2yohji8 k2EfZi 6Xp21h. 1LmVm wsM IDcUN92 uQlbd0 vFjsIt PdOg6 f89w 0IkvZ46 4K0iOqP H6XlH! m0Gq UV66IeE Eve0kD cTTwLn pVOZ woF5 aWDqQS! CQ0Bm b0wBn3YR ggVgInM SNyoCli C9f UsM.'</msg>
+<msg level="INFO" timestamp="20190128 17:35:56.299">${description} = Robot-Content-content Iby qpT 0qYCXB dobMkfH g8jytqt 2KA nBI? L2w F8I rSIxeJu zmhGg LQkpbeLf dTH X5fuL sa7! jraKYPQL z64Qa zp1nc2 OjFL8pR4 iOI3V 1Rs5x L4d 87r CgN 5czQA! sDsQHxzb W39YIe tNFP0Jrf ndl J...</msg>
+<status endtime="20190128 17:35:56.299" starttime="20190128 17:35:56.283" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Enter Content V 2 Body">
+<doc/>
+<arguments>
+<arg>${description}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:56.301">Arguments: [ u'Robot-Content-content Iby qpT 0qYCXB dobMkfH g8jytqt 2KA nBI? L2w F8I rSIxeJu zmhGg LQkpbeLf dTH X5fuL sa7! jraKYPQL z64Qa zp1nc2 OjFL8pR4 iOI3V 1Rs5x L4d 87r CgN 5czQA! sDsQHxzb W39YIe tNFP0Jrf ndl J3NFWoE1 OCrBh 2yohji8 k2EfZi 6Xp21h. 1LmVm wsM IDcUN92 uQlbd0 vFjsIt PdOg6 f89w 0IkvZ46 4K0iOqP H6XlH! m0Gq UV66IeE Eve0kD cTTwLn pVOZ woF5 aWDqQS! CQ0Bm b0wBn3YR ggVgInM SNyoCli C9f UsM.' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:56.301">Test timeout 10 minutes active. 582.199 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:35:58.974">Return: None</msg>
+<status endtime="20190128 17:35:58.973" starttime="20190128 17:35:56.300" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Select Content V 2 Parent Place">
+<doc/>
+<arguments>
+<arg>${group}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:35:58.976">Arguments: [ u'Robot-group-az94eZzOSqixmoUq' ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:35:58.976">Test timeout 10 minutes active. 579.524 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:36:10.211">Return: None</msg>
+<status endtime="20190128 17:36:10.211" starttime="20190128 17:35:58.975" status="PASS"/>
+</kw>
+<kw type="kw" name="com.jivesoftware.library.UiKeywordLibrary.Publish Content V 2">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:36:10.212">Arguments: [  ]</msg>
+<msg level="DEBUG" timestamp="20190128 17:36:10.213">Test timeout 10 minutes active. 568.287 seconds left.</msg>
+<msg level="TRACE" timestamp="20190128 17:36:20.298">Return: None</msg>
+<status endtime="20190128 17:36:20.297" starttime="20190128 17:36:10.212" status="PASS"/>
+</kw>
+<kw type="teardown" name="com.jivesoftware.library.UiKeywordLibrary.After Jive Robot Test">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190128 17:36:20.299">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190128 17:36:21.029">Return: None</msg>
+<status endtime="20190128 17:36:21.028" starttime="20190128 17:36:20.299" status="PASS"/>
+</kw>
+<doc/>
+<tags>
+<tag>contentV2</tag>
+<tag>ideasV2</tag>
+<tag>jiven</tag>
+<tag>pri1</tag>
+</tags>
+<status critical="yes" endtime="20190128 17:36:21.029" starttime="20190128 17:35:38.499" status="PASS"/>
+</test>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:36:21.032" starttime="20190128 17:35:38.393" status="PASS"/>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:36:21.036" starttime="20190128 17:35:38.370" status="PASS"/>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:36:21.047" starttime="20190128 17:33:14.181" status="PASS"/>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status endtime="20190128 17:36:21.072" starttime="20190128 17:33:14.160" status="PASS"/>
+</suite>
+<doc>*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* https://banzai-qe-content-2-22-develop.jivelandia.com</doc>
+<metadata>
+<item name="Jive Build Information">*318*</item>
+<item name="Jive Instance">https://banzai-qe-content-2-22-develop.jivelandia.com</item>
+<item name="Jive Version">*2018.16.0.0_jx*</item>
+</metadata>
+<status endtime="20190128 17:36:21.097" starttime="20190128 17:32:54.321" status="PASS"/>
+</suite>
+<statistics>
+<total>
+<stat pass="7" fail="0">Critical Tests</stat>
+<stat pass="7" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="6" fail="0" doc="" links="" combined="" info="">commonControls</stat>
+<stat pass="7" fail="0" doc="" links="" combined="" info="">contentV2</stat>
+<stat pass="7" fail="0" doc="" links="" combined="" info="">ideasV2</stat>
+<stat pass="7" fail="0" doc="" links="" combined="" info="">jiven</stat>
+<stat pass="7" fail="0" doc="" links="" combined="" info="">pri1</stat>
+</tag>
+<suite>
+<stat pass="7" fail="0" name="Jive Robot Run" id="s1">Jive Robot Run</stat>
+<stat pass="7" fail="0" name="Content" id="s1-s1">Jive Robot Run.Content</stat>
+<stat pass="7" fail="0" name="Content v2" id="s1-s1-s1">Jive Robot Run.Content.Content v2</stat>
+<stat pass="6" fail="0" name="Common Controls" id="s1-s1-s1-s1">Jive Robot Run.Content.Content v2.Common Controls</stat>
+<stat pass="4" fail="0" name="IdeaV2GroupTests" id="s1-s1-s1-s1-s1">Jive Robot Run.Content.Content v2.Common Controls.IdeaV2GroupTests</stat>
+<stat pass="2" fail="0" name="IdeaV2SpaceTests" id="s1-s1-s1-s1-s2">Jive Robot Run.Content.Content v2.Common Controls.IdeaV2SpaceTests</stat>
+<stat pass="1" fail="0" name="Ideas v2" id="s1-s1-s1-s2">Jive Robot Run.Content.Content v2.Ideas v2</stat>
+<stat pass="1" fail="0" name="IdeaV2Tests" id="s1-s1-s1-s2-s1">Jive Robot Run.Content.Content v2.Ideas v2.IdeaV2Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

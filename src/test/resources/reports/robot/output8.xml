@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot rpa="false" generator="Robot 3.1.1 (Jython 2.7.0 on java1.8.0_212)" generated="20190703 18:13:42.996">
+<suite source="/var/jenkins_home/workspace/Multijob-Robot/src/test/robot" name="Robot" id="s1">
+<suite source="/var/jenkins_home/workspace/Multijob-Robot/src/test/robot/test.robot" name="Test" id="s1-s1">
+<test name="pass test case" id="s1-s1-t1">
+<kw type="setup" library="com.clarolab.MyRobotKeywords" name="Init Test">
+<msg level="INFO" timestamp="20190703 18:14:49.262">Jul 03, 2019 6:13:43 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFO: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+Jul 03, 2019 6:14:49 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+Jul 03, 2019 6:14:49 PM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [825f1e42eb1421821d5ac6aab16304be, setTimeout {pageLoad=80000}]
+Jul 03, 2019 6:14:49 PM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [825f1e42eb1421821d5ac6aab16304be, setTimeout {pageLoad=80000}]
+Jul 03, 2019 6:14:49 PM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [825f1e42eb1421821d5ac6aab16304be, setTimeout {implicit=2000}]
+Jul 03, 2019 6:14:49 PM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [825f1e42eb1421821d5ac6aab16304be, setTimeout {implicit=2000}]</msg>
+<status endtime="20190703 18:14:49.267" starttime="20190703 18:13:43.290" status="PASS"/>
+</kw>
+<kw library="com.clarolab.MyRobotKeywords" name="Pass Test">
+<status endtime="20190703 18:14:50.338" starttime="20190703 18:14:49.269" status="PASS"/>
+</kw>
+<kw type="teardown" name="Close Test">
+<kw library="com.clarolab.MyRobotKeywords" name="Take Screen Shot">
+<status endtime="20190703 18:14:51.446" starttime="20190703 18:14:50.345" status="PASS"/>
+</kw>
+<kw library="com.clarolab.MyRobotKeywords" name="Clean Test">
+<status endtime="20190703 18:14:51.544" starttime="20190703 18:14:51.447" status="PASS"/>
+</kw>
+<status endtime="20190703 18:14:51.547" starttime="20190703 18:14:50.340" status="PASS"/>
+</kw>
+<tags>
+<tag>all</tag>
+</tags>
+<status critical="yes" endtime="20190703 18:14:51.548" starttime="20190703 18:13:43.285" status="PASS"/>
+</test>
+<test name="fail test case" id="s1-s1-t2">
+<kw type="setup" library="com.clarolab.MyRobotKeywords" name="Init Test">
+<status endtime="20190703 18:14:54.980" starttime="20190703 18:14:51.557" status="PASS"/>
+</kw>
+<kw library="com.clarolab.MyRobotKeywords" name="Fail Test">
+<assign>
+<var>${output}</var>
+</assign>
+<msg level="INFO" timestamp="20190703 18:14:55.752">${output} = False</msg>
+<status endtime="20190703 18:14:55.753" starttime="20190703 18:14:54.983" status="PASS"/>
+</kw>
+<kw library="BuiltIn" name="Should Be True">
+<doc>Fails if the given condition is not true.</doc>
+<arguments>
+<arg>${output}</arg>
+</arguments>
+<msg level="FAIL" timestamp="20190703 18:14:55.761">'False' should be true.</msg>
+<status endtime="20190703 18:14:55.762" starttime="20190703 18:14:55.756" status="FAIL"/>
+</kw>
+<kw type="teardown" name="Close Test">
+<kw library="com.clarolab.MyRobotKeywords" name="Take Screen Shot">
+<status endtime="20190703 18:14:56.571" starttime="20190703 18:14:55.766" status="PASS"/>
+</kw>
+<kw library="com.clarolab.MyRobotKeywords" name="Clean Test">
+<status endtime="20190703 18:14:57.097" starttime="20190703 18:14:56.573" status="PASS"/>
+</kw>
+<status endtime="20190703 18:14:57.098" starttime="20190703 18:14:55.764" status="PASS"/>
+</kw>
+<tags>
+<tag>all</tag>
+</tags>
+<status critical="yes" endtime="20190703 18:14:57.099" starttime="20190703 18:14:51.553" status="FAIL">'False' should be true.</status>
+</test>
+<test name="exception test case" id="s1-s1-t3">
+<kw type="setup" library="com.clarolab.MyRobotKeywords" name="Init Test">
+<status endtime="20190703 18:14:57.928" starttime="20190703 18:14:57.105" status="PASS"/>
+</kw>
+<kw library="com.clarolab.MyRobotKeywords" name="Exception Test">
+<msg level="FAIL" timestamp="20190703 18:14:58.778">NullPointerException</msg>
+<status endtime="20190703 18:14:58.780" starttime="20190703 18:14:57.930" status="FAIL"/>
+</kw>
+<kw type="teardown" name="Close Test">
+<kw library="com.clarolab.MyRobotKeywords" name="Take Screen Shot">
+<status endtime="20190703 18:14:59.560" starttime="20190703 18:14:58.785" status="PASS"/>
+</kw>
+<kw library="com.clarolab.MyRobotKeywords" name="Clean Test">
+<status endtime="20190703 18:14:59.654" starttime="20190703 18:14:59.562" status="PASS"/>
+</kw>
+<status endtime="20190703 18:14:59.655" starttime="20190703 18:14:58.783" status="PASS"/>
+</kw>
+<tags>
+<tag>all</tag>
+</tags>
+<status critical="yes" endtime="20190703 18:14:59.656" starttime="20190703 18:14:57.102" status="FAIL">NullPointerException</status>
+</test>
+<status endtime="20190703 18:14:59.663" starttime="20190703 18:13:43.241" status="FAIL"/>
+</suite>
+<status endtime="20190703 18:14:59.681" starttime="20190703 18:13:43.007" status="FAIL"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="2">Critical Tests</stat>
+<stat pass="1" fail="2">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="2">all</stat>
+</tag>
+<suite>
+<stat pass="1" fail="2" name="Robot" id="s1">Robot</stat>
+<stat pass="1" fail="2" name="Test" id="s1-s1">Robot.Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

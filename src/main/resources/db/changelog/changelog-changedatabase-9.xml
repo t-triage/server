@@ -1,0 +1,35 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+<!--    <changeSet author="clarolab" id="9-1">-->
+<!--        <createTable tableName="qa_news_board">-->
+<!--            <column name="id" type="BIGINT">-->
+<!--                <constraints primaryKey="true" primaryKeyName="qa_news_board_pkey"/>-->
+<!--            </column>-->
+<!--            <column name="enabled" type="BOOLEAN">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="timestamp" type="BIGINT">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="updated" type="BIGINT">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="message" type="VARCHAR(255)"/>-->
+<!--            <column name="eventTime" type="BIGINT"/>-->
+<!--            <column name="type" type="SMALLINT"/>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+<!--    <changeSet author="clarolab" id="9-2">-->
+<!--        <createIndex indexName="IDX_BOARD_EVENT" tableName="qa_news_board">-->
+<!--            <column name="eventTime"/>-->
+<!--        </createIndex>-->
+<!--    </changeSet>-->
+
+</databaseChangeLog>

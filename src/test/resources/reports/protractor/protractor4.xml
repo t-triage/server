@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="chrome.Drafts page Search Draft Messages box" timestamp="2023-01-23T17:38:35" hostname="localhost" time="12.037" errors="0" tests="5" skipped="0" disabled="0" failures="0">
+  <testcase classname="chrome.Drafts page Search Draft Messages box" name="Drafts page Search Draft Messages box Login" time="6.587" />
+  <testcase classname="chrome.Drafts page Search Draft Messages box" name="Drafts page Search Draft Messages box Navigate to the Drafts page" time="3.867" />
+  <testcase classname="chrome.Drafts page Search Draft Messages box" name="Drafts page Search Draft Messages box Click the Search drop-down arrow | The Search Draft Message box appears" time="0.356" />
+  <testcase classname="chrome.Drafts page Search Draft Messages box" name="Drafts page Search Draft Messages box Search with a known key | Folder structure for a known key is displayed" time="0.654" />
+  <testcase classname="chrome.Drafts page Search Draft Messages box" name="Drafts page Search Draft Messages box Search with an unknown key | &apos;No Results&apos; is reported for an unknown key" time="0.573" />
+ </testsuite>
+</testsuites>

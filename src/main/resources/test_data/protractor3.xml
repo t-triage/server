@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" timestamp="2019-11-16T19:25:44" hostname="localhost" time="286.638" errors="0" tests="36" skipped="0" disabled="0" failures="2">
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Login" time="10.747" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Navigate to the Forms page" time="20.71" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Set preconditions: Create 1st classic form" time="21.882" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Set preconditions: Create 2nd classic form" time="20.67" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Navigate to the Landing Pages page" time="3.035" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Create 1st Landing Page with a form block" time="30.435" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Create 2nd Landing Page with a form block" time="30.74" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Navigate to A/B Test Content page" time="3.733" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click on &apos;New A/B Test&apos; button | The Composer should open" time="6.435" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click on &apos;Add Landing Page&apos; in the Alternatives section | The &apos;Select Landing Page&apos; modal should open and validated" time="2.854" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click on &apos;Default Folder&apos; on the left panel and search for the landing page using the search box | The landing page should display on the right panel" time="4.517" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Mouse over the landing page and click Preview | The preview of the landing page should display in a new browser window" time="4.154" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Close the browser tab containing the preview" time="1.99" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Select the two landing pages and click Submit" time="4.089" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Edit the conversion of the first landing page by clicking its Edit button, then clicking the Select Form button in the picker modal" time="3.669" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Edit the conversion of the second landing page by clicking its Edit button, then clicking the Select Form button in the picker modal" time="3.359" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Input a valid name and description for the AB Test" time="2.238" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click the Save button | A notification appears which states &apos;The A/B Test has been saved successfully.&apos;" time="4.7" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click the &apos;Start Test&apos; button | A notification appears which states &apos;The A/B Test has been started.&apos;" time="4.604" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click the Close button to close the composer" time="1.661" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Open the Running tab, then select the Dashboard option for the A/B Test | The _absplit/dashboard.jsp page is displayed" time="16.288" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click on the 1st landing page | Preview of the Landing Page should display" time="2.382" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Close the Preview modal" time="0.596" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Click on the 2nd landing page | Preview of the Landing Page should display" time="2.357" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Close the Preview modal" time="0.584" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Navigate to the Landing Pages page" time="2.835" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the 1st landing page" time="6.015" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the 2nd landing page" time="6.559" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Navigate to the Forms page" time="18.902" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the 1st form" time="6.112" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the 2nd form" time="6.051" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Navigate to the Form Submissions page" time="10.033" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the 1st form submission" time="8.02" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the 2nd form submission" time="4.356">
+   <failure type="exception" message="Failed: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.70)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 6.1.7601 SP1 x86_64)"><![CDATA[StaleElementReferenceError: stale element reference: element is not attached to the page document
+  (Session info: chrome=78.0.3904.70)
+  (Driver info: chromedriver=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}),platform=Windows NT 6.1.7601 SP1 x86_64)
+    at WebDriverError (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/error.js:27:5)
+    at StaleElementReferenceError (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/error.js:251:5)
+    at Object.checkLegacyResponse (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/error.js:546:15)
+    at parseHttpResponse (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/http.js:509:13)
+    at doSend.then.response (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/http.js:441:30)
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+From: Task: WebElement.isDisplayed()
+    at schedule (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:807:17)
+    at WebElement.schedule_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)
+    at WebElement.isDisplayed (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:2362:17)
+    at actionFn (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:89:44)
+    at Array.map (native)
+    at actionResults.getWebElements.then (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:461:65)
+    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)Error
+    at ElementArrayFinder.applyAction_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function) [as isDisplayed] (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function) [as isDisplayed] (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:831:22)
+    at browser.wait (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/core/utility.js:288:24)
+    at /opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:938:14
+    at TaskQueue.execute_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2974:25)
+    at /opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+From: Task: <anonymous>
+    at pollCondition (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2195:19)
+    at /opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2191:7
+    at new ManagedPromise (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)
+    at ControlFlow.promise (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2505:12)
+    at /opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2190:22
+    at TaskQueue.execute_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:103:7)
+From: Task: <anonymous wait>
+    at scheduleWait (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)
+    at ControlFlow.wait (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)
+    at wait (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)
+    at run (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/browser.js:59:33)
+    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/browser.js:67:16)
+    at waitUntilReady (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/core/utility.js:287:17)
+    at waitAndClick (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/core/utility.js:267:14)
+    at menusMapping.every (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/page-objects/selectListMenu.page.js:169:31)
+    at Array.every (native)
+    at Object.JSPInterface.selectMenu (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/page-objects/selectListMenu.page.js:166:31)
+From: Task: Run it("Tear down: Delete the 2nd form submission") in control flow
+    at UserContext.<anonymous> (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at QueueRunner.execute (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+    at Spec.Env.queueRunnerFactory (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+    at Spec.execute (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+    at UserContext.fn (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+    at attempt (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.describe (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/test-cases/content/ab-test-content/abTestContent.alternatives.addLandingPage.spec.js:237:5)
+    at addSpecsToSuite (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at jasmineInterface.describe (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/test-cases/content/ab-test-content/abTestContent.alternatives.addLandingPage.spec.js:41:1)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)]]>
+   </failure>
+  </testcase>
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Navigate to A/B Test Content page" time="8.354" />
+  <testcase classname="chrome.A/B Test Content page : Alternatives &gt; Add Landing Page" name="A/B Test Content page : Alternatives &gt; Add Landing Page Tear down: Delete the A/B test" time="0.96">
+   <failure type="exception" message="Failed: No element found using locator: by.cssContainingText(&quot;td.title&quot;, &quot;33d069a7-6592 AB Test Content&quot;)"><![CDATA[NoSuchElementError: No element found using locator: by.cssContainingText("td.title", "33d069a7-6592 AB Test Content")
+    at WebDriverError (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/error.js:27:5)
+    at NoSuchElementError (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/error.js:192:5)
+    at elementArrayFinder.getWebElements.then (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:814:27)
+    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+    at asyncRun (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)
+    at /opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7
+    at process._tickCallback (internal/process/next_tick.js:103:7)Error
+    at ElementArrayFinder.applyAction_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:459:27)
+    at ElementArrayFinder.(anonymous function) [as getId] (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:91:29)
+    at ElementFinder.(anonymous function) [as getId] (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:831:22)
+    at ActionSequence.mouseMove (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/actions.js:151:44)
+    at delete (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/page-objects/content/abtestcontent/abtestcontent.page.js:101:34)
+    at o.ABTestContentPage.abRunningTestsTab.click.then (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/test-cases/content/ab-test-content/abTestContent.alternatives.addLandingPage.spec.js:248:39)
+    at elementArrayFinder_.then (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/protractor/built/element.js:804:32)
+    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)
+    at TaskQueue.execute_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)
+    at TaskQueue.executeNext_ (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)
+From: Task: Run it("Tear down: Delete the A/B test") in control flow
+    at UserContext.<anonymous> (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasminewd2/index.js:94:19)
+    at attempt (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at QueueRunner.execute (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)
+    at Spec.Env.queueRunnerFactory (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)
+    at Spec.execute (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)
+    at UserContext.fn (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)
+    at attempt (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)
+    at QueueRunner.run (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)
+    at runNext (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)
+From asynchronous test: 
+Error
+    at Suite.describe (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/test-cases/content/ab-test-content/abTestContent.alternatives.addLandingPage.spec.js:245:5)
+    at addSpecsToSuite (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)
+    at Env.describe (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)
+    at jasmineInterface.describe (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)
+    at Object.<anonymous> (/opt/bamboo/bamboo/bamboo-home/xml-data/build-dir/QA-TES-JOB1/src/test-cases/content/ab-test-content/abTestContent.alternatives.addLandingPage.spec.js:41:1)
+    at Module._compile (module.js:541:32)
+    at Object.Module._extensions..js (module.js:550:10)
+    at Module.load (module.js:458:32)
+    at tryModuleLoad (module.js:417:12)]]>
+   </failure>
+  </testcase>
+ </testsuite>
+</testsuites>

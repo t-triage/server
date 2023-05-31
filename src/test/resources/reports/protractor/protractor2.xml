@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="chrome.Login Page: UI Navigation happy path" timestamp="2019-10-30T11:23:57" hostname="localhost" time="25.006" errors="0" tests="1" skipped="0" disabled="0" failures="0">
+  <testcase classname="chrome.Login Page: UI Navigation happy path" name="Log in" time="25.004" />
+ </testsuite>
+</testsuites>

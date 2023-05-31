@@ -1,0 +1,58 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+<!--    <changeSet author="clarolab" id="a9.1">-->
+<!--        <addColumn tableName="QA_EXECUTOR">-->
+<!--            <column name="goal_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+    <changeSet author="clarolab" id="a9.2">
+        <addColumn tableName="QA_REPOSITORY_LOG">
+            <column name="updatedLines" type="INTEGER"/>
+        </addColumn>
+    </changeSet>
+
+<!--    <changeSet author="clarolab" id="a9.3">-->
+<!--        <addColumn tableName="QA_PRODUCT_STAT">-->
+<!--            <column name="commits" type="INTEGER"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+    <changeSet author="clarolab" id="a9.4">
+        <addColumn tableName="QA_PRODUCT_STAT">
+            <column name="repositoryLinesChanged" type="INTEGER"/>
+        </addColumn>
+    </changeSet>
+
+    <changeSet author="clarolab" id="a9.5">
+        <addColumn tableName="QA_REPOSITORY_LOG">
+            <column name="commitDay" type="VARCHAR(255)"/>
+        </addColumn>
+    </changeSet>
+
+<!--    <changeSet author="clarolab" id="a9.6">-->
+<!--        <addColumn tableName="QA_REPOSITORY_LOG">-->
+<!--            <column name="product_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+    <changeSet author="clarolab" id="a9.7">
+        <addColumn tableName="QA_REPOSITORY_LOG">
+            <column name="authorRealname" type="VARCHAR(255)"/>
+        </addColumn>
+    </changeSet>
+
+<!--    <changeSet author="clarolab" id="a9.8">-->
+<!--        <addColumn tableName="QA_EXECUTOR_STAT">-->
+<!--            <column name="product_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+</databaseChangeLog>

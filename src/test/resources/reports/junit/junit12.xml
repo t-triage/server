@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.456" tests="38" errors="0" skipped="6" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="sun.boot.library.path" value="/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/amd64"/>
+    <property name="java.vm.version" value="25.202-b08"/>
+    <property name="java.vm.vendor" value="Amazon.com Inc."/>
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/"/>
+    <property name="path.separator" value=":"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/opt/jenkins/workspace/jivenx-application_unit_tests-develop/cache/core"/>
+    <property name="java.runtime.version" value="1.8.0_202-b08"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="basedir" value="/opt/jenkins/workspace/jivenx-application_unit_tests-develop/cache/core"/>
+    <property name="java.endorsed.dirs" value="/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/opt/jenkins/workspace/jivenx-application_unit_tests-develop/tmp"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="build.number.hash" value="a341815"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/opt/tools/maven/apache-maven-3.2.1/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib"/>
+    <property name="surefire.test.class.path" value="/opt/jenkins/workspace/jivenx-application_unit_tests-develop/cache/core/target/test-classes:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/cache/core/target/classes:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/com/esotericsoftware/kryo/kryo/2.23.0/kryo-2.23.0.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/com/esotericsoftware/minlog/minlog/1.2/minlog-1.2.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/objenesis/objenesis/2.1/objenesis-2.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/log4j/log4j/1.2.17/log4j-1.2.17.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/com/google/guava/guava/14.0-rc2/guava-14.0-rc2.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/mvel/mvel2/2.0.17/mvel2-2.0.17.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/xerial/snappy/snappy-java/1.1.1.6/snappy-java-1.1.1.6.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/com/newrelic/agent/java/newrelic-api/3.5.1/newrelic-api-3.5.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/junit/junit/4.12/junit-4.12.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/hamcrest/hamcrest-all/1.3/hamcrest-all-1.3.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/mockito/mockito-core/1.9.5/mockito-core-1.9.5.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/powermock/powermock-module-junit4/1.6.1/powermock-module-junit4-1.6.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/powermock/powermock-module-junit4-common/1.6.1/powermock-module-junit4-common-1.6.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/powermock/powermock-core/1.6.1/powermock-core-1.6.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/javassist/javassist/3.18.2-GA/javassist-3.18.2-GA.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/powermock/powermock-reflect/1.6.1/powermock-reflect-1.6.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/powermock/powermock-api-mockito/1.6.1/powermock-api-mockito-1.6.1.jar:/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2/org/powermock/powermock-api-support/1.6.1/powermock-api-support-1.6.1.jar:"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2"/>
+    <property name="os.version" value="3.10.0-327.10.1.el7.x86_64"/>
+    <property name="user.home" value="/home/jenkins"/>
+    <property name="user.timezone" value="America/Los_Angeles"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="plugin.version" value="2018.22.0"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="java.class.path" value="/opt/tools/maven/apache-maven-3.2.1/boot/plexus-classworlds-2.5.1.jar"/>
+    <property name="org.slf4j.simpleLogger.defaultLogLevel" value="info"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="/opt/tools/java/amazon-corretto-8.202.08.2/jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher --batch-mode --define maven.repo.local=/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2 --define java.io.tmpdir=/opt/jenkins/workspace/jivenx-application_unit_tests-develop/tmp --define plugin.version=2018.22.0 --define build.number.hash=a341815 --fail-at-end --file /opt/jenkins/workspace/jivenx-application_unit_tests-develop/pom.xml --activate-profiles production --also-make --projects :jive-war,:chewbacca,:events-type-plugin,:extendedApis,:gamification,:idea,:objectpool-qa-plugin,:quickstart-plugins,:records-retention,:idea-type-plugin test"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_202"/>
+    <property name="java.ext.dirs" value="/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="sun.boot.class.path" value="/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/resources.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/rt.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/sunrsasign.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/jsse.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/jce.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/charsets.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/lib/jfr.jar:/opt/tools/java/amazon-corretto-8.202.08.2/jre/classes"/>
+    <property name="java.vendor" value="Amazon.com Inc."/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="maven.home" value="/opt/tools/maven/apache-maven-3.2.1"/>
+    <property name="localRepository" value="/opt/jenkins/workspace/jivenx-application_unit_tests-develop/m2"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-8/issues/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testWithValidEl" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.047"/>
+  <testcase name="testStatistics" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.012"/>
+  <testcase name="testReadPerformance" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0">
+    <skipped message="Not a test"/>
+  </testcase>
+  <testcase name="testCacheableObjectMockupCompositeReference" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMultipleRemoveOfNullSet" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.011"/>
+  <testcase name="testSimpleGetInteger" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.01"/>
+  <testcase name="testSimpleGetDouble" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.007"/>
+  <testcase name="testCompositeArrayCacheableObject" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.013"/>
+  <testcase name="testSimpleGet" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.017"/>
+  <testcase name="testSimplePut" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.01"/>
+  <testcase name="testMultipleCompositeRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.043"/>
+  <testcase name="testClear" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.015"/>
+  <testcase name="testSimpleGetString" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.012"/>
+  <testcase name="testCompositeCacheableObjectLevel2Remove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.01"/>
+  <testcase name="testBasicSize" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.023"/>
+  <testcase name="testNullValuePut" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.009"/>
+  <testcase name="testKeyRetrieval" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.011"/>
+  <testcase name="testSimpleRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.009"/>
+  <testcase name="testSimpleGetDate" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.008"/>
+  <testcase name="testMultipleRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.018"/>
+  <testcase name="testSimpleCacheableObjectRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.01"/>
+  <testcase name="testReference" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSimpleCacheableObject" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.016"/>
+  <testcase name="testPutPerformance" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0">
+    <skipped message="Not a test"/>
+  </testcase>
+  <testcase name="testEmptyRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.001"/>
+  <testcase name="testCompositeArrayCacheableObjectRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.01"/>
+  <testcase name="testCompositeCacheableObjectLevel1" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.009"/>
+  <testcase name="testCompositeCacheableObjectLevel2" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.009"/>
+  <testcase name="testCacheableObjectMockupReference" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testMultipleRemoveWithANull" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.02"/>
+  <testcase name="testCacheableObjectsMockupClear" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.031"/>
+  <testcase name="testNullKeyPut" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.016"/>
+  <testcase name="testSimpleGetByteArray" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.009"/>
+  <testcase name="testNullKeyRemove" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.008"/>
+  <testcase name="testCacheableObjectMockupCompositeArrayReference" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testReplacingPut" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.01"/>
+  <testcase name="testNullGet" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.009"/>
+  <testcase name="testInfoMethodsAreSane" classname="com.jivesoftware.cache.ExpressionVoldemortCacheTest" time="0.013"/>
+</testsuite>

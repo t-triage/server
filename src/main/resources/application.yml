@@ -1,0 +1,180 @@
+
+##################################################################################################################
+# WARNING: Base properties file, all properties will be in all profile unless override by specific profile files.
+##################################################################################################################
+
+
+
+    #########################
+    # Don't touch this file #
+    #########################
+
+
+
+# Tomcat properties
+server:
+  port: 8088
+  use-forward-headers: true
+  ssl:
+    enabled: ${ssl.enabled:false}
+    key-store: ${ssl.keystorefile:/ssl/keystore.p12}
+    key-store-password: 'Claromeco1'
+    keyStoreType: PKCS12
+    keyAlias: tomcat
+  tomcat:
+    max-http-post-size: ${data.max-http-post-size:-1}
+
+# Spring properties
+spring:
+  servlet:
+    multipart:
+      max-file-size: ${data.max-file-size:10MB}
+      max-request-size: ${data.max-request-size:25MB}
+  #Remove this when pagination works
+  data:
+    rest:
+      default-page-size: ${data.default-page-size:200}
+
+  # Application profiles included
+  profiles:
+    include: swagger
+
+  application:
+    name: 'T-Triage'
+
+  # Datasource configuration
+  datasource:
+    platform: ${db.platform:postgresql}
+    url: ${db.url:jdbc:postgresql://127.0.0.1:5432/acton1}
+    username: ${db.username:ttriage}
+    password: ${db.password:ttriage}
+    driver-class-name: ${db.driver:org.postgresql.Driver}
+    initialization-mode: never
+    maximumPoolSize: ${db.maximumPoolSize:5}
+    maximumLifetime: ${db.maximumLifetime:60000}
+
+  # Liquibase changelog configuration
+  liquibase:
+    change-log: classpath:db/changelog-master.xml
+    drop-first: ${db.drop:false}
+    enabled: ${db.liquibase.enable:true}
+
+  # JPA configuration
+  jpa:
+    database-platform: ${db.dialect:org.hibernate.dialect.PostgreSQL95Dialect}
+    show-sql: false
+    generate-ddl: ${db.generate-ddl:false}
+    hibernate:
+      ddl-auto: ${db.ddl-auto:none}
+    properties:
+      hibernate:
+        dialect: ${db.dialect:org.hibernate.dialect.PostgreSQL95Dialect}
+        use_sql_comments: true
+        format_sql: true
+        type: error
+        jdbc:
+          lob:
+            non_contextual_creation: true
+        temp:
+          use_jdbc_metadata_defaults: false
+
+  # H2 should be disabled iby default. You need to overrides in the proper profile
+  h2:
+    console:
+      enabled: ${db.h2.console.enable:false}
+      path: '/h2'
+      settings:
+        web-allow-others: ${db.h2.console.enable:false}
+
+  jackson:
+    serialization:
+      fail-on-empty-beans: false
+
+  # Security configuration
+  security:
+    oauth2:
+      client:
+        registration:
+          # Google Oauth2 configuration
+          google:
+            client-id: ${google.client-id:1066686257250-1hfr70q99mk81o1chj6j2k33v4u3uj5k.apps.googleusercontent.com}
+            client-secret: ${google.client-secret:sox5VY9B6Hwfb3cvM6GGAnIf}
+            redirect-uri-template: ${app.back.url:http://ttriageback.clarolab.com}/oauth2/callback/{registrationId}
+            scope: email profile
+          # OneLogin Oauth2 configuration
+          onelogin:
+            client-name: OneLogin
+            client-id: ${onelogin.client-id:94e62010-8934-0137-7a81-0ae1d4ad3d6c151979}
+            client-secret: ${onelogin.client-secret:23569195d34e72a47bfd861240422993acb74d0ab129b026d009ea115e16fb0d}
+            provider: onelogin
+            scope: openid profile
+            client-authentication-method: basic
+            authorization-grant-type: authorization_code
+            redirect-uri-template: ${app.back.url:http://ttriageback.clarolab.com}/oauth2/callback/{registrationId}
+          # Okta Oauth2 configuration
+#          okta:
+#            client-id: ${okta.client-id:0oabp04wnsIMeNbsO357}
+#            client-secret: ${okta.client-secret:y5m4vhp9lH-donChtLmcJD2qm__RH9G_5K4NGOGi}
+#            client-name: Okta
+#            scope: openid profile email
+#            provider: okta
+#            authorization-grant-type: authorization_code
+            #For local tests use:
+            #redirect-uri-template: ${app.back.url:http://localhost:8080}/oauth2/callback/{registrationId}
+            #For server tests use:
+#            redirect-uri-template: ${app.back.url:https://api-demo.ttriage.com}/oauth2/callback/{registrationId}
+        provider:
+          onelogin:
+            authorization-uri: ${onelogin.client.url:https://clarolab-dev.onelogin.com}/oidc/auth
+            token-uri: ${onelogin.client.url:https://clarolab-dev.onelogin.com}/oidc/token
+            user-info-uri: ${onelogin.client.url:https://clarolab-dev.onelogin.com}/oidc/me
+            jwk-set-uri: ${onelogin.client.url:https://clarolab-dev.onelogin.com}/oidc/certs
+            user-name-attribute: sub
+#          okta:
+#            issuer-uri: ${okta.issuer-uri:https://act-on.okta.com/oauth2/default}
+
+# Logging properties
+logging:
+  file: target/logs/logfile.log
+  level:
+    org:
+      hibernate:
+        SQL: ERROR
+        type: ERROR
+        engine:
+          jdbc:
+            env:
+              internal:
+                LobCreatorBuilderImpl: WARN
+    liquibase: INFO
+
+context:
+  listener:
+    classes: com.clarolab.startup.ApplicationRunListener
+
+
+################################################################################################
+# Application specific properties
+################################################################################################
+
+# This is the App config section, it should be overrides in each profile
+
+app:
+  security:
+    auth:
+      tokenSecret: ${auth.token:926D96C90030DD58429D2751AC1BDBBC}
+      # expiration is 10 days
+      tokenExpirationMsec: 864000000
+    oauth2:
+      authorizedRedirectUris:
+        - ${app.back.url:http://ttriageback.clarolab.com}
+        - ${app.url:http://ttriage.clarolab.com}
+  configuration:
+    url: ${app.url:http://ttriage.clarolab.com}
+    internalUsersEnabled: ${app.internalUsersEnabled:true}
+
+################################################################################################
+################################################################################################
+################################################################################################
+
+

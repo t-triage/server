@@ -1,0 +1,16 @@
+Search Service
+UI Smoke
+UI Regression
+API Critical
+API Regression
+Smoke Core
+Smoke Services
+Dev Units
+Upgrade DBs
+Pre Production
+Production
+Localization
+Performance GUI
+Performance Backend
+Security UI
+Security Access

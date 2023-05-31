@@ -1,0 +1,1623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20190324 16:54:08.241" generator="Rebot 2.8.5 (Jython 2.5.3 on java1.8.0_131)">
+<suite id="s1" name="final run">
+<suite id="s1-s1" name="Jive Robot Run" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui">
+<kw name="SuiteSetup.Global Jive Setup" type="setup">
+<doc>Created By Patricio Lugli</doc>
+<arguments>
+</arguments>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Log Selenium Version</arg>
+</arguments>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Log Selenium Version" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.877">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.883">Return: None</msg>
+<status endtime="20190324 16:51:00.882" starttime="20190324 16:51:00.877" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:00.875">Arguments: [ u'Log Selenium Version' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.884">Return: None</msg>
+<status endtime="20190324 16:51:00.884" starttime="20190324 16:51:00.873" status="PASS"/>
+</kw>
+<kw name="SuiteSetup.Setup Admin Credentials" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Set Admin Credentials From Hostname" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.892">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.897">Return: None</msg>
+<status endtime="20190324 16:51:00.897" starttime="20190324 16:51:00.891" status="PASS"/>
+</kw>
+<kw name="${user}, ${pass} = com.jivesoftware.ui.JiveUiLibrary.Get Admin Credentials" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.899">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.900">Return: array(java.lang.String, [u'admin', u'admin'])</msg>
+<msg level="INFO" timestamp="20190324 16:51:00.901">${user} = admin</msg>
+<msg level="INFO" timestamp="20190324 16:51:00.902">${pass} = admin</msg>
+<status endtime="20190324 16:51:00.900" starttime="20190324 16:51:00.898" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Global Variable" type="kw">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>\${adminUser}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.904">Arguments: [ u'\\${adminUser}' | u'${user}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:00.906">${adminUser} = admin</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.907">Return: None</msg>
+<status endtime="20190324 16:51:00.906" starttime="20190324 16:51:00.903" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Global Variable" type="kw">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>\${adminPass}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.908">Arguments: [ u'\\${adminPass}' | u'${pass}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:00.909">${adminPass} = admin</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.910">Return: None</msg>
+<status endtime="20190324 16:51:00.910" starttime="20190324 16:51:00.907" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:00.891">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.911">Return: None</msg>
+<status endtime="20190324 16:51:00.911" starttime="20190324 16:51:00.884" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Set Https" type="kw">
+<doc/>
+<arguments>
+<arg>${enableHttps}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.913">Arguments: [ u'true' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:00.915">Return: None</msg>
+<status endtime="20190324 16:51:00.915" starttime="20190324 16:51:00.912" status="PASS"/>
+</kw>
+<kw name="${version} = com.jivesoftware.api.JiveApiLibrary.Api Get Jive Version" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:00.916">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.246">Return: u'2018.16.0.0_jx'</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.246">${version} = 2018.16.0.0_jx</msg>
+<status endtime="20190324 16:51:01.244" starttime="20190324 16:51:00.915" status="PASS"/>
+</kw>
+<kw name="${jcaAdminUser} = com.jivesoftware.api.JiveApiLibrary.Api Get Jca Admin Username" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.248">Arguments: [  ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.250">===https://cloud.qa.jivehosted.com</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.251">Return: u'cylon@jivesoftware.com'</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.251">${jcaAdminUser} = cylon@jivesoftware.com</msg>
+<status endtime="20190324 16:51:01.251" starttime="20190324 16:51:01.247" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Variable" type="kw">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>\${jcaAdminUser}</arg>
+<arg>${jcaAdminUser}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.253">Arguments: [ u'\\${jcaAdminUser}' | u'${jcaAdminUser}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.254">${jcaAdminUser} = cylon@jivesoftware.com</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.255">Return: None</msg>
+<status endtime="20190324 16:51:01.255" starttime="20190324 16:51:01.252" status="PASS"/>
+</kw>
+<kw name="${jcaAdminPass} = com.jivesoftware.api.JiveApiLibrary.Api Get Jca Admin Password" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.256">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.257">Return: u'CylonSix66!'</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.257">${jcaAdminPass} = CylonSix66!</msg>
+<status endtime="20190324 16:51:01.257" starttime="20190324 16:51:01.256" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Variable" type="kw">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>\${jcaAdminPass}</arg>
+<arg>${jcaAdminPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.259">Arguments: [ u'\\${jcaAdminPass}' | u'${jcaAdminPass}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.260">${jcaAdminPass} = CylonSix66!</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.261">Return: None</msg>
+<status endtime="20190324 16:51:01.260" starttime="20190324 16:51:01.258" status="PASS"/>
+</kw>
+<kw name="${buildInfo} = com.jivesoftware.api.JiveApiLibrary.Api Get Build Information Data From JCI" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.262">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.945">Return: u'No Build Information Available'</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.946">${buildInfo} = No Build Information Available</msg>
+<status endtime="20190324 16:51:01.945" starttime="20190324 16:51:01.261" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Documentation" type="kw">
+<doc>Sets documentation for the current test suite.</doc>
+<arguments>
+<arg>*Jive Version :* ${version} -- *Jive Instance :* ${jiveServer}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.948">Arguments: [ u'*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.949">Set suite documentation to:
+*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.950">Return: None</msg>
+<status endtime="20190324 16:51:01.950" starttime="20190324 16:51:01.947" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Metadata" type="kw">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Version</arg>
+<arg>*${version}*</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.953">Arguments: [ u'Jive Version' | u'*2018.16.0.0_jx*' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.954">Set suite metadata 'Jive Version' to value '*2018.16.0.0_jx*'.</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.955">Return: None</msg>
+<status endtime="20190324 16:51:01.955" starttime="20190324 16:51:01.951" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Metadata" type="kw">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Instance</arg>
+<arg>${jiveServer}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.956">Arguments: [ u'Jive Instance' | u'http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.957">Set suite metadata 'Jive Instance' to value 'http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080'.</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.958">Return: None</msg>
+<status endtime="20190324 16:51:01.958" starttime="20190324 16:51:01.955" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Metadata" type="kw">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Build Information</arg>
+<arg>*${buildInfo}*</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.960">Arguments: [ u'Jive Build Information' | u'*No Build Information Available*' ]</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.961">Set suite metadata 'Jive Build Information' to value '*No Build Information Available*'.</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.961">Return: None</msg>
+<status endtime="20190324 16:51:01.961" starttime="20190324 16:51:01.959" status="PASS"/>
+</kw>
+<kw name="${doEnableOnboardingAndTips} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Onboarding And Tips" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.963">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.965">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.966">${doEnableOnboardingAndTips} = False</msg>
+<status endtime="20190324 16:51:01.965" starttime="20190324 16:51:01.962" status="PASS"/>
+</kw>
+<kw name="${doEnableAdminV2} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Admin V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.967">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.968">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.968">${doEnableAdminV2} = False</msg>
+<status endtime="20190324 16:51:01.968" starttime="20190324 16:51:01.967" status="PASS"/>
+</kw>
+<kw name="${doEnablePlaceAdvanceOptions} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Place Advanced Options" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.969">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.970">Return: True</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.970">${doEnablePlaceAdvanceOptions} = True</msg>
+<status endtime="20190324 16:51:01.970" starttime="20190324 16:51:01.969" status="PASS"/>
+</kw>
+<kw name="${doEnableGroupMembershipV2} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Group Membership V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.972">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.972">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.973">${doEnableGroupMembershipV2} = False</msg>
+<status endtime="20190324 16:51:01.972" starttime="20190324 16:51:01.971" status="PASS"/>
+</kw>
+<kw name="${doEnableProfileV2} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Profile V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.974">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.974">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.975">${doEnableProfileV2} = False</msg>
+<status endtime="20190324 16:51:01.974" starttime="20190324 16:51:01.973" status="PASS"/>
+</kw>
+<kw name="${doEnableVideo} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Video" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.976">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:01.976">Return: True</msg>
+<msg level="INFO" timestamp="20190324 16:51:01.977">${doEnableVideo} = True</msg>
+<status endtime="20190324 16:51:01.976" starttime="20190324 16:51:01.975" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Cloud Notifications" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:01.978">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:02.763">Return: None</msg>
+<status endtime="20190324 16:51:02.762" starttime="20190324 16:51:01.978" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Onboarding</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Onboarding</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Onboarding</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Onboarding</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Onboarding" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:02.773">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:03.079">Return: None</msg>
+<status endtime="20190324 16:51:03.077" starttime="20190324 16:51:02.772" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:02.769">Arguments: [ u"'False' == 'True'" | u'Api Enable Onboarding' | u'ELSE' | u'Api Disable Onboarding' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:03.081">Return: None</msg>
+<status endtime="20190324 16:51:03.080" starttime="20190324 16:51:02.768" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:02.765">Arguments: [ u'Run Keyword If' | u"'${doEnableOnboardingAndTips}' == 'True'" | u'Api Enable Onboarding' | u'ELSE' | u'Api Disable Onboarding' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:03.082">Return: None</msg>
+<status endtime="20190324 16:51:03.081" starttime="20190324 16:51:02.764" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Content V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:03.083">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:04.099">Return: None</msg>
+<status endtime="20190324 16:51:04.098" starttime="20190324 16:51:03.083" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Real Time Chat" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:04.102">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:04.456">Return: None</msg>
+<status endtime="20190324 16:51:04.456" starttime="20190324 16:51:04.101" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Direct Message" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:04.459">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:04.814">Return: None</msg>
+<status endtime="20190324 16:51:04.813" starttime="20190324 16:51:04.458" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Ratings And Likes" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:04.816">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.152">Return: None</msg>
+<status endtime="20190324 16:51:11.151" starttime="20190324 16:51:04.816" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Tips</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Tips</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Tips</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Tips</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Tips" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:11.162">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.509">Return: None</msg>
+<status endtime="20190324 16:51:11.509" starttime="20190324 16:51:11.162" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:11.159">Arguments: [ u"'False' == 'True'" | u'Api Enable Tips' | u'ELSE' | u'Api Disable Tips' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.511">Return: None</msg>
+<status endtime="20190324 16:51:11.511" starttime="20190324 16:51:11.158" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:11.156">Arguments: [ u'Run Keyword If' | u"'${doEnableOnboardingAndTips}' == 'True'" | u'Api Enable Tips' | u'ELSE' | u'Api Disable Tips' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.512">Return: None</msg>
+<status endtime="20190324 16:51:11.512" starttime="20190324 16:51:11.154" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableAdminV2}' == 'True'</arg>
+<arg>Api Enable Admin Console V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Admin Console V2</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableAdminV2}' == 'True'</arg>
+<arg>Api Enable Admin Console V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Admin Console V2</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Admin Console V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:11.523">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.859">Return: None</msg>
+<status endtime="20190324 16:51:11.858" starttime="20190324 16:51:11.522" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:11.519">Arguments: [ u"'False' == 'True'" | u'Api Enable Admin Console V2' | u'ELSE' | u'Api Disable Admin Console V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.861">Return: None</msg>
+<status endtime="20190324 16:51:11.860" starttime="20190324 16:51:11.517" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:11.516">Arguments: [ u'Run Keyword If' | u"'${doEnableAdminV2}' == 'True'" | u'Api Enable Admin Console V2' | u'ELSE' | u'Api Disable Admin Console V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:11.862">Return: None</msg>
+<status endtime="20190324 16:51:11.862" starttime="20190324 16:51:11.514" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnablePlaceAdvanceOptions}' == 'True'</arg>
+<arg>Api Enable Place Advanced Options</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Place Advanced Options</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnablePlaceAdvanceOptions}' == 'True'</arg>
+<arg>Api Enable Place Advanced Options</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Place Advanced Options</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Place Advanced Options" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:11.879">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.184">Return: None</msg>
+<status endtime="20190324 16:51:12.181" starttime="20190324 16:51:11.879" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:11.870">Arguments: [ u"'True' == 'True'" | u'Api Enable Place Advanced Options' | u'ELSE' | u'Api Disable Place Advanced Options' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.186">Return: None</msg>
+<status endtime="20190324 16:51:12.185" starttime="20190324 16:51:11.868" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:11.866">Arguments: [ u'Run Keyword If' | u"'${doEnablePlaceAdvanceOptions}' == 'True'" | u'Api Enable Place Advanced Options' | u'ELSE' | u'Api Disable Place Advanced Options' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.187">Return: None</msg>
+<status endtime="20190324 16:51:12.187" starttime="20190324 16:51:11.864" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableGroupMembershipV2}' == 'True'</arg>
+<arg>Api Enable Group Membership V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Group Membership V2</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableGroupMembershipV2}' == 'True'</arg>
+<arg>Api Enable Group Membership V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Group Membership V2</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Group Membership V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:12.195">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.591">Return: None</msg>
+<status endtime="20190324 16:51:12.590" starttime="20190324 16:51:12.195" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:12.192">Arguments: [ u"'False' == 'True'" | u'Api Enable Group Membership V2' | u'ELSE' | u'Api Disable Group Membership V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.592">Return: None</msg>
+<status endtime="20190324 16:51:12.592" starttime="20190324 16:51:12.190" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:12.189">Arguments: [ u'Run Keyword If' | u"'${doEnableGroupMembershipV2}' == 'True'" | u'Api Enable Group Membership V2' | u'ELSE' | u'Api Disable Group Membership V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.594">Return: None</msg>
+<status endtime="20190324 16:51:12.593" starttime="20190324 16:51:12.188" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableProfileV2}' == 'True'</arg>
+<arg>Api Enable Profile V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Profile V2</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableProfileV2}' == 'True'</arg>
+<arg>Api Enable Profile V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Profile V2</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Profile V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:12.603">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.958">Return: None</msg>
+<status endtime="20190324 16:51:12.957" starttime="20190324 16:51:12.602" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:12.600">Arguments: [ u"'False' == 'True'" | u'Api Enable Profile V2' | u'ELSE' | u'Api Disable Profile V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.959">Return: None</msg>
+<status endtime="20190324 16:51:12.959" starttime="20190324 16:51:12.598" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:12.597">Arguments: [ u'Run Keyword If' | u"'${doEnableProfileV2}' == 'True'" | u'Api Enable Profile V2' | u'ELSE' | u'Api Disable Profile V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:12.961">Return: None</msg>
+<status endtime="20190324 16:51:12.961" starttime="20190324 16:51:12.595" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableVideo}' == 'True'</arg>
+<arg>Api Enable Video</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Video</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableVideo}' == 'True'</arg>
+<arg>Api Enable Video</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Video</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Video" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:12.969">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:13.320">Return: None</msg>
+<status endtime="20190324 16:51:13.318" starttime="20190324 16:51:12.968" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:12.966">Arguments: [ u"'True' == 'True'" | u'Api Enable Video' | u'ELSE' | u'Api Disable Video' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:13.323">Return: None</msg>
+<status endtime="20190324 16:51:13.322" starttime="20190324 16:51:12.964" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:12.963">Arguments: [ u'Run Keyword If' | u"'${doEnableVideo}' == 'True'" | u'Api Enable Video' | u'ELSE' | u'Api Disable Video' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:13.325">Return: None</msg>
+<status endtime="20190324 16:51:13.324" starttime="20190324 16:51:12.962" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Api Set Smtp Host To Mail Drop Server</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Set Smtp Host To Mail Drop Server" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:13.329">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:13.636">Return: None</msg>
+<status endtime="20190324 16:51:13.636" starttime="20190324 16:51:13.328" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:13.327">Arguments: [ u'Api Set Smtp Host To Mail Drop Server' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:13.637">Return: None</msg>
+<status endtime="20190324 16:51:13.637" starttime="20190324 16:51:13.327" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Api Disable Playbox</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Playbox" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:13.654">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:14.012">Return: None</msg>
+<status endtime="20190324 16:51:14.011" starttime="20190324 16:51:13.653" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:13.639">Arguments: [ u'Api Disable Playbox' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:14.013">Return: None</msg>
+<status endtime="20190324 16:51:14.013" starttime="20190324 16:51:13.638" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Configure Selenide" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:14.015">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:14.021">Return: None</msg>
+<status endtime="20190324 16:51:14.021" starttime="20190324 16:51:14.014" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:00.872">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:51:14.022">Return: None</msg>
+<status endtime="20190324 16:51:14.022" starttime="20190324 16:51:00.867" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Close All Browsers" type="teardown">
+<doc>Close all browsers</doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:22.411">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:22.455">Return: None</msg>
+<status endtime="20190324 16:52:22.455" starttime="20190324 16:52:22.410" status="PASS"/>
+</kw>
+<suite id="s1-s1-s1" name="Activity" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui/Activity">
+<kw name="Do EAE Suite Setup" type="setup">
+<doc/>
+<arguments>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.AP Iinit All EAE Data" type="kw">
+<doc/>
+<arguments>
+<arg>${isCloud}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:51:14.101">Arguments: [ u'true' ]</msg>
+<msg level="FAIL" timestamp="20190324 16:52:21.822">CoreV3 Test timed out searching for content with SLA of 60000 ms</msg>
+<msg level="DEBUG" timestamp="20190324 16:52:21.823">java.lang.RuntimeException: 
+	at org.robotframework.javalib.library.AnnotationLibrary.retrieveInnerException(AnnotationLibrary.java:148)
+	at org.robotframework.javalib.library.AnnotationLibrary.runKeyword(AnnotationLibrary.java:130)
+	at com.jivesoftware.api.JiveApiLibrary.runKeyword(JiveApiLibrary.java:44)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
+	at robot.model.itemlist$py.visit$10(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/itemlist.py:58)
+	at robot.model.itemlist$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/itemlist.py)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
+	at robot.run$py.main$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:408)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.utils.application$py._execute$11(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:98)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.utils.application$py.execute_cli$5(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:45)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.run$py.run_cli$7(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:432)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.jarrunner$py._run$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:60)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at robot.jarrunner$py.run$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:53)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at org.robotframework.RobotFramework.run(RobotFramework.java:62)
+	at org.robotframework.mavenplugin.AcceptanceTestMojo.executeRobot(AcceptanceTestMojo.java:176)
+	at org.robotframework.mavenplugin.AcceptanceTestMojo.executeSuite(AcceptanceTestMojo.java:146)
+	at org.robotframework.mavenplugin.AcceptanceTestMojo.subclassExecute(AcceptanceTestMojo.java:82)
+	at org.robotframework.mavenplugin.AbstractMojoWithLoadedClasspath.execute(AbstractMojoWithLoadedClasspath.java:46)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: com.jivesoftware.api.utils.search.CoreV3SearchException: CoreV3 Test timed out searching for content with SLA of 60000 ms
+	at com.jivesoftware.api.utils.search.PlaceSearchUtils.pollPlacesUntilPredicateIsTrue(PlaceSearchUtils.java:367)
+	at com.jivesoftware.api.utils.search.PlaceSearchUtils.pollPlacesUntilNameIsPresent(PlaceSearchUtils.java:268)
+	at com.jivesoftware.util.EAESetupUtils.createGroupIfNeeded(EAESetupUtils.java:117)
+	at com.jivesoftware.util.EAESetupUtils.initRobotEAETests(EAESetupUtils.java:88)
+	at com.jivesoftware.api.content.ApiContentKeywords.APIinitAllEAEData(ApiContentKeywords.java:1054)
+	at org.robotframework.javalib.reflection.KeywordInvoker.invoke(KeywordInvoker.java:50)
+	at org.robotframework.javalib.beans.annotation.AnnotationKeywordExtractor$1.execute(AnnotationKeywordExtractor.java:62)
+	at org.robotframework.javalib.library.KeywordFactoryBasedLibrary.runKeyword(KeywordFactoryBasedLibrary.java:37)
+	at org.robotframework.javalib.library.AnnotationLibrary.runKeyword(AnnotationLibrary.java:128)
+	... 229 more</msg>
+<status endtime="20190324 16:52:21.828" starttime="20190324 16:51:14.100" status="FAIL"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:51:14.099">Arguments: [  ]</msg>
+<status endtime="20190324 16:52:21.830" starttime="20190324 16:51:14.096" status="FAIL"/>
+</kw>
+<suite id="s1-s1-s1-s1" name="DM Inbox Notifications" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui/Activity/DM Inbox Notifications">
+<suite id="s1-s1-s1-s1-s1" name="TestDMs" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui/Activity/DM Inbox Notifications/TestDMs.robot">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="243" endtime="N/A" starttime="N/A" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="243" endtime="N/A" starttime="N/A" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="67977" endtime="N/A" starttime="N/A" status="FAIL">Suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</suite>
+<doc>*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080</doc>
+<metadata>
+<item name="Jive Build Information">*No Build Information Available*</item>
+<item name="Jive Instance">http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080</item>
+<item name="Jive Version">*2018.16.0.0_jx*</item>
+</metadata>
+<status elapsedtime="81177" endtime="N/A" starttime="N/A" status="FAIL"/>
+</suite>
+<suite id="s1-s2" name="Jive Robot Run (Retry #1)" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui">
+<kw name="SuiteSetup.Global Jive Setup" type="setup">
+<doc>Created By Patricio Lugli</doc>
+<arguments>
+</arguments>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Log Selenium Version</arg>
+</arguments>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Log Selenium Version" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.291">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.292">Return: None</msg>
+<status endtime="20190324 16:52:46.292" starttime="20190324 16:52:46.291" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:46.290">Arguments: [ u'Log Selenium Version' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.293">Return: None</msg>
+<status endtime="20190324 16:52:46.293" starttime="20190324 16:52:46.289" status="PASS"/>
+</kw>
+<kw name="SuiteSetup.Setup Admin Credentials" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Set Admin Credentials From Hostname" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.296">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.297">Return: None</msg>
+<status endtime="20190324 16:52:46.297" starttime="20190324 16:52:46.296" status="PASS"/>
+</kw>
+<kw name="${user}, ${pass} = com.jivesoftware.ui.JiveUiLibrary.Get Admin Credentials" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.298">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.298">Return: array(java.lang.String, [u'admin', u'admin'])</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.299">${user} = admin</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.299">${pass} = admin</msg>
+<status endtime="20190324 16:52:46.298" starttime="20190324 16:52:46.297" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Global Variable" type="kw">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>\${adminUser}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.300">Arguments: [ u'\\${adminUser}' | u'${user}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.301">${adminUser} = admin</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.302">Return: None</msg>
+<status endtime="20190324 16:52:46.302" starttime="20190324 16:52:46.299" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Global Variable" type="kw">
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<arguments>
+<arg>\${adminPass}</arg>
+<arg>${pass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.303">Arguments: [ u'\\${adminPass}' | u'${pass}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.304">${adminPass} = admin</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.304">Return: None</msg>
+<status endtime="20190324 16:52:46.304" starttime="20190324 16:52:46.302" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:46.295">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.305">Return: None</msg>
+<status endtime="20190324 16:52:46.305" starttime="20190324 16:52:46.293" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Set Https" type="kw">
+<doc/>
+<arguments>
+<arg>${enableHttps}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.306">Arguments: [ u'true' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.306">Return: None</msg>
+<status endtime="20190324 16:52:46.306" starttime="20190324 16:52:46.305" status="PASS"/>
+</kw>
+<kw name="${version} = com.jivesoftware.api.JiveApiLibrary.Api Get Jive Version" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.307">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.617">Return: u'2018.16.0.0_jx'</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.618">${version} = 2018.16.0.0_jx</msg>
+<status endtime="20190324 16:52:46.617" starttime="20190324 16:52:46.307" status="PASS"/>
+</kw>
+<kw name="${jcaAdminUser} = com.jivesoftware.api.JiveApiLibrary.Api Get Jca Admin Username" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.620">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.621">Return: u'cylon@jivesoftware.com'</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.622">${jcaAdminUser} = cylon@jivesoftware.com</msg>
+<status endtime="20190324 16:52:46.621" starttime="20190324 16:52:46.619" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Variable" type="kw">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>\${jcaAdminUser}</arg>
+<arg>${jcaAdminUser}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.623">Arguments: [ u'\\${jcaAdminUser}' | u'${jcaAdminUser}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.624">${jcaAdminUser} = cylon@jivesoftware.com</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.624">Return: None</msg>
+<status endtime="20190324 16:52:46.624" starttime="20190324 16:52:46.623" status="PASS"/>
+</kw>
+<kw name="${jcaAdminPass} = com.jivesoftware.api.JiveApiLibrary.Api Get Jca Admin Password" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.625">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.626">Return: u'CylonSix66!'</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.626">${jcaAdminPass} = CylonSix66!</msg>
+<status endtime="20190324 16:52:46.626" starttime="20190324 16:52:46.625" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Variable" type="kw">
+<doc>Makes a variable available everywhere within the scope of the current suite.</doc>
+<arguments>
+<arg>\${jcaAdminPass}</arg>
+<arg>${jcaAdminPass}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.627">Arguments: [ u'\\${jcaAdminPass}' | u'${jcaAdminPass}' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:46.628">${jcaAdminPass} = CylonSix66!</msg>
+<msg level="TRACE" timestamp="20190324 16:52:46.628">Return: None</msg>
+<status endtime="20190324 16:52:46.628" starttime="20190324 16:52:46.627" status="PASS"/>
+</kw>
+<kw name="${buildInfo} = com.jivesoftware.api.JiveApiLibrary.Api Get Build Information Data From JCI" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:46.629">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.192">Return: u'No Build Information Available'</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.193">${buildInfo} = No Build Information Available</msg>
+<status endtime="20190324 16:52:47.188" starttime="20190324 16:52:46.629" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Documentation" type="kw">
+<doc>Sets documentation for the current test suite.</doc>
+<arguments>
+<arg>*Jive Version :* ${version} -- *Jive Instance :* ${jiveServer}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.194">Arguments: [ u'*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.195">Set suite documentation to:
+*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.195">Return: None</msg>
+<status endtime="20190324 16:52:47.195" starttime="20190324 16:52:47.193" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Metadata" type="kw">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Version</arg>
+<arg>*${version}*</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.197">Arguments: [ u'Jive Version' | u'*2018.16.0.0_jx*' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.198">Set suite metadata 'Jive Version' to value '*2018.16.0.0_jx*'.</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.198">Return: None</msg>
+<status endtime="20190324 16:52:47.198" starttime="20190324 16:52:47.196" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Metadata" type="kw">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Instance</arg>
+<arg>${jiveServer}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.199">Arguments: [ u'Jive Instance' | u'http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.201">Set suite metadata 'Jive Instance' to value 'http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080'.</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.201">Return: None</msg>
+<status endtime="20190324 16:52:47.201" starttime="20190324 16:52:47.198" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Set Suite Metadata" type="kw">
+<doc>Sets metadata for the current test suite.</doc>
+<arguments>
+<arg>Jive Build Information</arg>
+<arg>*${buildInfo}*</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.202">Arguments: [ u'Jive Build Information' | u'*No Build Information Available*' ]</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.203">Set suite metadata 'Jive Build Information' to value '*No Build Information Available*'.</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.204">Return: None</msg>
+<status endtime="20190324 16:52:47.204" starttime="20190324 16:52:47.202" status="PASS"/>
+</kw>
+<kw name="${doEnableOnboardingAndTips} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Onboarding And Tips" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.205">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.205">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.206">${doEnableOnboardingAndTips} = False</msg>
+<status endtime="20190324 16:52:47.205" starttime="20190324 16:52:47.204" status="PASS"/>
+</kw>
+<kw name="${doEnableAdminV2} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Admin V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.206">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.207">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.207">${doEnableAdminV2} = False</msg>
+<status endtime="20190324 16:52:47.207" starttime="20190324 16:52:47.206" status="PASS"/>
+</kw>
+<kw name="${doEnablePlaceAdvanceOptions} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Place Advanced Options" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.208">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.209">Return: True</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.209">${doEnablePlaceAdvanceOptions} = True</msg>
+<status endtime="20190324 16:52:47.209" starttime="20190324 16:52:47.208" status="PASS"/>
+</kw>
+<kw name="${doEnableGroupMembershipV2} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Group Membership V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.210">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.210">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.211">${doEnableGroupMembershipV2} = False</msg>
+<status endtime="20190324 16:52:47.210" starttime="20190324 16:52:47.209" status="PASS"/>
+</kw>
+<kw name="${doEnableProfileV2} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Profile V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.211">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.212">Return: False</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.212">${doEnableProfileV2} = False</msg>
+<status endtime="20190324 16:52:47.212" starttime="20190324 16:52:47.211" status="PASS"/>
+</kw>
+<kw name="${doEnableVideo} = com.jivesoftware.api.JiveApiLibrary.Api Do Enable Video" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.213">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.214">Return: True</msg>
+<msg level="INFO" timestamp="20190324 16:52:47.214">${doEnableVideo} = True</msg>
+<status endtime="20190324 16:52:47.214" starttime="20190324 16:52:47.213" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Cloud Notifications" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.215">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:47.847">Return: None</msg>
+<status endtime="20190324 16:52:47.847" starttime="20190324 16:52:47.214" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Onboarding</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Onboarding</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Onboarding</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Onboarding</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Onboarding" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:47.857">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:48.161">Return: None</msg>
+<status endtime="20190324 16:52:48.160" starttime="20190324 16:52:47.857" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:47.853">Arguments: [ u"'False' == 'True'" | u'Api Enable Onboarding' | u'ELSE' | u'Api Disable Onboarding' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:48.162">Return: None</msg>
+<status endtime="20190324 16:52:48.162" starttime="20190324 16:52:47.852" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:47.850">Arguments: [ u'Run Keyword If' | u"'${doEnableOnboardingAndTips}' == 'True'" | u'Api Enable Onboarding' | u'ELSE' | u'Api Disable Onboarding' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:48.164">Return: None</msg>
+<status endtime="20190324 16:52:48.163" starttime="20190324 16:52:47.849" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Content V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:48.166">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:49.080">Return: None</msg>
+<status endtime="20190324 16:52:49.077" starttime="20190324 16:52:48.165" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Real Time Chat" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:49.082">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:49.387">Return: None</msg>
+<status endtime="20190324 16:52:49.387" starttime="20190324 16:52:49.081" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Direct Message" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:49.389">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:49.748">Return: None</msg>
+<status endtime="20190324 16:52:49.748" starttime="20190324 16:52:49.388" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Ratings And Likes" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:49.751">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.011">Return: None</msg>
+<status endtime="20190324 16:52:56.010" starttime="20190324 16:52:49.750" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Tips</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Tips</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableOnboardingAndTips}' == 'True'</arg>
+<arg>Api Enable Tips</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Tips</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Tips" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:56.021">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.332">Return: None</msg>
+<status endtime="20190324 16:52:56.332" starttime="20190324 16:52:56.020" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.017">Arguments: [ u"'False' == 'True'" | u'Api Enable Tips' | u'ELSE' | u'Api Disable Tips' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.333">Return: None</msg>
+<status endtime="20190324 16:52:56.333" starttime="20190324 16:52:56.015" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.014">Arguments: [ u'Run Keyword If' | u"'${doEnableOnboardingAndTips}' == 'True'" | u'Api Enable Tips' | u'ELSE' | u'Api Disable Tips' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.334">Return: None</msg>
+<status endtime="20190324 16:52:56.334" starttime="20190324 16:52:56.013" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableAdminV2}' == 'True'</arg>
+<arg>Api Enable Admin Console V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Admin Console V2</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableAdminV2}' == 'True'</arg>
+<arg>Api Enable Admin Console V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Admin Console V2</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Admin Console V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:56.351">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.649">Return: None</msg>
+<status endtime="20190324 16:52:56.649" starttime="20190324 16:52:56.351" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.348">Arguments: [ u"'False' == 'True'" | u'Api Enable Admin Console V2' | u'ELSE' | u'Api Disable Admin Console V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.650">Return: None</msg>
+<status endtime="20190324 16:52:56.650" starttime="20190324 16:52:56.347" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.335">Arguments: [ u'Run Keyword If' | u"'${doEnableAdminV2}' == 'True'" | u'Api Enable Admin Console V2' | u'ELSE' | u'Api Disable Admin Console V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.651">Return: None</msg>
+<status endtime="20190324 16:52:56.651" starttime="20190324 16:52:56.334" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnablePlaceAdvanceOptions}' == 'True'</arg>
+<arg>Api Enable Place Advanced Options</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Place Advanced Options</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnablePlaceAdvanceOptions}' == 'True'</arg>
+<arg>Api Enable Place Advanced Options</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Place Advanced Options</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Place Advanced Options" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:56.658">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.977">Return: None</msg>
+<status endtime="20190324 16:52:56.977" starttime="20190324 16:52:56.658" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.655">Arguments: [ u"'True' == 'True'" | u'Api Enable Place Advanced Options' | u'ELSE' | u'Api Disable Place Advanced Options' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.978">Return: None</msg>
+<status endtime="20190324 16:52:56.978" starttime="20190324 16:52:56.654" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.653">Arguments: [ u'Run Keyword If' | u"'${doEnablePlaceAdvanceOptions}' == 'True'" | u'Api Enable Place Advanced Options' | u'ELSE' | u'Api Disable Place Advanced Options' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:56.978">Return: None</msg>
+<status endtime="20190324 16:52:56.978" starttime="20190324 16:52:56.652" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableGroupMembershipV2}' == 'True'</arg>
+<arg>Api Enable Group Membership V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Group Membership V2</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableGroupMembershipV2}' == 'True'</arg>
+<arg>Api Enable Group Membership V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Group Membership V2</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Group Membership V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:56.985">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.290">Return: None</msg>
+<status endtime="20190324 16:52:57.289" starttime="20190324 16:52:56.985" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.982">Arguments: [ u"'False' == 'True'" | u'Api Enable Group Membership V2' | u'ELSE' | u'Api Disable Group Membership V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.292">Return: None</msg>
+<status endtime="20190324 16:52:57.291" starttime="20190324 16:52:56.981" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:56.980">Arguments: [ u'Run Keyword If' | u"'${doEnableGroupMembershipV2}' == 'True'" | u'Api Enable Group Membership V2' | u'ELSE' | u'Api Disable Group Membership V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.293">Return: None</msg>
+<status endtime="20190324 16:52:57.293" starttime="20190324 16:52:56.979" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableProfileV2}' == 'True'</arg>
+<arg>Api Enable Profile V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Profile V2</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableProfileV2}' == 'True'</arg>
+<arg>Api Enable Profile V2</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Profile V2</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Profile V 2" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:57.303">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.607">Return: None</msg>
+<status endtime="20190324 16:52:57.607" starttime="20190324 16:52:57.303" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:57.298">Arguments: [ u"'False' == 'True'" | u'Api Enable Profile V2' | u'ELSE' | u'Api Disable Profile V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.608">Return: None</msg>
+<status endtime="20190324 16:52:57.608" starttime="20190324 16:52:57.297" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:57.295">Arguments: [ u'Run Keyword If' | u"'${doEnableProfileV2}' == 'True'" | u'Api Enable Profile V2' | u'ELSE' | u'Api Disable Profile V2' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.609">Return: None</msg>
+<status endtime="20190324 16:52:57.609" starttime="20190324 16:52:57.294" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Run Keyword If</arg>
+<arg>'${doEnableVideo}' == 'True'</arg>
+<arg>Api Enable Video</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Video</arg>
+</arguments>
+<kw name="BuiltIn.Run Keyword If" type="kw">
+<doc>Runs the given keyword with the given arguments, if `condition` is true.</doc>
+<arguments>
+<arg>'${doEnableVideo}' == 'True'</arg>
+<arg>Api Enable Video</arg>
+<arg>ELSE</arg>
+<arg>Api Disable Video</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Enable Video" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:57.617">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.929">Return: None</msg>
+<status endtime="20190324 16:52:57.929" starttime="20190324 16:52:57.617" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:57.614">Arguments: [ u"'True' == 'True'" | u'Api Enable Video' | u'ELSE' | u'Api Disable Video' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.930">Return: None</msg>
+<status endtime="20190324 16:52:57.930" starttime="20190324 16:52:57.613" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:57.612">Arguments: [ u'Run Keyword If' | u"'${doEnableVideo}' == 'True'" | u'Api Enable Video' | u'ELSE' | u'Api Disable Video' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:57.932">Return: None</msg>
+<status endtime="20190324 16:52:57.932" starttime="20190324 16:52:57.610" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Api Set Smtp Host To Mail Drop Server</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Set Smtp Host To Mail Drop Server" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:57.935">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:58.247">Return: None</msg>
+<status endtime="20190324 16:52:58.247" starttime="20190324 16:52:57.934" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:57.933">Arguments: [ u'Api Set Smtp Host To Mail Drop Server' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:58.249">Return: None</msg>
+<status endtime="20190324 16:52:58.249" starttime="20190324 16:52:57.933" status="PASS"/>
+</kw>
+<kw name="BuiltIn.Run Keyword And Continue On Failure" type="kw">
+<doc>Runs the keyword and continues execution even if a failure occurs.</doc>
+<arguments>
+<arg>Api Disable Playbox</arg>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.Api Disable Playbox" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:58.254">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:58.571">Return: None</msg>
+<status endtime="20190324 16:52:58.570" starttime="20190324 16:52:58.253" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:58.251">Arguments: [ u'Api Disable Playbox' ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:58.572">Return: None</msg>
+<status endtime="20190324 16:52:58.572" starttime="20190324 16:52:58.250" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Configure Selenide" type="kw">
+<doc/>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:58.574">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:58.577">Return: None</msg>
+<status endtime="20190324 16:52:58.577" starttime="20190324 16:52:58.573" status="PASS"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:46.289">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:52:58.579">Return: None</msg>
+<status endtime="20190324 16:52:58.578" starttime="20190324 16:52:46.286" status="PASS"/>
+</kw>
+<kw name="com.jivesoftware.ui.JiveUiLibrary.Close All Browsers" type="teardown">
+<doc>Close all browsers</doc>
+<arguments>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:54:07.375">Arguments: [  ]</msg>
+<msg level="TRACE" timestamp="20190324 16:54:07.377">Return: None</msg>
+<status endtime="20190324 16:54:07.376" starttime="20190324 16:54:07.374" status="PASS"/>
+</kw>
+<suite id="s1-s2-s1" name="Activity" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui/Activity">
+<kw name="Do EAE Suite Setup" type="setup">
+<doc/>
+<arguments>
+</arguments>
+<kw name="com.jivesoftware.api.JiveApiLibrary.AP Iinit All EAE Data" type="kw">
+<doc/>
+<arguments>
+<arg>${isCloud}</arg>
+</arguments>
+<msg level="TRACE" timestamp="20190324 16:52:58.637">Arguments: [ u'true' ]</msg>
+<msg level="FAIL" timestamp="20190324 16:54:07.212">CoreV3 Test timed out searching for content with SLA of 60000 ms</msg>
+<msg level="DEBUG" timestamp="20190324 16:54:07.213">java.lang.RuntimeException: 
+	at org.robotframework.javalib.library.AnnotationLibrary.retrieveInnerException(AnnotationLibrary.java:148)
+	at org.robotframework.javalib.library.AnnotationLibrary.runKeyword(AnnotationLibrary.java:130)
+	at com.jivesoftware.api.JiveApiLibrary.runKeyword(JiveApiLibrary.java:44)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
+	at robot.model.itemlist$py.visit$10(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/itemlist.py:58)
+	at robot.model.itemlist$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/itemlist.py)
+	at robot.model.visitor$py.visit_suite$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py:22)
+	at robot.model.visitor$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/visitor.py)
+	at robot.model.testsuite$py.visit$19(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py:152)
+	at robot.model.testsuite$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/model/testsuite.py)
+	at robot.run$py.main$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:408)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.utils.application$py._execute$11(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:98)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.utils.application$py.execute_cli$5(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py:45)
+	at robot.utils.application$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/utils/application.py)
+	at robot.run$py.run_cli$7(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py:432)
+	at robot.run$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/run.py)
+	at robot.jarrunner$py._run$3(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:60)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at robot.jarrunner$py.run$2(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py:53)
+	at robot.jarrunner$py.call_function(/Users/jmalinen/Documents/workspace/robotframework/tmp-jar-dir/Lib/robot/jarrunner.py)
+	at org.robotframework.RobotFramework.run(RobotFramework.java:62)
+	at org.robotframework.mavenplugin.AcceptanceTestMojo.executeRetry(AcceptanceTestMojo.java:212)
+	at org.robotframework.mavenplugin.AcceptanceTestMojo.executeSuite(AcceptanceTestMojo.java:159)
+	at org.robotframework.mavenplugin.AcceptanceTestMojo.subclassExecute(AcceptanceTestMojo.java:82)
+	at org.robotframework.mavenplugin.AbstractMojoWithLoadedClasspath.execute(AbstractMojoWithLoadedClasspath.java:46)
+	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:208)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:154)
+	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:146)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
+	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
+	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
+	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
+	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
+	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:954)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:289)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:229)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:415)
+	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:356)
+Caused by: com.jivesoftware.api.utils.search.CoreV3SearchException: CoreV3 Test timed out searching for content with SLA of 60000 ms
+	at com.jivesoftware.api.utils.search.PlaceSearchUtils.pollPlacesUntilPredicateIsTrue(PlaceSearchUtils.java:367)
+	at com.jivesoftware.api.utils.search.PlaceSearchUtils.pollPlacesUntilNameIsPresent(PlaceSearchUtils.java:268)
+	at com.jivesoftware.util.EAESetupUtils.createGroupIfNeeded(EAESetupUtils.java:117)
+	at com.jivesoftware.util.EAESetupUtils.initRobotEAETests(EAESetupUtils.java:88)
+	at com.jivesoftware.api.content.ApiContentKeywords.APIinitAllEAEData(ApiContentKeywords.java:1054)
+	at org.robotframework.javalib.reflection.KeywordInvoker.invoke(KeywordInvoker.java:50)
+	at org.robotframework.javalib.beans.annotation.AnnotationKeywordExtractor$1.execute(AnnotationKeywordExtractor.java:62)
+	at org.robotframework.javalib.library.KeywordFactoryBasedLibrary.runKeyword(KeywordFactoryBasedLibrary.java:37)
+	at org.robotframework.javalib.library.AnnotationLibrary.runKeyword(AnnotationLibrary.java:128)
+	... 229 more</msg>
+<status endtime="20190324 16:54:07.217" starttime="20190324 16:52:58.636" status="FAIL"/>
+</kw>
+<msg level="TRACE" timestamp="20190324 16:52:58.636">Arguments: [  ]</msg>
+<status endtime="20190324 16:54:07.219" starttime="20190324 16:52:58.634" status="FAIL"/>
+</kw>
+<suite id="s1-s2-s1-s1" name="DM Inbox Notifications" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui/Activity/DM Inbox Notifications">
+<suite id="s1-s2-s1-s1-s1" name="TestDMs" source="/home/jenkins/workspace/gui-tests/src/test/robot/ui/Activity/DM Inbox Notifications/TestDMs.robot">
+<test id="s1-s2-s1-s1-s1-t1" name="DMs - Conversation permalink: Reply" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>conversationPermanentLinkReply</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.237" starttime="20190324 16:54:07.234" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t2" name="DMs - Add Users in Conversation" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>addUsersInConversation</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.242" starttime="20190324 16:54:07.238" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t3" name="DMs - UserA create conversation with user2, UserB adds a reply" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+<tag>userBAddsReplyToConversationWithUserA</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.249" starttime="20190324 16:54:07.246" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t4" name="DMs - Update collaboration subject" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+<tag>updateCollaborationSubject</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.253" starttime="20190324 16:54:07.250" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t5" name="DMs - As a non-admin user, I cannot see a dm for which I am not a participant" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>nonAdminUserTriesToSeeACollaborationAsNotParticipant</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.258" starttime="20190324 16:54:07.254" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t6" name="DMs - create a long ongoing conversation" timeout="25 minutes">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>createLongOngoingConversation</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.263" starttime="20190324 16:54:07.259" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t7" name="DMs - Verify author icon subject and message for the most recent RTC interaction in the Inbox" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+<tag>verifyAuthorAndMessageForLastRtcInteraction</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.268" starttime="20190324 16:54:07.264" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t8" name="DMs - Existing DM Structure (one on one chat)" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>existingDmStructure</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.272" starttime="20190324 16:54:07.269" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t9" name="DMs - Browse to allowed conversation page" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>browseToAllowedConversationPage</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.277" starttime="20190324 16:54:07.274" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t10" name="DMs - User's replies are rolled up under a single row" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+<tag>UserRepliesInSingleRow</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.282" starttime="20190324 16:54:07.279" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t11" name="DMs - Any user on the conversation can change the subject line" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>allParticipantsChangeConversationSubject</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.288" starttime="20190324 16:54:07.284" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t12" name="DMs - Subject in one to one chat" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+<tag>verifySubjectInOneToOneChat</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.300" starttime="20190324 16:54:07.289" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t13" name="DMs - Logged user is listed as the last person in default conversation subject" timeout="10 minutes">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>loggedUserIsListedAsLastPersonInConversationSubject</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.305" starttime="20190324 16:54:07.301" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t14" name="DMs - From Inbox click timestamp of a chat reply" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>fromInboxClickTimestampOfChatReply</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.319" starttime="20190324 16:54:07.307" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t15" name="DMs - Add chat reply with mention" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>addChatReplyWithMention</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.323" starttime="20190324 16:54:07.320" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t16" name="DMs - User1 sends a Message to User2 when User2 is offline" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>ui</tag>
+<tag>User1sendsAMessageToUser2WhenUser2IsOffline</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.328" starttime="20190324 16:54:07.324" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<test id="s1-s2-s1-s1-s1-t17" name="DMs - Send empty collaboration messages" timeout="5 minutes 30 seconds">
+<doc>author: Marcos Remolgao</doc>
+<tags>
+<tag>activity</tag>
+<tag>all</tag>
+<tag>dms</tag>
+<tag>dms_pri2</tag>
+<tag>sendEmptyCollaborationReply</tag>
+<tag>ui</tag>
+</tags>
+<status critical="yes" endtime="20190324 16:54:07.336" starttime="20190324 16:54:07.332" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</test>
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="76" endtime="N/A" starttime="N/A" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="76" endtime="N/A" starttime="N/A" status="FAIL">Parent suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="68661" endtime="N/A" starttime="N/A" status="FAIL">Suite setup failed:
+CoreV3 Test timed out searching for content with SLA of 60000 ms</status>
+</suite>
+<doc>*Jive Version :* 2018.16.0.0_jx -- *Jive Instance :* http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080</doc>
+<metadata>
+<item name="Jive Build Information">*No Build Information Available*</item>
+<item name="Jive Instance">http://lithium-cloud-auto-int-2-h-single.dynjcint.jivehosted.com:8080</item>
+<item name="Jive Version">*2018.16.0.0_jx*</item>
+</metadata>
+<status elapsedtime="80955" endtime="N/A" starttime="N/A" status="FAIL"/>
+</suite>
+<doc/>
+<metadata>
+</metadata>
+<status elapsedtime="162132" endtime="N/A" starttime="N/A" status="FAIL"/>
+</suite>
+<statistics>
+<total>
+<stat fail="34" pass="0">Critical Tests</stat>
+<stat fail="34" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat combined="" doc="" fail="34" info="" links="" pass="0">activity</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">addChatReplyWithMention</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">addUsersInConversation</stat>
+<stat combined="" doc="" fail="34" info="" links="" pass="0">all</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">allParticipantsChangeConversationSubject</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">browseToAllowedConversationPage</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">conversationPermanentLinkReply</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">createLongOngoingConversation</stat>
+<stat combined="" doc="" fail="34" info="" links="" pass="0">dms</stat>
+<stat combined="" doc="" fail="34" info="" links="" pass="0">dms_pri2</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">existingDmStructure</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">fromInboxClickTimestampOfChatReply</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">loggedUserIsListedAsLastPersonInConversationSubject</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">nonAdminUserTriesToSeeACollaborationAsNotParticipant</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">sendEmptyCollaborationReply</stat>
+<stat combined="" doc="" fail="34" info="" links="" pass="0">ui</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">updateCollaborationSubject</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">User1sendsAMessageToUser2WhenUser2IsOffline</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">userBAddsReplyToConversationWithUserA</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">UserRepliesInSingleRow</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">verifyAuthorAndMessageForLastRtcInteraction</stat>
+<stat combined="" doc="" fail="2" info="" links="" pass="0">verifySubjectInOneToOneChat</stat>
+</tag>
+<suite>
+<stat fail="34" id="s1" name="final run" pass="0">final run</stat>
+<stat fail="17" id="s1-s1" name="Jive Robot Run" pass="0">final run.Jive Robot Run</stat>
+<stat fail="17" id="s1-s1-s1" name="Activity" pass="0">final run.Jive Robot Run.Activity</stat>
+<stat fail="17" id="s1-s1-s1-s1" name="DM Inbox Notifications" pass="0">final run.Jive Robot Run.Activity.DM Inbox Notifications</stat>
+<stat fail="17" id="s1-s1-s1-s1-s1" name="TestDMs" pass="0">final run.Jive Robot Run.Activity.DM Inbox Notifications.TestDMs</stat>
+<stat fail="17" id="s1-s2" name="Jive Robot Run (Retry #1)" pass="0">final run.Jive Robot Run (Retry #1)</stat>
+<stat fail="17" id="s1-s2-s1" name="Activity" pass="0">final run.Jive Robot Run (Retry #1).Activity</stat>
+<stat fail="17" id="s1-s2-s1-s1" name="DM Inbox Notifications" pass="0">final run.Jive Robot Run (Retry #1).Activity.DM Inbox Notifications</stat>
+<stat fail="17" id="s1-s2-s1-s1-s1" name="TestDMs" pass="0">final run.Jive Robot Run (Retry #1).Activity.DM Inbox Notifications.TestDMs</stat>
+</suite>
+</statistics>
+<errors>
+<msg level="WARN" timestamp="20190324 16:51:00.522">Adding keyword 'apiCreateDefaultStatusUpdateInGroupAs' to library 'com.jivesoftware.api.JiveApiLibrary' failed: Calling dynamic method 'getKeywordDocumentation' failed: NullPointerException</msg>
+<msg level="WARN" timestamp="20190324 16:52:46.192">Adding keyword 'apiCreateDefaultStatusUpdateInGroupAs' to library 'com.jivesoftware.api.JiveApiLibrary' failed: Calling dynamic method 'getKeywordDocumentation' failed: NullPointerException</msg>
+</errors>
+</robot>

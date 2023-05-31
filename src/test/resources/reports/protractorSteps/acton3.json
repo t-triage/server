@@ -1,0 +1,979 @@
+{viewName: "QA", jobName: "production-smoke-testsuite", jobUrl: "null", jobId: 0, buildNumber: 120, buildUrl: "http://bamboo3.via.act-on.net:8085/browse/QA-PROD-120", buildStatus: "Failed",
+  artifacts: [{fileName: "QA-PROD-JOB1-120.log", fileType: "log", url: "https://bamboo.via.act-on.net:8443/download/QA-PROD-JOB1/build_logs/QA-PROD-JOB1-120.log", content: "https://bamboo.via.act-on.net:8443/download/QA-PROD-JOB1/build_logs/QA-PROD-JOB1-120.log"},{fileName: "chrome-ProtractorOutputClassicFormsResponsePageShowThisMessage.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputClassicFormsResponsePageShowThisMessage.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 24,
+  'failures': 0,
+  'name': 'chrome.Classic Forms: Response Page > Show This Message',
+  'disabled': 0,
+  'time': 57.144,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Set controlled features',
+      'time': 0.241
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Login',
+      'time': 6.892
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Navigate to the Bounces & Opt-Outs page',
+      'time': 5.034
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Set preconditions: Ensure there exists at least one domain on the Email Suppression Domains list',
+      'time': 1.019
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Navigate to the Forms page',
+      'time': 4.158
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Click on '+' -> 'Classic' button | Form Composer should open',
+      'time': 2.281
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Open the Settings tab | The Settings tab is open',
+      'time': 5.842
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Give the form a valid title and description',
+      'time': 0.338
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Enable the 'Show This Message' radio button in the Response section, then enter a message in the TinyMCE editor',
+      'time': 0.511
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Open the Finish tab | The Finish tab is open',
+      'time': 0.963
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Save the form',
+      'time': 1.391
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Select the 'Get Public URLs' option for the form',
+      'time': 2.139
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Access the form through its public URL',
+      'time': 5.018
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Enter an email address in the suppressed domain, then submit the form | The custom response text is served',
+      'time': 0.503
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Close the browser tab containing the response message',
+      'time': 1.23
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Access the form again through its public URL',
+      'time': 4.878
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Enter a valid first and last name, but leave the email address blank, then submit the form | The custom response text is served',
+      'time': 0.62
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Close the browser tab containing the response message, then close the 'Form Public URLs' modal',
+      'time': 1.466
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Tear down: Delete the form',
+      'time': 3.053
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Navigate to the Form Submissions page',
+      'time': 2.705
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Setup: Refresh the form submission list's record count',
+      'time': 2.305
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Click the title of the form submission list | The list view is displayed. It contains the submission with the first & last names but not the submission from the suppressed domain',
+      'time': 2.223
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Tear down: Click the Listing button to return to the Form Submissions page',
+      'time': 0.944
+    },
+    {
+      'classname': 'chrome.Classic Forms: Response Page > Show This Message',
+      'name': 'Classic Forms: Response Page > Show This Message Tear down: Delete the form submission',
+      'time': 1.381
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+}}}"},{fileName: "chrome-ProtractorOutputEmailTemplatespageDelete.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputEmailTemplatespageDelete.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 14,
+  'failures': 0,
+  'name': 'chrome.Email Templates page: Delete',
+  'disabled': 0,
+  'time': 58.08,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Log in',
+      'time': 8.933
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Get the parent user's first and last name from the profile drop-down menu',
+      'time': 0.783
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Navigate to the Users page',
+      'time': 3.108
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Ensure that the user does not have the content-delete privilege',
+      'time': 9.768
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Navigate to the Email Templates page',
+      'time': 3.831
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Create a template | A template has been created',
+      'time': 8.113
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Mouse over the template | The delete option is not present',
+      'time': 0.133
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Navigate to the Users page',
+      'time': 2.831
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Ensure that the user does have the content-delete privilege',
+      'time': 9.695
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Navigate to the Email Templates page',
+      'time': 3.935
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Select the Delete option for the template | The Delete modal is displayed',
+      'time': 1.977
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Click the X button in the Delete modal | The Delete modal is closed. The template has not been deleted',
+      'time': 0.789
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Click the Cancel button in the Delete modal | The Delete modal is closed. The template has not been deleted',
+      'time': 2.147
+    },
+    {
+      'classname': 'chrome.Email Templates page: Delete',
+      'name': 'Email Templates page: Delete Click the Delete button in the Delete modal | The Delete modal is closed. The template has been deleted',
+      'time': 2.031
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+  }}}"},{fileName: "chrome-ProtractorOutputAutomatedProgramsCreateaprogramfromatemplate.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputAutomatedProgramsCreateaprogramfromatemplate.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 40,
+  'failures': 0,
+  'name': 'chrome.Automated Programs: Create a program from a template',
+  'disabled': 0,
+  'time': 155.855,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Login',
+      'time': 8.96
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Navigate to the Marketing Lists page',
+      'time': 3.799
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Create a marketing list',
+      'time': 9.744
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Populate the marketing list with 1 contacts',
+      'time': 23.687
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Create a segment of the marketing list, such that it contains the contact',
+      'time': 5.946
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Navigate to the Drafts page',
+      'time': 2.798
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Begin creating a draft message from a blank message by designating a title, subject and sender',
+      'time': 3.244
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Pick the marketing list as the source list',
+      'time': 2.248
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Save and close the Message Composer',
+      'time': 2.508
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Navigate to the Automated Programs page',
+      'time': 2.653
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Begin creating a program by configuring the Settings tab, picking the marketing list as the source list',
+      'time': 9.682
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click the 'Add Program Message' button | The 'Add Message To Program' modal is displayed',
+      'time': 1.092
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Pick the draft message | The draft message is listed on the Program Messages tab',
+      'time': 1.063
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click the 'Add List/Segment' button | The 'Source List or Segment' modal is displayed',
+      'time': 1.793
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Finish creating the program',
+      'time': 7.298
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Navigate to the Automated Programs page',
+      'time': 1.784
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Select the Edit option for the program to invoke the Editor',
+      'time': 1.781
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Ensure that the segment is still listed as one of the two source lists in the General Settings tab',
+      'time': 6.865
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click the Done button to save the program',
+      'time': 7.244
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click the Listing button to return to the Automated Programs page',
+      'time': 2.984
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Set preconditions: Select the 'Create Template' option > Enter in List's Description and click 'Create' button',
+      'time': 7.599
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Navigate to the Program Templates page',
+      'time': 2.104
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Select the New Program option for the template | The 'New Program from Template' modal is displayed',
+      'time': 1.178
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click the Create button without first having selected any lists | An alert is displayed which states 'You must select an asset...'',
+      'time': 4.211
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click 'Select List' button | The 'Choose Lists and Segments' modal is displayed',
+      'time': 0.79
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Search for the marketing list and click the Submit button | The 'Choose Lists and Segments' modal is closed. The 'Select List' button in the 'New Program from Template modal now shows the name of the selected marketing list',
+      'time': 2.8
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click 'Select List' button again to add a segment to the Program Template | The 'Choose Lists and Segments' modal is displayed again to choose a segment',
+      'time': 1.102
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Search for the segment and click the Submit button | The 'Choose Lists and Segments' modal is closed',
+      'time': 3.402
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Select the Draft option from the messages drop down button',
+      'time': 1.633
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Select a draft message from the 'Choose Draft Messages' picker, then click the Submit button | The 'Choose Draft Messages' modal is closed. The 'Select List' button in the modal now shows the name of the draft message',
+      'time': 3.02
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Click the 'Create' Button | The Program Editor should open and the program's name and source list should display correctly',
+      'time': 1.492
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Navigate to the Automated Programs page',
+      'time': 2.087
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Delete the program',
+      'time': 2.666
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Delete the program created by the template',
+      'time': 2.53
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Navigate to Program Templates page',
+      'time': 2.057
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Delete the program template',
+      'time': 1.609
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Navigate to the Marketing Lists page',
+      'time': 2.908
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Delete the marketing list',
+      'time': 1.412
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Go to the Drafts page',
+      'time': 2.639
+    },
+    {
+      'classname': 'chrome.Automated Programs: Create a program from a template',
+      'name': 'Automated Programs: Create a program from a template Tear down: Delete the draft message',
+      'time': 1.433
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+  }}}"},{fileName: "chrome-ProtractorOutputFormspageDeleteaform.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputFormspageDeleteaform.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 15,
+  'failures': 0,
+  'name': 'chrome.Forms page: Delete a form',
+  'disabled': 0,
+  'time': 41.542,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Set controlled features',
+      'time': 0.468
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Log in',
+      'time': 8.725
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Navigate to the Forms page',
+      'time': 4.152
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Click the New Form button | The Form Composer's interstitial page is displayed in a new browser tab. It contains two options: 'Blank Form' and 'Template Form'',
+      'time': 1.929
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Select the Blank Form option',
+      'time': 0.742
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Input a title and description',
+      'time': 0.384
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Select the Contacts list as the source list',
+      'time': 2.724
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Configure a response page | The response page item is now green and displays a checkmark symbol',
+      'time': 1.873
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Add a Submit button block',
+      'time': 3.756
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Add an input field block | An input field block has been added to the form',
+      'time': 2.274
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Select the 'Save & Close' option | The form has been created',
+      'time': 8.133
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Select the Delete action | The Delete confirmation modal opens',
+      'time': 1.08
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Click the X button | The form asset has not been deleted',
+      'time': 1.609
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Select the Delete action again, but this time click the Close button | The form has not been deleted',
+      'time': 2.093
+    },
+    {
+      'classname': 'chrome.Forms page: Delete a form',
+      'name': 'Forms page: Delete a form Select the Delete action again, but this time click the Delete button | The form has been deleted',
+      'time': 1.594
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+  }}}"},{fileName: "chrome-ProtractorOutputABTestContentpageDeleteABtest.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputABTestContentpageDeleteABtest.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 7,
+  'failures': 0,
+  'name': 'chrome.A/B Test Content page: Delete A/B test',
+  'disabled': 0,
+  'time': 18.795,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Login',
+      'time': 8.911
+    },
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Setup: Navigate to A/B Test Content page',
+      'time': 1.835
+    },
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Click the 'New A/B Test' button | The Composer should open',
+      'time': 1.953
+    },
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Setup: Input a valid name and description for the A/B Test',
+      'time': 0.351
+    },
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Click the Save button | A notification appears which states 'The A/B Test has been saved successfully.'',
+      'time': 4.141
+    },
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Click the Close button to close the composer',
+      'time': 0.587
+    },
+    {
+      'classname': 'chrome.A/B Test Content page: Delete A/B test',
+      'name': 'A/B Test Content page: Delete A/B test Delete the A/B test | The A/B test should be deleted',
+      'time': 1.01
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+  }}}"},{fileName: "chrome-ProtractorOutputSegmentationDeleteasegment.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputSegmentationDeleteasegment.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 12,
+  'failures': 9,
+  'name': 'chrome.Segmentation: Delete a segment',
+  'disabled': 0,
+  'time': 244.963,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'name': 'Segmentation: Delete a segment Set controlled features',
+      'time': 0.156
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'name': 'Segmentation: Delete a segment Log in',
+      'time': 6.049
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'name': 'Segmentation: Delete a segment Setup: Navigate to the Marketing Lists page',
+      'time': 2.922
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: element click intercepted: Element <iframe id=\'content\' name=\'content\' frameborder=\'0\' data-ng-src=\'/acton/_lists/marketingListing.jsp\' data-iframe-onload=\'\' class=\'ng-scope\' src=\'/acton/_lists/marketingListing.jsp\' cd_frame_id_=\'064154a35c47ba359bd40d0d5b9ca334\'><\/iframe> is not clickable at point (1559, 28). Other element would receive the click: <button ng-click=\'dismiss('.ao-banner')\' class=\'ao-banner-dismiss\'>...<\/button>\n  (Session info: chrome=87.0.4280.66)\n  (Driver info: chromedriver=87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}),platform=Linux 3.10.0-1062.9.1.el7.x86_64 x86_64)',
+        'content': 'WebDriverError: element click intercepted: Element <iframe id=\'content\' name=\'content\' frameborder=\'0\' data-ng-src=\'/acton/_lists/marketingListing.jsp\' data-iframe-onload=\'\' class=\'ng-scope\' src=\'/acton/_lists/marketingListing.jsp\' cd_frame_id_=\'064154a35c47ba359bd40d0d5b9ca334\'><\/iframe> is not clickable at point (1559, 28). Other element would receive the click: <button ng-click=\'dismiss('.ao-banner')\' class=\'ao-banner-dismiss\'>...<\/button>\n  (Session info: chrome=87.0.4280.66)\n  (Driver info: chromedriver=87.0.4280.20 (c99e81631faa0b2a448e658c0dbd8311fb04ddbd-refs/branch-heads/4280@{#355}),platform=Linux 3.10.0-1062.9.1.el7.x86_64 x86_64)\n    at Object.checkLegacyResponse (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/error.js:546:15)\n    at parseHttpResponse (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/http.js:509:13)\n    at doSend.then.response (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/http.js:441:30)\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: WebElement.click()\n    at thenableWebDriverProxy.schedule (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:807:17)\n    at WebElement.schedule_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:2010:25)\n    at WebElement.click (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:2092:17)\n    at actionFn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:89:44)\n    at Array.map (<anonymous>)\n    at actionResults.getWebElements.then (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:461:65)\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)Error\n    at ElementArrayFinder.applyAction_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as click] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.(anonymous function).args [as click] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:831:22)\n    at MarketingListPage.createNewList (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/page-objects/contacts/marketing-lists/marketinglist.page.js:537:45)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:40:23)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\nFrom: Task: Run it(\'Set preconditions: Create a marketing list\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:39:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Set preconditions: Create a marketing list',
+      'time': 1.839
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 10003ms',
+        'content': 'TimeoutError: Wait timed out after 10003ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitUntilReady (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:304:17)\n    at AddContactsPage.addContacts (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/page-objects/contacts/marketing-lists/CreatedList/MoreActions/AddContactsPage.js:121:13)\n    at AddContactsPage.AddAutoGeneratedContactsWithPrefix (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/page-objects/contacts/marketing-lists/CreatedList/MoreActions/AddContactsPage.js:107:8)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:44:21)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\nFrom: Task: Run it(\'Set precondition: Populate the marketing list with 2 contact(s)\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:43:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Set precondition: Populate the marketing list with 2 contact(s)',
+      'time': 10.504
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 50012ms',
+        'content': 'TimeoutError: Wait timed out after 50012ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitUntilReady (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:304:17)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:48:13)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2505:12)\nFrom: Task: Run it(\'Setup: Select the 'Create a Segment' option for the marketing list\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:47:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Setup: Select the 'Create a Segment' option for the marketing list',
+      'time': 50.423
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 50004ms',
+        'content': 'TimeoutError: Wait timed out after 50004ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitForRender (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:19:17)\n    at Utility.waitAndSendKeys (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:283:14)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:55:13)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\nFrom: Task: Run it(\'Setup: Input a name for the segment\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:53:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Setup: Input a name for the segment',
+      'time': 50.515
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 50001ms',
+        'content': 'TimeoutError: Wait timed out after 50001ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitUntilReady (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:304:17)\n    at Utility.pickMenuOption (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:796:19)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:62:13)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\nFrom: Task: Run it(\'Setup: Select the Behavior type for the initial expression\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:58:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Setup: Select the Behavior type for the initial expression',
+      'time': 50.395
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 50010ms',
+        'content': 'TimeoutError: Wait timed out after 50010ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitForRender (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:19:17)\n    at Utility.waitAndSendKeys (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:283:14)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:66:13)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\nFrom: Task: Run it(\'Setup: Configure the expression with 'in the last -> 1 day -> opened -> at least -> 1 message'\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:65:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Setup: Configure the expression with 'in the last -> 1 day -> opened -> at least -> 1 message'',
+      'time': 50.354
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: No element found using locator: By(css selector, .ao-segment-bar .save-all)',
+        'content': 'NoSuchElementError: No element found using locator: By(css selector, .ao-segment-bar .save-all)\n    at elementArrayFinder.getWebElements.then (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:814:27)\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)Error\n    at ElementArrayFinder.applyAction_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:459:27)\n    at ElementArrayFinder.(anonymous function).args [as click] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:91:29)\n    at ElementFinder.(anonymous function).args [as click] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/element.js:831:22)\n    at SegmentsPage.saveSegment (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/page-objects/contacts/segments.page.js:245:32)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:71:18)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\n    at ControlFlow.promise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2505:12)\n    at schedulerExecute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:95:18)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\nFrom: Task: Run it(\'Save the segment | The Marketing Lists page displays the new segment\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:70:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Save the segment | The Marketing Lists page displays the new segment',
+      'time': 0.353
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 10010ms',
+        'content': 'TimeoutError: Wait timed out after 10010ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitUntilReady (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:304:17)\n    at MarketingListPage.deleteList (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/page-objects/contacts/marketing-lists/marketinglist.page.js:744:19)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:75:23)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\nFrom: Task: Run it(\'Delete the segment | The segment should be deleted\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:74:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Delete the segment | The segment should be deleted',
+      'time': 10.647
+    },
+    {
+      'classname': 'chrome.Segmentation: Delete a segment',
+      'failure': {
+        'type': 'exception',
+        'message': 'Failed: Wait timed out after 10045ms',
+        'content': 'TimeoutError: Wait timed out after 10045ms\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2201:17\n    at ManagedPromise.invokeCallback_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1376:14)\n    at TaskQueue.execute_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3084:14)\n    at TaskQueue.executeNext_ (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:3067:27)\n    at asyncRun (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2927:27)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:668:7\n    at process._tickCallback (internal/process/next_tick.js:68:7)\nFrom: Task: <anonymous wait>\n    at scheduleWait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2188:20)\n    at ControlFlow.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:2517:12)\n    at thenableWebDriverProxy.wait (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/webdriver.js:934:29)\n    at run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:59:33)\n    at ProtractorBrowser.to.(anonymous function) [as wait] (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/protractor/built/browser.js:67:16)\n    at Utility.waitUntilReady (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/core/utility.js:304:17)\n    at MarketingListPage.deleteList (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/page-objects/contacts/marketing-lists/marketinglist.page.js:744:19)\n    at UserContext.it (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:79:23)\n    at /opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:112:25\n    at new ManagedPromise (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/selenium-webdriver/lib/promise.js:1077:7)\nFrom: Task: Run it(\'Tear down: Delete the marketing list\') in control flow\n    at UserContext.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasminewd2/index.js:94:19)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at QueueRunner.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4199:10)\n    at Spec.queueRunnerFactory (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:909:35)\n    at Spec.execute (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:526:10)\n    at UserContext.fn (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:5340:37)\n    at attempt (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4297:26)\n    at QueueRunner.run (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4217:20)\n    at runNext (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4257:20)\nFrom asynchronous test: \nError\n    at Suite.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:78:2)\n    at addSpecsToSuite (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1107:25)\n    at Env.describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:1074:7)\n    at describe (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/node_modules/jasmine-core/lib/jasmine-core/jasmine.js:4399:18)\n    at Object.<anonymous> (/opt/bamboo/bamboo-home/xml-data/build-dir/QA-PROD-JOB1/src/test-cases/list-segmentation/listSegmentation.deleteSegment.spec.js:21:1)\n    at Module._compile (internal/modules/cjs/loader.js:701:30)\n    at Object.Module._extensions..js (internal/modules/cjs/loader.js:712:10)\n    at Module.load (internal/modules/cjs/loader.js:600:32)\n    at tryModuleLoad (internal/modules/cjs/loader.js:539:12)'
+      },
+      'name': 'Segmentation: Delete a segment Tear down: Delete the marketing list',
+      'time': 10.789
+    }
+  ],
+  'timestamp': '2021-03-30T21:12:41',
+  'skipped': 0
+  }}}"},{fileName: "chrome-ProtractorOutputFormSubmissionsDeletealist.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputFormSubmissionsDeletealist.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 11,
+  'failures': 0,
+  'name': 'chrome.Form Submissions: Delete a list',
+  'disabled': 0,
+  'time': 49.427,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Set controlled features',
+      'time': 0.455
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Login',
+      'time': 8.526
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Navigate to the Forms page',
+      'time': 2.885
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Set preconditions: Create a test form',
+      'time': 13.705
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Select the 'Get Public URLs' option for the form',
+      'time': 3.138
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Access the form through its public URL',
+      'time': 5.231
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Submit the form',
+      'time': 3.428
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Navigate to the Form Submissions page',
+      'time': 3.261
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Delete the Form Submission list | The Form Submission list should be deleted',
+      'time': 1.639
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Tear down: Navigate to the Forms page',
+      'time': 3.997
+    },
+    {
+      'classname': 'chrome.Form Submissions: Delete a list',
+      'name': 'Form Submissions: Delete a list Tear down: Delete the test form',
+      'time': 3.155
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+  }}}"},{fileName: "chrome-ProtractorOutputWebinarsCitrixsmoketest.xml", fileType: "xml", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/QA-TES-AR/chrome-ProtractorOutputWebinarsCitrixsmoketest.xml", content: "{'testsuites': {'testsuite': {
+  'hostname': 'localhost',
+  'tests': 44,
+  'failures': 0,
+  'name': 'chrome.Webinars: Citrix smoke test',
+  'disabled': 0,
+  'time': 228.351,
+  'errors': 0,
+  'testcase': [
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set controlled features',
+      'time': 0.283
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Login',
+      'time': 8.103
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Navigate to the Connectors page',
+      'time': 4.145
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set preconditions: Ensure Citrix GoToWebinar is active',
+      'time': 10.496
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Navigate to the Marketing Lists page',
+      'time': 2.956
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set preconditions: Create a test marketing list',
+      'time': 8.03
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Navigate to the Automation Webinars page',
+      'time': 2.898
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Open the Past tab',
+      'time': 10.441
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Open the webinar from its most recent past occurrence',
+      'time': 16.668
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set preconditions: Ensure there exists a signup form for the event | A link to a registration signup form is displayed on the webinar's program page',
+      'time': 2.655
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Mouse over the registration sign up form row | Buttons are displayed for Preview and Report',
+      'time': 1.03
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Preview button | A preview of the sign-up form is open in a new browser tab',
+      'time': 1.549
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Close the new browser tab',
+      'time': 1.264
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Report link | A signup form activity report is displayed',
+      'time': 0.365
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Click the Close button',
+      'time': 0.12
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Event Session Sign-Up Form link | The Form Builder is displayed in a new browser tab',
+      'time': 1.584
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Close the new browser tab',
+      'time': 1.077
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Add Trackable Signup Form link | The 'NEW TRACKABLE SIGNUP FORM LINK' modal opens',
+      'time': 0.724
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Create a trackable signup form link | A trackable signup form link has been created',
+      'time': 3.028
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set preconditions: Ensure there exists a signup auto-response message | A default auto-response message has been created',
+      'time': 7.236
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Create button in the 'Create a Program Message' modal | An auto-response message link is displayed in the Event Session section',
+      'time': 7.904
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Mouse over the new auto-response message link, then click the Edit button | The Message Composer opens in a new browser tab',
+      'time': 3.995
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Save button to save the auto-response message',
+      'time': 1.843
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set preconditions: If a message already exists for this event, then delete it',
+      'time': 0.021
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Add Reminder link in the Event Sessions group | An event reminder has been created and a scheduling link is displayed',
+      'time': 10.473
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Set preconditions: Ensure the program is running',
+      'time': 0.037
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Schedule the event reminder | The event reminder has been scheduled',
+      'time': 13.157
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Select Promotion Lists link in the Event Promotion group, click the checkbox next to the marketing list, then click the save button | The name of the selected promotion list is displayed',
+      'time': 2.475
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Add Invitation link in the Event Promotion group, then click the Create button | A default invitation message has been created and a scheduling link is displayed',
+      'time': 3.401
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Schedule the invitation message | The invitation message has been scheduled',
+      'time': 13.223
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Add Followup link in the Event Followup group, then enable the All Attendees checkbox | An event follow-up message has been created and a scheduling link is displayed',
+      'time': 6.899
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Schedule the follow-up message | The follow-up message has been scheduled',
+      'time': 12.98
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Refresh button, mouse over 'Your Registration is accepted for ...', then click the Report link | The signup autoresponder report is displayed',
+      'time': 19.002
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Close the report',
+      'time': 0.322
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Stop link | The event has stopped',
+      'time': 1.067
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Click the Start link | The event has restarted',
+      'time': 1.221
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Delete the trackable signup form link',
+      'time': 7.543
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Delete the event followup message',
+      'time': 3.264
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Navigate to the Webinars page',
+      'time': 2.221
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Delete the webinar',
+      'time': 20.463
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Navigate to the Marketing Lists page',
+      'time': 2.961
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Delete the test marketing list',
+      'time': 1.512
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Navigate to the Forms page',
+      'time': 4.445
+    },
+    {
+      'classname': 'chrome.Webinars: Citrix smoke test',
+      'name': 'Webinars: Citrix smoke test Tear down: Delete the form',
+      'time': 3.258
+    }
+  ],
+  'timestamp': '2021-03-30T21:00:17',
+  'skipped': 0
+  }}}"},{fileName: "aoversion.json", fileType: "json", url: "https://bamboo.via.act-on.net:8443/browse/QA-PROD-120/artifact/shared/version/aoversion.json", content: "{'appVersion':' acton##20210325.10.47.43.079820621-47.10-release-47.10.1-1 '}"}
+  ]}

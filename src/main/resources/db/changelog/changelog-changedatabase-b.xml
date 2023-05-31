@@ -1,0 +1,42 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<!--
+  ~ Copyright (c) 2019, Clarolab. All rights reserved.
+  -->
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+
+<!--    <changeSet author="clarolab" id="b.1">-->
+<!--        <createTable tableName="QA_LICENSE">-->
+<!--            <column name="_id" type="BIGINT">-->
+<!--                <constraints primaryKey="true" primaryKeyName="qa_license_pkey"/>-->
+<!--            </column>-->
+<!--            <column name="enabled" type="BOOLEAN">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="timestamp" type="BIGINT">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="updated" type="BIGINT">-->
+<!--                <constraints nullable="false"/>-->
+<!--            </column>-->
+<!--            <column name="created" type="BIGINT"/>-->
+<!--            <column name="expiration" type="BIGINT"/>-->
+<!--            <column name="free" type="BOOLEAN"/>-->
+<!--            <column name="expired" type="BOOLEAN"/>-->
+<!--            <column name="licenseCode" type="VARCHAR(255)"/>-->
+<!--        </createTable>-->
+<!--    </changeSet>-->
+
+<!-- LA COLUMNA NO EXISTE! agregar?
+<!-    <changeSet id="b.2" author="clarolab">-->
+<!--        <renameColumn tableName="qa_license" oldColumnName="created" newColumnName="creationTime"/>-->
+<!--        <renameColumn tableName="qa_license" oldColumnName="expiration" newColumnName="expirationTime"/>-->
+<!--        <addColumn tableName="qa_repository_log">-->
+<!--            <column name="report_id" type="BIGINT"/>-->
+<!--        </addColumn>-->
+<!--    </changeSet>-->
+
+
+</databaseChangeLog>

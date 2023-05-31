@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+ <testsuite name="chrome.A/B Test Content page: Delete A/B test" timestamp="2023-01-24T15:22:49" hostname="localhost" time="28.471" errors="0" tests="7" skipped="0" disabled="0" failures="0">
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Login" time="12.353" />
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Setup: Navigate to A/B Test Content page" time="8.44" />
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Click the &apos;New A/B Test&apos; button | The Composer should open" time="1.066" />
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Setup: Input a valid name and description for the A/B Test" time="0.268" />
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Click the Save button | A notification appears which states &apos;The A/B Test has been saved successfully.&apos;" time="3.542" />
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Click the Close button to close the composer" time="1.282" />
+  <testcase classname="chrome.A/B Test Content page: Delete A/B test" name="A/B Test Content page: Delete A/B test Delete the A/B test | The A/B test should be deleted" time="1.518" />
+ </testsuite>
+</testsuites>

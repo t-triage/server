@@ -1,0 +1,2 @@
+{viewName: "QA", jobName: "ttriage-push", jobUrl: "null", jobId: 0, buildNumber: 33, buildUrl: "http://bamboo3.via.act-on.net:8085/browse/QA-TTRIAG-33", buildStatus: "Successful",
+  artifacts: [{fileName: "QA-TTRIAG-JOB1-33.log", fileType: "log", url: "https://bamboo.via.act-on.net:8443/download/QA-TTRIAG-JOB1/build_logs/QA-TTRIAG-JOB1-33.log", content: "https://bamboo.via.act-on.net:8443/download/QA-TTRIAG-JOB1/build_logs/QA-TTRIAG-JOB1-33.log"}]}

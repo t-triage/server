@@ -1,0 +1,31 @@
+{
+  "suite": "DataFilterTestsGzipBatch",
+  "status": "Fail",
+  "duration": 0,
+  "total": 2,
+  "passed": 0,
+  "warning": 0,
+  "failed": 2,
+  "test_cases": [
+    {
+      "name": "Failed to create table",
+      "status": "FAIL",
+      "duration_ms": 0,
+      "exception_msg": "Failed to create table: Operation failed [408] >> There was an error during POST request to 'http://clarolab.hydrolix.net/config/v1/orgs/b96b0be2-c966-4bf9-969b-184915863901/projects/97bb4d81-0223-46ed-89c1-5d6f09547d36/tables': HTTPConnectionPool(host='clarolab.hydrolix.net', port=80): Read timed out. (read timeout=1)",
+      "exception_stack_trace": "  File \"/home/rodrigo/Desarrollo/Python/VirtualEnvs/Hydrolix/TurbineDataDrivenTests__Py3_10/bin/ts-runner\", line 8, in <module>\n    sys.exit(main())\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/main.py\", line 160, in main\n    _generate_report(options, e.get_report(), test_suite.get_suite_name())\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/entity/table.py\", line 33, in create\n    self.__create()\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/entity/table.py\", line 68, in __create\n    _, result_json = self._table_api.create_table(self._project.get_id(), self._name, settings)\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/table_api_rest.py\", line 19, in create_table\n    return self.create_table_by_data(project_id, data)\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/table_api_rest.py\", line 24, in create_table_by_data\n    response = self._post(request_url,\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/table_api_rest.py\", line 147, in _post\n    response = ApiRest.post(request_url, headers, data, 1)\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/api_rest.py\", line 28, in post\n    response = ApiRest.perform_rest_action(requests.post, request_url, headers, data, timeout,\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/api_rest.py\", line 75, in perform_rest_action\n    raise ApiRestException(HTTPStatus.REQUEST_TIMEOUT, message) from None\n\n  <class 'battery.exception.api_rest_exception.ApiRestException'> (<HTTPStatus.REQUEST_TIMEOUT: 408>, \"There was an error during POST request to 'http://clarolab.hydrolix.net/config/v1/orgs/b96b0be2-c966-4bf9-969b-184915863901/projects/97bb4d81-0223-46ed-89c1-5d6f09547d36/tables': HTTPConnectionPool(host='clarolab.hydrolix.net', port=80): Read timed out. (read timeout=1)\")",
+      "jira_ticket": null,
+      "current_out": null,
+      "expected_out": null
+    },
+    {
+      "name": "Hola",
+      "status": "FAIL",
+      "duration_ms": 2,
+      "exception_msg": "Failed to create table: Operation failed [408] >> There was an error during POST request to 'http://clarolab.hydrolix.net/config/v1/orgs/b96b0be2-c966-4bf9-969b-184915863901/projects/97bb4d81-0223-46ed-89c1-5d6f09547d36/tables': HTTPConnectionPool(host='clarolab.hydrolix.net', port=80): Read timed out. (read timeout=1)",
+      "exception_stack_trace": "  File \"/home/rodrigo/Desarrollo/Python/VirtualEnvs/Hydrolix/TurbineDataDrivenTests__Py3_10/bin/ts-runner\", line 8, in <module>\n    sys.exit(main())\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/main.py\", line 160, in main\n    _generate_report(options, e.get_report(), test_suite.get_suite_name())\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/entity/table.py\", line 33, in create\n    self.__create()\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/entity/table.py\", line 68, in __create\n    _, result_json = self._table_api.create_table(self._project.get_id(), self._name, settings)\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/table_api_rest.py\", line 19, in create_table\n    return self.create_table_by_data(project_id, data)\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/table_api_rest.py\", line 24, in create_table_by_data\n    response = self._post(request_url,\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/table_api_rest.py\", line 147, in _post\n    response = ApiRest.post(request_url, headers, data, 1)\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/api_rest.py\", line 28, in post\n    response = ApiRest.perform_rest_action(requests.post, request_url, headers, data, timeout,\n  File \"/home/rodrigo/Desarrollo/Repos/Hydrolix/turbine/turbine-data-driven-ci-tests/battery/api/api_rest.py\", line 75, in perform_rest_action\n    raise ApiRestException(HTTPStatus.REQUEST_TIMEOUT, message) from None\n\n  <class 'battery.exception.api_rest_exception.ApiRestException'> (<HTTPStatus.REQUEST_TIMEOUT: 408>, \"There was an error during POST request to 'http://clarolab.hydrolix.net/config/v1/orgs/b96b0be2-c966-4bf9-969b-184915863901/projects/97bb4d81-0223-46ed-89c1-5d6f09547d36/tables': HTTPConnectionPool(host='clarolab.hydrolix.net', port=80): Read timed out. (read timeout=1)\")",
+      "jira_ticket": null,
+      "current_out": null,
+      "expected_out": null
+    }
+  ]
+}

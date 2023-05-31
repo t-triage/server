@@ -1,0 +1,25 @@
+-Did you a pull today? Make sure to have your tool with the latest test. Need Help: https://wiki.clarolab.com.ar/docs/DOC-6988
+
+-Do you have all set for a push? Its easy... take a loot at: https://wiki.clarolab.com.ar/docs/DOC-7025
+
+-Make sure to have all set to perform a push... more info at: https://wiki.clarolab.com.ar/docs/DOC-7025
+
+-Have you triaged today? It's easy! https://youtu.be/05b_H6K67f4
+
+-Remember to take a look at your triage results today! https://youtu.be/05b_H6K67f4
+
+-Find your today's work in "My Today's list" https://youtu.be/BHvEROfmT30
+
+-Your backlog shows you pending non-critical work. See https://youtu.be/BHvEROfmT30
+
+-Drag and Drop the triage cards in Kanban view. See https://youtu.be/o8fDzGGffX4
+
+-Take a look at you progress in Insights views. https://wiki.clarolab.com.ar/docs/DOC-6974#jive_content_id_Insights
+
+-Automated Test has issues? Mark it as "Not Working" and follow the progress in Automation Issues view. https://youtu.be/voVVFrhc31c
+
+-Triage Deadline Frequency will help you to have your work on track!
+
+-Set deadlines because of new version released as milestones.
+
+-Analise your automation tests failures, error relations, test relations plus the ability to track what has happened. https://youtu.be/05b_H6K67f4

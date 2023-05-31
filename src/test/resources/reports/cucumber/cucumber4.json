@@ -1,0 +1,116 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "This test should pass",
+        "description": "",
+        "id": "cucumbersteps;this-test-should-pass",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 60546036,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I want the test to pass",
+            "match": {
+              "location": "CucumberSteps.i_want_the_test_to_pass()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 62723,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "The test will pass",
+            "match": {
+              "location": "CucumberSteps.the_test_will_pass()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "This test shouldn\u0027t pass",
+        "description": "",
+        "id": "cucumbersteps;this-test-shouldn\u0027t-pass",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20150,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I don\u0027t want the test to pass",
+            "match": {
+              "location": "CucumberSteps.i_don_t_want_the_test_to_pass()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1332228,
+              "error_message": "java.lang.AssertionError: null\n\tat org.testng.Assert.fail(Assert.java:94)\n\tat org.testng.Assert.fail(Assert.java:101)\n\tat com.clarolab.CucumberSteps.the_test_will_fail(CucumberSteps.java:25)\n\tat ✽.Then The test will fail(com/clarolab/cucumberJava.feature:14)\n",
+              "status": "failed"
+            },
+            "line": 14,
+            "name": "The test will fail",
+            "match": {
+              "location": "CucumberSteps.the_test_will_fail()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "This test should break",
+        "description": "",
+        "id": "cucumbersteps;this-test-should-break",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 20524,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I want the test to break",
+            "match": {
+              "location": "CucumberSteps.i_want_the_test_to_break()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 187125,
+              "error_message": "java.lang.NullPointerException\n\tat com.clarolab.CucumberSteps.the_test_will_break(CucumberSteps.java:36)\n\tat ✽.Then The test will break(com/clarolab/cucumberJava.feature:20)\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "The test will break",
+            "match": {
+              "location": "CucumberSteps.the_test_will_break()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "CucumberSteps",
+    "description": "",
+    "id": "cucumbersteps",
+    "keyword": "Feature",
+    "uri": "com/clarolab/cucumberJava.feature"
+  }
+]

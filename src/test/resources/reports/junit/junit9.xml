@@ -1,0 +1,1780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="1,452.983" tests="56" errors="0" skipped="29" failures="7">
+  <properties>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="tests.url" value="http://tdev.clarolab.com/"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="org.uncommons.reportng.frames" value="true"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="org.uncommons.reportng.escape-output" value="false"/>
+    <property name="java.class.path" value="/var/jenkins_home/workspace/TTriage Test Selenium/target/test-classes:/var/jenkins_home/workspace/TTriage Test Selenium/target/classes:/var/jenkins_home/.m2/repository/com/clarolab/selenium/pages-framework/1.1/pages-framework-1.1.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/var/jenkins_home/.m2/repository/io/appium/java-client/2.1.0/java-client-2.1.0.jar:/var/jenkins_home/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/var/jenkins_home/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/var/jenkins_home/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/var/jenkins_home/.m2/repository/org/testng/testng/6.8.8/testng-6.8.8.jar:/var/jenkins_home/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/var/jenkins_home/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/2.45.0/selenium-api-2.45.0.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/2.45.0/selenium-java-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.45.0/selenium-chrome-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.45.0/selenium-htmlunit-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.15/htmlunit-2.15.jar:/var/jenkins_home/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar:/var/jenkins_home/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar:/var/jenkins_home/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.3.3/httpmime-4.3.3.jar:/var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.15/htmlunit-core-js-2.15.jar:/var/jenkins_home/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/var/jenkins_home/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/var/jenkins_home/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.21/nekohtml-1.9.21.jar:/var/jenkins_home/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.14/cssparser-0.9.14.jar:/var/jenkins_home/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.15.v20140411/jetty-websocket-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-util/8.1.15.v20140411/jetty-util-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-io/8.1.15.v20140411/jetty-io-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-http/8.1.15.v20140411/jetty-http-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.45.0/selenium-firefox-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.45.0/selenium-ie-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.45.0/selenium-safari-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/2.45.0/selenium-support-2.45.0.jar:/var/jenkins_home/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/var/jenkins_home/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.45.0/selenium-leg-rc-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.45.0/selenium-remote-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar:/var/jenkins_home/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar:/var/jenkins_home/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/4.2.1/selenide-4.2.1.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.2/browsermob-core-2.1.2.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-13/littleproxy-1.1.0-beta-bmp-13.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.5/jackson-core-2.7.5.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.5/jackson-databind-2.7.5.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.5/jackson-annotations-2.7.5.jar:/var/jenkins_home/.m2/repository/net/sf/uadetector/uadetector-resources/2014.10/uadetector-resources-2014.10.jar:/var/jenkins_home/.m2/repository/net/sf/uadetector/uadetector-core/0.9.22/uadetector-core-0.9.22.jar:/var/jenkins_home/.m2/repository/net/sf/qualitycheck/quality-check/1.3/quality-check-1.3.jar:/var/jenkins_home/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.0.39.Final/netty-all-4.0.39.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.54/bcpkix-jdk15on-1.54.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.2/mitm-2.1.2.jar:/var/jenkins_home/.m2/repository/com/codeborne/phantomjsdriver/1.3.0/phantomjsdriver-1.3.0.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/var/jenkins_home/.m2/repository/org/json/json/20180813/json-20180813.jar:/var/jenkins_home/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/var/jenkins_home/.m2/repository/junit/junit/4.10/junit-4.10.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/var/jenkins_home/.m2/repository/com/browserstack/browserstack-local-java/1.0.3/browserstack-local-java-1.0.3.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/var/jenkins_home/.m2/repository/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="tests.webDriverPath" value=""/>
+    <property name="org.uncommons.reportng.title" value="T-triage UI Test Results"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="selenium.hub" value="BROWSERSTACK"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="os.name" value="Linux"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="HUB_SERVER" value="BROWSERSTACK"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64"/>
+    <property name="sun.java.command" value="/var/jenkins_home/workspace/TTriage Test Selenium/target/surefire/surefirebooter6652426658747610086.jar /var/jenkins_home/workspace/TTriage Test Selenium/target/surefire 2019-04-26T00-00-27_303-jvmRun1 surefire416687898509252619tmp surefire_05106138430019170963tmp"/>
+    <property name="surefire.test.class.path" value="/var/jenkins_home/workspace/TTriage Test Selenium/target/test-classes:/var/jenkins_home/workspace/TTriage Test Selenium/target/classes:/var/jenkins_home/.m2/repository/com/clarolab/selenium/pages-framework/1.1/pages-framework-1.1.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpclient/4.3.2/httpclient-4.3.2.jar:/var/jenkins_home/.m2/repository/commons-logging/commons-logging/1.1.3/commons-logging-1.1.3.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpcore/4.3.2/httpcore-4.3.2.jar:/var/jenkins_home/.m2/repository/org/slf4j/slf4j-api/1.7.7/slf4j-api-1.7.7.jar:/var/jenkins_home/.m2/repository/com/google/code/findbugs/jsr305/3.0.0/jsr305-3.0.0.jar:/var/jenkins_home/.m2/repository/com/google/guava/guava/18.0/guava-18.0.jar:/var/jenkins_home/.m2/repository/io/appium/java-client/2.1.0/java-client-2.1.0.jar:/var/jenkins_home/.m2/repository/cglib/cglib/3.1/cglib-3.1.jar:/var/jenkins_home/.m2/repository/org/ow2/asm/asm/4.2/asm-4.2.jar:/var/jenkins_home/.m2/repository/org/codehaus/jackson/jackson-mapper-asl/1.9.13/jackson-mapper-asl-1.9.13.jar:/var/jenkins_home/.m2/repository/org/codehaus/jackson/jackson-core-asl/1.9.13/jackson-core-asl-1.9.13.jar:/var/jenkins_home/.m2/repository/org/testng/testng/6.8.8/testng-6.8.8.jar:/var/jenkins_home/.m2/repository/org/beanshell/bsh/2.0b4/bsh-2.0b4.jar:/var/jenkins_home/.m2/repository/com/beust/jcommander/1.27/jcommander-1.27.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-api/2.45.0/selenium-api-2.45.0.jar:/var/jenkins_home/.m2/repository/com/google/code/gson/gson/2.3.1/gson-2.3.1.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-java/2.45.0/selenium-java-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-chrome-driver/2.45.0/selenium-chrome-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-htmlunit-driver/2.45.0/selenium-htmlunit-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit/2.15/htmlunit-2.15.jar:/var/jenkins_home/.m2/repository/xalan/xalan/2.7.1/xalan-2.7.1.jar:/var/jenkins_home/.m2/repository/xalan/serializer/2.7.1/serializer-2.7.1.jar:/var/jenkins_home/.m2/repository/commons-collections/commons-collections/3.2.1/commons-collections-3.2.1.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar:/var/jenkins_home/.m2/repository/org/apache/httpcomponents/httpmime/4.3.3/httpmime-4.3.3.jar:/var/jenkins_home/.m2/repository/net/sourceforge/htmlunit/htmlunit-core-js/2.15/htmlunit-core-js-2.15.jar:/var/jenkins_home/.m2/repository/xerces/xercesImpl/2.11.0/xercesImpl-2.11.0.jar:/var/jenkins_home/.m2/repository/xml-apis/xml-apis/1.4.01/xml-apis-1.4.01.jar:/var/jenkins_home/.m2/repository/net/sourceforge/nekohtml/nekohtml/1.9.21/nekohtml-1.9.21.jar:/var/jenkins_home/.m2/repository/net/sourceforge/cssparser/cssparser/0.9.14/cssparser-0.9.14.jar:/var/jenkins_home/.m2/repository/org/w3c/css/sac/1.3/sac-1.3.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-websocket/8.1.15.v20140411/jetty-websocket-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-util/8.1.15.v20140411/jetty-util-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-io/8.1.15.v20140411/jetty-io-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/eclipse/jetty/jetty-http/8.1.15.v20140411/jetty-http-8.1.15.v20140411.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-firefox-driver/2.45.0/selenium-firefox-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-ie-driver/2.45.0/selenium-ie-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-safari-driver/2.45.0/selenium-safari-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-support/2.45.0/selenium-support-2.45.0.jar:/var/jenkins_home/.m2/repository/org/webbitserver/webbit/0.4.14/webbit-0.4.14.jar:/var/jenkins_home/.m2/repository/io/netty/netty/3.5.2.Final/netty-3.5.2.Final.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-leg-rc/2.45.0/selenium-leg-rc-2.45.0.jar:/var/jenkins_home/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/2.45.0/selenium-remote-driver-2.45.0.jar:/var/jenkins_home/.m2/repository/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar:/var/jenkins_home/.m2/repository/org/apache/commons/commons-exec/1.1/commons-exec-1.1.jar:/var/jenkins_home/.m2/repository/net/java/dev/jna/jna/3.4.0/jna-3.4.0.jar:/var/jenkins_home/.m2/repository/net/java/dev/jna/platform/3.4.0/platform-3.4.0.jar:/var/jenkins_home/.m2/repository/com/codeborne/selenide/4.2.1/selenide-4.2.1.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/browsermob-core/2.1.2/browsermob-core-2.1.2.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/littleproxy/1.1.0-beta-bmp-13/littleproxy-1.1.0-beta-bmp-13.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.7.5/jackson-core-2.7.5.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.7.5/jackson-databind-2.7.5.jar:/var/jenkins_home/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.7.5/jackson-annotations-2.7.5.jar:/var/jenkins_home/.m2/repository/net/sf/uadetector/uadetector-resources/2014.10/uadetector-resources-2014.10.jar:/var/jenkins_home/.m2/repository/net/sf/uadetector/uadetector-core/0.9.22/uadetector-core-0.9.22.jar:/var/jenkins_home/.m2/repository/net/sf/qualitycheck/quality-check/1.3/quality-check-1.3.jar:/var/jenkins_home/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar:/var/jenkins_home/.m2/repository/dnsjava/dnsjava/2.1.7/dnsjava-2.1.7.jar:/var/jenkins_home/.m2/repository/org/slf4j/jcl-over-slf4j/1.7.21/jcl-over-slf4j-1.7.21.jar:/var/jenkins_home/.m2/repository/com/jcraft/jzlib/1.1.3/jzlib-1.1.3.jar:/var/jenkins_home/.m2/repository/io/netty/netty-all/4.0.39.Final/netty-all-4.0.39.Final.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcprov-jdk15on/1.54/bcprov-jdk15on-1.54.jar:/var/jenkins_home/.m2/repository/org/bouncycastle/bcpkix-jdk15on/1.54/bcpkix-jdk15on-1.54.jar:/var/jenkins_home/.m2/repository/net/lightbody/bmp/mitm/2.1.2/mitm-2.1.2.jar:/var/jenkins_home/.m2/repository/com/codeborne/phantomjsdriver/1.3.0/phantomjsdriver-1.3.0.jar:/var/jenkins_home/.m2/repository/commons-codec/commons-codec/1.10/commons-codec-1.10.jar:/var/jenkins_home/.m2/repository/org/json/json/20180813/json-20180813.jar:/var/jenkins_home/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar:/var/jenkins_home/.m2/repository/junit/junit/4.10/junit-4.10.jar:/var/jenkins_home/.m2/repository/org/hamcrest/hamcrest-core/1.1/hamcrest-core-1.1.jar:/var/jenkins_home/.m2/repository/com/browserstack/browserstack-local-java/1.0.3/browserstack-local-java-1.0.3.jar:/var/jenkins_home/.m2/repository/commons-io/commons-io/1.3.2/commons-io-1.3.2.jar:/var/jenkins_home/.m2/repository/org/projectlombok/lombok/1.18.4/lombok-1.18.4.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/var/jenkins_home"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.home" value="/usr/lib/jvm/java-8-openjdk-amd64/jre"/>
+    <property name="basedir" value="/var/jenkins_home/workspace/TTriage Test Selenium"/>
+    <property name="file.separator" value="/"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="org.uncommons.reportng.stylesheet" value="/var/jenkins_home/workspace/TTriage Test Selenium/etc/testng/report/stylesheet.css"/>
+    <property name="surefire.real.class.path" value="/var/jenkins_home/workspace/TTriage Test Selenium/target/surefire/surefirebooter6652426658747610086.jar"/>
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="1.8.0_181-8u181-b13-2~deb9u1-b13"/>
+    <property name="user.name" value="jenkins"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="4.15.0-29-generic"/>
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="tests.browser.path" value=""/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="localRepository" value="/var/jenkins_home/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="java.version" value="1.8.0_181"/>
+    <property name="user.dir" value="/var/jenkins_home/workspace/TTriage Test Selenium"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="tests.browser" value="chrome"/>
+    <property name="java.library.path" value="/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="25.181-b13"/>
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="52.0"/>
+  </properties>
+  <testcase name="testDisableConnector" classname="com.clarolab.AdminConsoleTest" time="32.45"/>
+  <testcase name="testDisableContainer" classname="com.clarolab.AdminConsoleTest" time="27.091"/>
+  <testcase name="testDisableMilestone" classname="com.clarolab.AdminConsoleTest" time="41.176"/>
+  <testcase name="testDisableProduct" classname="com.clarolab.AdminConsoleTest" time="24.415"/>
+  <testcase name="testDisableProperties" classname="com.clarolab.AdminConsoleTest" time="33.472"/>
+  <testcase name="testEditConnector" classname="com.clarolab.AdminConsoleTest" time="33.788"/>
+  <testcase name="testEditContainer" classname="com.clarolab.AdminConsoleTest" time="42.053"/>
+  <testcase name="testEditMilestone" classname="com.clarolab.AdminConsoleTest" time="26.456"/>
+  <testcase name="testEditProduct" classname="com.clarolab.AdminConsoleTest" time="29.904"/>
+  <testcase name="testEditProperties" classname="com.clarolab.AdminConsoleTest" time="30.604"/>
+  <testcase name="testSaveConnector" classname="com.clarolab.AdminConsoleTest" time="43.452"/>
+  <testcase name="testSaveContainer" classname="com.clarolab.AdminConsoleTest" time="49.283"/>
+  <testcase name="testSaveMilestone" classname="com.clarolab.AdminConsoleTest" time="49.403"/>
+  <testcase name="testSaveProduct" classname="com.clarolab.AdminConsoleTest" time="29.307"/>
+  <testcase name="testSaveProperties" classname="com.clarolab.AdminConsoleTest" time="39.474"/>
+  <testcase name="testSaveUsers" classname="com.clarolab.AdminConsoleTest" time="27.316"/>
+  <testcase name="testFilterByAutomatedTriages" classname="com.clarolab.KanbanTest" time="25.359">
+    <failure message="expected not same" type="java.lang.AssertionError">java.lang.AssertionError: expected not same
+	at com.clarolab.KanbanTest.testFilterByAutomatedTriages(KanbanTest.java:26)
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:16:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [737de01e93f267c92ef4d0fa560369346470339a, deleteAllCookies {}]
+Apr 26, 2019 12:16:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [737de01e93f267c92ef4d0fa560369346470339a, deleteAllCookies {}]
+Apr 26, 2019 12:16:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [737de01e93f267c92ef4d0fa560369346470339a, quit {}]
+Apr 26, 2019 12:16:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [737de01e93f267c92ef4d0fa560369346470339a, quit {}]
+Apr 26, 2019 12:16:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [03d7b0949516c8354f29280d3087237cea3039da, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:16:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:16:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: implicitlyWait [03d7b0949516c8354f29280d3087237cea3039da, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:16:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:16:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: get [03d7b0949516c8354f29280d3087237cea3039da, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:16:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:16:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=email}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=email}]
+Apr 26, 2019 12:16:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [03d7b0949516c8354f29280d3087237cea3039da, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@2141a12}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@2141a12}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=password}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=password}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [03d7b0949516c8354f29280d3087237cea3039da, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@4196c360}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@4196c360}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:16:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=4}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=4}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [03d7b0949516c8354f29280d3087237cea3039da, isElementEnabled {id=4}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementEnabled {id=4}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=4}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=4}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:16:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:16:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:16:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:16:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [03d7b0949516c8354f29280d3087237cea3039da, findElements {using=css selector, value=tr.jobsTableRow}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElements {using=css selector, value=tr.jobsTableRow}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=6}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=6}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=7}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=7}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=8}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=8}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=9}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=9}]
+Apr 26, 2019 12:16:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=10}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=10}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=11}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=11}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=12}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=12}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=6, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=6, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=13}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=13}]
+Apr 26, 2019 12:16:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=7, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=7, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=14}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=14}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=8, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=8, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=15}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=15}]
+Apr 26, 2019 12:16:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=8, using=css selector, value=td div}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findChildElement {id=8, using=css selector, value=td div}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementSize [03d7b0949516c8354f29280d3087237cea3039da, getElementSize {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementSize {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementSize [03d7b0949516c8354f29280d3087237cea3039da, getElementSize {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementSize {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementTagName [03d7b0949516c8354f29280d3087237cea3039da, getElementTagName {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementTagName {id=16}]
+Apr 26, 2019 12:16:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=16}]
+Apr 26, 2019 12:16:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=16}]
+Apr 26, 2019 12:16:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=css selector, value=div.kanban}]
+Apr 26, 2019 12:16:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=css selector, value=div.kanban}]
+Apr 26, 2019 12:16:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getCurrentUrl {}]
+Apr 26, 2019 12:16:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [03d7b0949516c8354f29280d3087237cea3039da, findElements {using=class name, value=testName}]
+Apr 26, 2019 12:16:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElements {using=class name, value=testName}]
+Apr 26, 2019 12:16:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=css selector, value=button[title='Filter and Sort']}]
+Apr 26, 2019 12:16:42 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=css selector, value=button[title='Filter and Sort']}]
+Apr 26, 2019 12:16:42 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=70}]
+Apr 26, 2019 12:16:42 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=70}]
+Apr 26, 2019 12:16:42 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [03d7b0949516c8354f29280d3087237cea3039da, isElementEnabled {id=70}]
+Apr 26, 2019 12:16:42 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementEnabled {id=70}]
+Apr 26, 2019 12:16:42 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=70}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=70}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=css selector, value=label.filterByAutomatedTriaged}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=css selector, value=label.filterByAutomatedTriaged}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=71}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementDisplayed {id=71}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [03d7b0949516c8354f29280d3087237cea3039da, isElementEnabled {id=71}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, isElementEnabled {id=71}]
+Apr 26, 2019 12:16:43 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=71}]
+Apr 26, 2019 12:16:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, clickElement {id=71}]
+Apr 26, 2019 12:16:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:50 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:51 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:51 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:16:51 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, getElementText {id=1}]
+Apr 26, 2019 12:16:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [03d7b0949516c8354f29280d3087237cea3039da, findElements {using=class name, value=testName}]
+Apr 26, 2019 12:16:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, findElements {using=class name, value=testName}]
+]]></system-err>
+  </testcase>
+  <testcase name="testFilterByBugsOnly" classname="com.clarolab.KanbanTest" time="24.24">
+    <failure message="expected not same" type="java.lang.AssertionError">java.lang.AssertionError: expected not same
+	at com.clarolab.KanbanTest.testFilterByBugsOnly(KanbanTest.java:16)
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:16:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [03d7b0949516c8354f29280d3087237cea3039da, deleteAllCookies {}]
+Apr 26, 2019 12:16:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, deleteAllCookies {}]
+Apr 26, 2019 12:16:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [03d7b0949516c8354f29280d3087237cea3039da, quit {}]
+Apr 26, 2019 12:16:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [03d7b0949516c8354f29280d3087237cea3039da, quit {}]
+Apr 26, 2019 12:17:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:17:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:17:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: implicitlyWait [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:17:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:17:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: get [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:17:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:17:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:17:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:17:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=email}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=email}]
+Apr 26, 2019 12:17:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@609db546}]
+Apr 26, 2019 12:17:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@609db546}]
+Apr 26, 2019 12:17:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=password}]
+Apr 26, 2019 12:17:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=password}]
+Apr 26, 2019 12:17:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@20f5281c}]
+Apr 26, 2019 12:17:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@20f5281c}]
+Apr 26, 2019 12:17:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=4}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=4}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementEnabled {id=4}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementEnabled {id=4}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=4}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=4}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:17:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:17:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:17:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:17:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElements {using=css selector, value=tr.jobsTableRow}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElements {using=css selector, value=tr.jobsTableRow}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=6}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=6}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=7}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=7}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=8}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=8}]
+Apr 26, 2019 12:17:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=9}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=9}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=10}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=10}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=11}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=11}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=12}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=12}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=6, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=6, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:17:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=13}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=13}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=7, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=7, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=14}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=14}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=8, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=8, using=css selector, value=td.jobStatusTableCell div div:first-child}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=15}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=15}]
+Apr 26, 2019 12:17:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=8, using=css selector, value=td div}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findChildElement {id=8, using=css selector, value=td div}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementSize [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementSize {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementSize {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementSize [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementSize {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementSize {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementTagName [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementTagName {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementTagName {id=16}]
+Apr 26, 2019 12:17:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=16}]
+Apr 26, 2019 12:17:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=16}]
+Apr 26, 2019 12:17:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=css selector, value=div.kanban}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=css selector, value=div.kanban}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getCurrentUrl {}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElements {using=class name, value=testName}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElements {using=class name, value=testName}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=css selector, value=button[title='Filter and Sort']}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=css selector, value=button[title='Filter and Sort']}]
+Apr 26, 2019 12:17:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=70}]
+Apr 26, 2019 12:17:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=70}]
+Apr 26, 2019 12:17:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementEnabled {id=70}]
+Apr 26, 2019 12:17:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementEnabled {id=70}]
+Apr 26, 2019 12:17:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=70}]
+Apr 26, 2019 12:17:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=70}]
+Apr 26, 2019 12:17:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=css selector, value=label.filterByBugsOnly}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=css selector, value=label.filterByBugsOnly}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=71}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementDisplayed {id=71}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementEnabled {id=71}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, isElementEnabled {id=71}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=71}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, clickElement {id=71}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:17:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, getElementText {id=1}]
+Apr 26, 2019 12:17:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElements {using=class name, value=testName}]
+Apr 26, 2019 12:17:44 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [bb1c2a962bcc9472257f82fde1f1c8576a7d8058, findElements {using=class name, value=testName}]
+]]></system-err>
+  </testcase>
+  <testcase name="testSortByName" classname="com.clarolab.KanbanTest" time="44.572"/>
+  <testcase name="changeContainer" classname="com.clarolab.DashboardTest" time="13.648">
+    <failure type="java.lang.AssertionError:">java.lang.AssertionError: null
+	at com.clarolab.DashboardTest.changeContainer(DashboardTest.java:33)
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:18:50 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [f29364cbeafb37ee14faae25cd16ced7ed0dc5d1, deleteAllCookies {}]
+Apr 26, 2019 12:18:50 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [f29364cbeafb37ee14faae25cd16ced7ed0dc5d1, deleteAllCookies {}]
+Apr 26, 2019 12:18:50 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [f29364cbeafb37ee14faae25cd16ced7ed0dc5d1, quit {}]
+Apr 26, 2019 12:18:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [f29364cbeafb37ee14faae25cd16ced7ed0dc5d1, quit {}]
+Apr 26, 2019 12:18:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:18:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:18:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: implicitlyWait [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:18:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:18:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: get [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:19:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:19:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:04 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:19:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:19:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:06 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:06 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:06 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:06 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=email}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=email}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@59e505b2}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@59e505b2}]
+Apr 26, 2019 12:19:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=password}]
+Apr 26, 2019 12:19:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=password}]
+Apr 26, 2019 12:19:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@3af0a9da}]
+Apr 26, 2019 12:19:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@3af0a9da}]
+Apr 26, 2019 12:19:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:19:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:19:08 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=4}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=4}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementEnabled {id=4}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementEnabled {id=4}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, clickElement {id=4}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, clickElement {id=4}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:09 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:19:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:19:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getCurrentUrl {}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElements {using=css selector, value=td.SuiteList-NameCell}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElements {using=css selector, value=td.SuiteList-NameCell}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=11}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=11}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:19:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementLocation [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementLocation {id=12}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementLocation {id=12}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=window.scrollTo(0, 441), args=[]}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=window.scrollTo(0, 441), args=[]}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=12}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=12}]
+Apr 26, 2019 12:19:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementEnabled {id=12}]
+Apr 26, 2019 12:19:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementEnabled {id=12}]
+Apr 26, 2019 12:19:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, clickElement {id=12}]
+Apr 26, 2019 12:19:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, clickElement {id=12}]
+Apr 26, 2019 12:19:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElements {using=css selector, value=li.containerOption}]
+Apr 26, 2019 12:19:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElements {using=css selector, value=li.containerOption}]
+Apr 26, 2019 12:19:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=13}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=13}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=14}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=14}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=15}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=15}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=16}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=16}]
+Apr 26, 2019 12:19:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=17}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=17}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=18}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=18}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=19}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=19}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=20}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=20}]
+Apr 26, 2019 12:19:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=21}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=21}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=22}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, isElementDisplayed {id=22}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findChildElement {id=15, using=css selector, value=span:first-child}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findChildElement {id=15, using=css selector, value=span:first-child}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=23}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=23}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:19:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementLocation [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementLocation {id=15}]
+Apr 26, 2019 12:19:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementLocation {id=15}]
+Apr 26, 2019 12:19:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=window.scrollTo(0, 331), args=[]}]
+Apr 26, 2019 12:19:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, executeScript {script=window.scrollTo(0, 331), args=[]}]
+Apr 26, 2019 12:19:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, clickElement {id=15}]
+Apr 26, 2019 12:19:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, clickElement {id=15}]
+Apr 26, 2019 12:19:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:19:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=1}]
+Apr 26, 2019 12:19:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElements {using=css selector, value=td.SuiteList-NameCell}]
+Apr 26, 2019 12:19:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, findElements {using=css selector, value=td.SuiteList-NameCell}]
+Apr 26, 2019 12:19:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=29}]
+Apr 26, 2019 12:19:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [106a7ad94cab2544d9b0f5ad1f57a20fe5de870a, getElementText {id=29}]
+]]></system-err>
+  </testcase>
+  <testcase name="gotoDashboard" classname="com.clarolab.DashboardTest" time="2.387"/>
+  <testcase name="testNavigation" classname="com.clarolab.DashboardTest" time="20.073">
+    <failure message="Timed out after 5 seconds: Failure in verifyElementContainsText: an element with Locator 'By.tagName: div' was never found containing text 'PopulatexRxE: rqDtwPYxGY'!
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: '6888e31d0e98', ip: '172.17.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-29-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1660}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72), userDataDir=C:\Windows\proxy\scoped_dir4488_10406}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=09825832b03a3111fb0ec7a0f12512d64d84cd87, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 09825832b03a3111fb0ec7a0f12512d64d84cd87" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Timed out after 5 seconds: Failure in verifyElementContainsText: an element with Locator 'By.tagName: div' was never found containing text 'PopulatexRxE: rqDtwPYxGY'!
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: '6888e31d0e98', ip: '172.17.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-29-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{mobileEmulationEnabled=false, timeouts={implicit=0, pageLoad=300000, script=30000}, hasTouchScreen=false, platform=XP, acceptSslCerts=false, goog:chromeOptions={debuggerAddress=localhost:1660}, acceptInsecureCerts=false, webStorageEnabled=true, browserName=chrome, takesScreenshot=true, javascriptEnabled=true, setWindowRect=true, unexpectedAlertBehaviour=ignore, applicationCacheEnabled=false, rotatable=false, networkConnectionEnabled=false, chrome={chromedriverVersion=73.0.3683.68 (47787ec04b6e38e22703e856e101e840b65afe72), userDataDir=C:\Windows\proxy\scoped_dir4488_10406}, takesHeapSnapshot=true, pageLoadStrategy=normal, strictFileInteractability=false, databaseEnabled=false, handlesAlerts=true, version=73.0.3683.86, browserConnectionEnabled=false, nativeEvents=true, webdriver.remote.sessionid=09825832b03a3111fb0ec7a0f12512d64d84cd87, locationContextEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 09825832b03a3111fb0ec7a0f12512d64d84cd87
+	at com.clarolab.DashboardTest.testNavigation(DashboardTest.java:55)
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:19:58 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [659354761319eb28a0df2761856db480752302e9, deleteAllCookies {}]
+Apr 26, 2019 12:19:58 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [659354761319eb28a0df2761856db480752302e9, deleteAllCookies {}]
+Apr 26, 2019 12:19:58 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [659354761319eb28a0df2761856db480752302e9, quit {}]
+Apr 26, 2019 12:19:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [659354761319eb28a0df2761856db480752302e9, quit {}]
+Apr 26, 2019 12:20:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [09825832b03a3111fb0ec7a0f12512d64d84cd87, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:20:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:20:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: implicitlyWait [09825832b03a3111fb0ec7a0f12512d64d84cd87, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:20:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:20:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: get [09825832b03a3111fb0ec7a0f12512d64d84cd87, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:20:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:20:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:10 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:20:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:20:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:11 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=email}]
+Apr 26, 2019 12:20:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=email}]
+Apr 26, 2019 12:20:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@7d9e8ef7}]
+Apr 26, 2019 12:20:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@7d9e8ef7}]
+Apr 26, 2019 12:20:13 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=password}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=password}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@f107c50}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@f107c50}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=4}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=4}]
+Apr 26, 2019 12:20:14 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementEnabled {id=4}]
+Apr 26, 2019 12:20:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementEnabled {id=4}]
+Apr 26, 2019 12:20:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=4}]
+Apr 26, 2019 12:20:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=4}]
+Apr 26, 2019 12:20:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:15 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:16 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:17 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementLocation [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementLocation {id=6}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementLocation {id=6}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=window.scrollTo(0, 463), args=[]}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=window.scrollTo(0, 463), args=[]}]
+Apr 26, 2019 12:20:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.containerSelect div}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=6}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=6}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementEnabled {id=6}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementEnabled {id=6}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=6}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=6}]
+Apr 26, 2019 12:20:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElements {using=css selector, value=li.containerOption}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElements {using=css selector, value=li.containerOption}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=7}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=7}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=8}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=8}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=9}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=9}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=10}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=10}]
+Apr 26, 2019 12:20:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=11}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=11}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=12}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=12}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=13}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=13}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=14}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=14}]
+Apr 26, 2019 12:20:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=15}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=15}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=16}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=16}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findChildElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findChildElement {id=9, using=css selector, value=span:first-child}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findChildElement {id=9, using=css selector, value=span:first-child}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=17}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=17}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=return window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;, args=[]}]
+Apr 26, 2019 12:20:24 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementLocation [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementLocation {id=9}]
+Apr 26, 2019 12:20:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementLocation {id=9}]
+Apr 26, 2019 12:20:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: executeScript [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=window.scrollTo(0, 375), args=[]}]
+Apr 26, 2019 12:20:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, executeScript {script=window.scrollTo(0, 375), args=[]}]
+Apr 26, 2019 12:20:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=9}]
+Apr 26, 2019 12:20:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=9}]
+Apr 26, 2019 12:20:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=1}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElements {using=css selector, value=div.jobsListBox td a div}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElements {using=css selector, value=div.jobsListBox td a div}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElements {using=css selector, value=div.jobsListBox td a div}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElements {using=css selector, value=div.jobsListBox td a div}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=35}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=35}]
+Apr 26, 2019 12:20:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.kanban}]
+Apr 26, 2019 12:20:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.kanban}]
+Apr 26, 2019 12:20:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.WorkSpaceText}]
+Apr 26, 2019 12:20:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=css selector, value=div.WorkSpaceText}]
+Apr 26, 2019 12:20:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=37}]
+Apr 26, 2019 12:20:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementDisplayed {id=37}]
+Apr 26, 2019 12:20:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementEnabled {id=37}]
+Apr 26, 2019 12:20:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, isElementEnabled {id=37}]
+Apr 26, 2019 12:20:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=37}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, clickElement {id=37}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getCurrentUrl {}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:33 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:34 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:35 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:36 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:37 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, findElement {using=tag name, value=div}]
+Apr 26, 2019 12:20:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+Apr 26, 2019 12:20:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, getElementText {id=38}]
+]]></system-err>
+  </testcase>
+  <testcase name="testUpdateAssignee" classname="com.clarolab.DashboardTest" time="2.821">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.clarolab.DashboardTest.testUpdateAssignee(DashboardTest.java:40)
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:20:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [09825832b03a3111fb0ec7a0f12512d64d84cd87, deleteAllCookies {}]
+Apr 26, 2019 12:20:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, deleteAllCookies {}]
+Apr 26, 2019 12:20:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [09825832b03a3111fb0ec7a0f12512d64d84cd87, quit {}]
+Apr 26, 2019 12:20:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [09825832b03a3111fb0ec7a0f12512d64d84cd87, quit {}]
+Apr 26, 2019 12:20:46 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [476f0557cd021b9c4bd51a0b4bd69178abf32da9, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:20:47 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:20:47 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: implicitlyWait [476f0557cd021b9c4bd51a0b4bd69178abf32da9, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:20:47 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:20:47 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: get [476f0557cd021b9c4bd51a0b4bd69178abf32da9, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:20:52 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:53 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:53 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:53 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:53 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:54 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:54 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:54 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:54 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=email}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=email}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@38604b81}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@38604b81}]
+Apr 26, 2019 12:20:55 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=password}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=password}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@1e44b638}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@1e44b638}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [476f0557cd021b9c4bd51a0b4bd69178abf32da9, isElementDisplayed {id=4}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, isElementDisplayed {id=4}]
+Apr 26, 2019 12:20:56 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [476f0557cd021b9c4bd51a0b4bd69178abf32da9, isElementEnabled {id=4}]
+Apr 26, 2019 12:20:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, isElementEnabled {id=4}]
+Apr 26, 2019 12:20:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, clickElement {id=4}]
+Apr 26, 2019 12:20:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, clickElement {id=4}]
+Apr 26, 2019 12:20:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:20:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:20:57 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:20:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:20:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:20:59 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:21:00 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:00 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:00 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:21:01 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:21:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:21:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getElementText {id=1}]
+Apr 26, 2019 12:21:02 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:21:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:21:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:21:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, getCurrentUrl {}]
+Apr 26, 2019 12:21:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:21:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:21:03 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElements {using=css selector, value=input#downshift-simple-input}]
+Apr 26, 2019 12:21:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, findElements {using=css selector, value=input#downshift-simple-input}]
+]]></system-err>
+  </testcase>
+  <testcase name="updateJobPriority" classname="com.clarolab.DashboardTest" time="3.007">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.clarolab.DashboardTest.updateJobPriority(DashboardTest.java:24)
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:21:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [476f0557cd021b9c4bd51a0b4bd69178abf32da9, deleteAllCookies {}]
+Apr 26, 2019 12:21:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, deleteAllCookies {}]
+Apr 26, 2019 12:21:05 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [476f0557cd021b9c4bd51a0b4bd69178abf32da9, quit {}]
+Apr 26, 2019 12:21:07 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [476f0557cd021b9c4bd51a0b4bd69178abf32da9, quit {}]
+Apr 26, 2019 12:21:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: setTimeout [9db3638e813656c278aee0c843c3efb08c83ea41, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:21:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, setTimeout {type=page load, ms=80000}]
+Apr 26, 2019 12:21:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: implicitlyWait [9db3638e813656c278aee0c843c3efb08c83ea41, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:21:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, implicitlyWait {ms=2000}]
+Apr 26, 2019 12:21:12 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: get [9db3638e813656c278aee0c843c3efb08c83ea41, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:21:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, get {url=http://tdev.clarolab.com/}]
+Apr 26, 2019 12:21:18 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=loginForm}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:19 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:20 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=email}]
+Apr 26, 2019 12:21:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=email}]
+Apr 26, 2019 12:21:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [9db3638e813656c278aee0c843c3efb08c83ea41, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@3688eb5b}]
+Apr 26, 2019 12:21:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, sendKeysToElement {id=2, value=[Ljava.lang.CharSequence;@3688eb5b}]
+Apr 26, 2019 12:21:21 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=password}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=password}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: sendKeysToElement [9db3638e813656c278aee0c843c3efb08c83ea41, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@69f1a286}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, sendKeysToElement {id=3, value=[Ljava.lang.CharSequence;@69f1a286}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=id, value=internalLoginSubmit}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementDisplayed [9db3638e813656c278aee0c843c3efb08c83ea41, isElementDisplayed {id=4}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, isElementDisplayed {id=4}]
+Apr 26, 2019 12:21:22 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: isElementEnabled [9db3638e813656c278aee0c843c3efb08c83ea41, isElementEnabled {id=4}]
+Apr 26, 2019 12:21:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, isElementEnabled {id=4}]
+Apr 26, 2019 12:21:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: clickElement [9db3638e813656c278aee0c843c3efb08c83ea41, clickElement {id=4}]
+Apr 26, 2019 12:21:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, clickElement {id=4}]
+Apr 26, 2019 12:21:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:23 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:21:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:21:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:25 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:26 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:27 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=tag name, value=body}]
+Apr 26, 2019 12:21:28 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=1}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getCurrentUrl [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getCurrentUrl {}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElement [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElement {using=class name, value=homeRoot}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: findElements [9db3638e813656c278aee0c843c3efb08c83ea41, findElements {using=css selector, value=tr.jobsTableRow}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, findElements {using=css selector, value=tr.jobsTableRow}]
+Apr 26, 2019 12:21:29 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=6}]
+Apr 26, 2019 12:21:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=6}]
+Apr 26, 2019 12:21:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=7}]
+Apr 26, 2019 12:21:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=7}]
+Apr 26, 2019 12:21:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=8}]
+Apr 26, 2019 12:21:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=8}]
+Apr 26, 2019 12:21:30 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=9}]
+Apr 26, 2019 12:21:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=9}]
+Apr 26, 2019 12:21:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=10}]
+Apr 26, 2019 12:21:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=10}]
+Apr 26, 2019 12:21:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=11}]
+Apr 26, 2019 12:21:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=11}]
+Apr 26, 2019 12:21:31 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: getElementText [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=12}]
+Apr 26, 2019 12:21:32 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [9db3638e813656c278aee0c843c3efb08c83ea41, getElementText {id=12}]
+]]></system-err>
+  </testcase>
+  <testcase name="testCommentSave" classname="com.clarolab.TriageTest" time="45.337"/>
+  <testcase name="testOptionsSave" classname="com.clarolab.TriageTest" time="95.716"/>
+  <testcase name="initTest" classname="com.clarolab.TriageTest" time="98.278">
+    <failure message="Automate testing time expired. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 816 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: '6888e31d0e98', ip: '172.17.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-29-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver" type="org.openqa.selenium.WebDriverException">org.openqa.selenium.WebDriverException: 
+Automate testing time expired. (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 816 milliseconds
+Build info: version: '2.45.0', revision: '5017cb8e7ca8e37638dc3091b2440b90a1d8686f', time: '2015-02-27 09:10:26'
+System info: host: '6888e31d0e98', ip: '172.17.0.9', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-29-generic', java.version: '1.8.0_181'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+</failure>
+    <system-err><![CDATA[Apr 26, 2019 12:24:38 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [5c2e8a5a34d74267e8a4bfd4e2df8cc48ef2a3ad, deleteAllCookies {}]
+Apr 26, 2019 12:24:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [5c2e8a5a34d74267e8a4bfd4e2df8cc48ef2a3ad, deleteAllCookies {}]
+Apr 26, 2019 12:24:39 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: quit [5c2e8a5a34d74267e8a4bfd4e2df8cc48ef2a3ad, quit {}]
+Apr 26, 2019 12:24:40 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executed: [5c2e8a5a34d74267e8a4bfd4e2df8cc48ef2a3ad, quit {}]
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.TriageTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [null, deleteAllCookies {}]
+Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="testProductBugSave" classname="com.clarolab.TriageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testProductBugUrl" classname="com.clarolab.TriageTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM org.openqa.selenium.remote.RemoteWebDriver log
+WARNING: Executing: deleteAllCookies [null, deleteAllCookies {}]
+Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="initTest" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+    <system-err><![CDATA[Apr 26, 2019 12:24:41 AM com.clarolab.BaseTest cleanTest
+SEVERE: There is a problem cleaning the session!
+]]></system-err>
+  </testcase>
+  <testcase name="testAssignedToMe" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCancelCleanNote" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreateAutomaticPriority" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreateHighPriority" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreateLowPriority" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testCreateMediumPriority" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testPinned" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSaveCancelCleanNote" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testShowPassingIssues" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSortByNewerFirst" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSortByOlderFirst" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSortByPriority" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+  <testcase name="testSortBySuiteName" classname="com.clarolab.AutomationIssuesTest" time="0">
+    <skipped/>
+  </testcase>
+</testsuite>
